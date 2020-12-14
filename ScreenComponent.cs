@@ -5,6 +5,7 @@
 using System;
 using System.Threading.Tasks;
 using Anki.Vector.Types;
+using Google.Protobuf;
 
 namespace Anki.Vector
 {
@@ -156,6 +157,33 @@ namespace Anki.Vector
             }
             return DisplayImageRgb565(imageData, durationMs, interruptRunning);
         }
+
+
+
+
+        public async Task<StatusCode> SetEyeColor(float hue, float saturation)
+        {
+            var response = await Robot.RunMethod(client => client.SetEyeColorAsync(new ExternalInterface.SetEyeColorRequest()
+            {
+                Hue = hue,
+                Saturation = saturation
+            })).ConfigureAwait(false);
+            return response.Status.Code.Convert();
+        }
+
+        public async Task<StatusCode> SetScreenImage(ByteString imageData, TimeSpan? duration = null, bool interruptRunning = true)
+        {
+            var durationMS = duration == null ? 0 : duration.Value.TotalMilliseconds;
+            var response = await Robot.RunMethod(client => client.DisplayFaceImageRGBAsync(new ExternalInterface.DisplayFaceImageRGBRequest()
+            {
+                FaceData = imageData,
+                DurationMs = (uint)durationMS,
+                InterruptRunning = interruptRunning
+            })).ConfigureAwait(false);
+            return response.Status.Code.Convert();
+        }
+
+      
 
         /// <summary>
         /// Called when disconnecting
