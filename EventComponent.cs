@@ -285,7 +285,8 @@ namespace Anki.Vector
         private void ProcessEvent(EventResponse eventResponse)
         {
             // Must receive en event every 5 seconds or the feed will be shut down
-            _ = ResetTimeout(EventStreamTimeout).ConfigureAwait(false);
+            // GOT THE IDEA BUT THIS WAY ??? NO !!! 
+            //_ = ResetTimeout(EventStreamTimeout).ConfigureAwait(false);
 
             var e = eventResponse.Event;
             switch (e.EventTypeCase)
@@ -358,6 +359,9 @@ namespace Anki.Vector
                     break;
                 case Event.EventTypeOneofCase.UnexpectedMovement:
                     RaiseRobotEvents(UnexpectedMovement, new UnexpectedMovementEventArgs(e));
+                    break;
+                default:
+                    Console.WriteLine(string.Format("Unknown Event: {0}", e.ToString()));
                     break;
             }
         }
