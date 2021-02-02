@@ -176,7 +176,7 @@ namespace Anki.Vector.GrpcUtil
             {
                 cancellationTokenSource.Dispose();
                 cancellationTokenSource = null;
-                endTaskCompletionSource.TrySetResult(true);
+                endTaskCompletionSource?.TrySetResult(true);
                 endTaskCompletionSource = null;
                 endAction?.Invoke();
             }

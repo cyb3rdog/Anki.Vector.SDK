@@ -5,6 +5,7 @@
 namespace Anki.Vector
 {
     using System;
+    using System.Threading;
     using System.Threading.Tasks;
     using Anki.Vector.Events;
     using Anki.Vector.ExternalInterface;
@@ -27,12 +28,21 @@ namespace Anki.Vector
         /// <summary>
         /// Gets the map frequency.
         /// </summary>
-        public float Frequency { get; private set; } = 0.5f;
+        public float Frequency { get; private set; } = 1f;
+
+        /// <summary>
+        /// The cancellation token source for terminating the feed loop
+        /// </summary>
+        private CancellationTokenSource cancellationTokenSource = null;
 
         /// <summary>
         /// Gets the latest nav map.
         /// </summary>
-        public NavMapGrid LatestNavMap { get; private set; }
+        public NavMapGrid LatestNavMap { get => _latestNavMap; private set => SetProperty(ref _latestNavMap, value); }
+        private NavMapGrid _latestNavMap = null;
+
+        public long LatestNavMapTimestamp { get => _latestNavMapTimestamp; private set => SetProperty(ref _latestNavMapTimestamp, value); }
+        private long _latestNavMapTimestamp = 0;
 
         /// <summary>
         /// Occurs when nav map updated
@@ -51,9 +61,11 @@ namespace Anki.Vector
                 {
                     var navMapUpdateEventArgs = new NavMapUpdateEventArgs(response);
                     LatestNavMap = navMapUpdateEventArgs.NavMap;
+                    LatestNavMapTimestamp = DateTime.Now.Ticks;
                     NavMapUpdate?.Invoke(this, navMapUpdateEventArgs);
                 },
-                () => OnPropertyChanged(nameof(IsFeedActive)),
+                () => { return; },
+                //() => OnPropertyChanged(nameof(IsFeedActive)),
                 robot.PropagateException
              );
         }
@@ -61,7 +73,7 @@ namespace Anki.Vector
         /// <summary>
         /// Gets a value indicating whether the nav map feed is active.
         /// </summary>
-        public bool IsFeedActive => navMapFeed.IsActive;
+        public bool IsFeedActive => navMapFeed.IsActive || cancellationTokenSource != null;
 
         /// <summary>
         /// Starts the nav map feed.  The feed will run in a background thread and raise the <see cref="LatestNavMap" /> event for each map change.  It will
@@ -69,10 +81,38 @@ namespace Anki.Vector
         /// </summary>
         /// <param name="frequency">The navmap polling frequency.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
-        public async Task StartFeed(float frequency = 0.5f)
+        public async Task StartFeed(float frequency = 1f)
         {
             Frequency = frequency;
-            await navMapFeed.Start().ConfigureAwait(false);
+            cancellationTokenSource = new CancellationTokenSource();
+            var token = cancellationTokenSource.Token;
+            try
+            {
+                await Task.Run(() =>
+                {
+                    navMapFeed.Start().Wait();
+                    Thread.Sleep(2500);
+                    OnPropertyChanged(nameof(IsFeedActive));
+                    while (!token.IsCancellationRequested)
+                    {
+                        Thread.Sleep((int)(this.Frequency * 500));
+                        if ((DateTime.Now.Ticks - this.LatestNavMapTimestamp) > (Frequency * 2000000))
+                        {
+                            navMapFeed.End().Wait();
+                            Thread.Sleep((int)(this.Frequency * 500));
+                            navMapFeed.Start().Wait();
+                        }
+                    }
+                });
+            }
+            catch (Exception error)
+            {
+            }
+            finally
+            {
+                cancellationTokenSource?.Dispose();
+                cancellationTokenSource = null;
+            }
             OnPropertyChanged(nameof(IsFeedActive));
         }
 
@@ -82,7 +122,13 @@ namespace Anki.Vector
         /// <returns>A task that represents the asynchronous operation.</returns>
         public async Task StopFeed()
         {
+            cancellationTokenSource?.Cancel();
+            cancellationTokenSource?.Dispose();
+            cancellationTokenSource = null;
+
             await navMapFeed.End().ConfigureAwait(false);
+
+            OnPropertyChanged(nameof(IsFeedActive));
         }
 
         /// <summary>

@@ -31,7 +31,7 @@ namespace Anki.Vector
         /// <summary>
         /// Gets the cancellation token source for timing out the event loop
         /// </summary>
-        private CancellationTokenSource timeoutCancellationTokenSource = null;
+        ////private CancellationTokenSource timeoutCancellationTokenSource = null;
 
         /// <summary>Lost connection to Vector</summary>
         private bool lostConnection = false;
@@ -66,7 +66,7 @@ namespace Anki.Vector
         /// <exception cref="InvalidOperationException">The camera feed has already been started.</exception>
         internal async Task Start()
         {
-            await eventFeed.Start().ConfigureAwait(false); 
+            await eventFeed.Start().ConfigureAwait(false);
             OnPropertyChanged(nameof(IsProccessingEvents));
         }
 
@@ -285,8 +285,8 @@ namespace Anki.Vector
         private void ProcessEvent(EventResponse eventResponse)
         {
             // Must receive en event every 5 seconds or the feed will be shut down
-            // GOT THE IDEA BUT THIS WAY ??? NO !!! 
-            //_ = ResetTimeout(EventStreamTimeout).ConfigureAwait(false);
+            // GOT THE IDEA BUT THIS WAY ??? NO !!!
+            ////_ = ResetTimeout(EventStreamTimeout).ConfigureAwait(false);
 
             var e = eventResponse.Event;
             switch (e.EventTypeCase)
@@ -367,7 +367,7 @@ namespace Anki.Vector
         }
 
         /// <summary>
-        /// Processes the wake word event 
+        /// Processes the wake word event
         /// </summary>
         /// <param name="e">The wake word data.</param>
         private void ProcessWakeWord(Event e)
@@ -453,27 +453,27 @@ namespace Anki.Vector
             eventHandler?.Invoke(this, eventArgs);
         }
 
-        /// <summary>
-        /// Resets the timeout every time an event is received.
-        /// </summary>
-        /// <param name="timeout">The timeout.</param>
-        /// <returns>A task that represents the asynchronous operation.</returns>
-        private async Task ResetTimeout(int timeout)
-        {
-            if (timeoutCancellationTokenSource != null)
-            {
-                timeoutCancellationTokenSource.Cancel();
-                timeoutCancellationTokenSource.Dispose();
-                timeoutCancellationTokenSource = null;
-            }
+        /////// <summary>
+        /////// Resets the timeout every time an event is received.
+        /////// </summary>
+        /////// <param name="timeout">The timeout.</param>
+        /////// <returns>A task that represents the asynchronous operation.</returns>
+        ////private async Task ResetTimeout(int timeout)
+        ////{
+        ////    if (timeoutCancellationTokenSource != null)
+        ////    {
+        ////        timeoutCancellationTokenSource.Cancel();
+        ////        timeoutCancellationTokenSource.Dispose();
+        ////        timeoutCancellationTokenSource = null;
+        ////    }
 
-            timeoutCancellationTokenSource = new CancellationTokenSource();
-            var token = timeoutCancellationTokenSource.Token;
-            if (token.IsCancellationRequested) return;
-            await Task.Delay(timeout, token).ConfigureAwait(false);
-            if (token.IsCancellationRequested) return;
-            lostConnection = true;
-            await End().ConfigureAwait(false);
-        }
+        ////    timeoutCancellationTokenSource = new CancellationTokenSource();
+        ////    var token = timeoutCancellationTokenSource.Token;
+        ////    if (token.IsCancellationRequested) return;
+        ////    await Task.Delay(timeout, token).ConfigureAwait(false);
+        ////    if (token.IsCancellationRequested) return;
+        ////    lostConnection = true;
+        ////    await End().ConfigureAwait(false);
+        ////}
     }
 }
