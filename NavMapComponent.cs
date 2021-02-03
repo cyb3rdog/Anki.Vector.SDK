@@ -96,14 +96,14 @@ namespace Anki.Vector
                     navMapFeed.Start().Wait();
                     Thread.Sleep(3500);
                     OnPropertyChanged(nameof(IsFeedActive));
-                    while (!token.IsCancellationRequested)
+                    while ((!token.IsCancellationRequested && cancellationTokenSource != null))
                     {
                         Thread.Sleep((int)(this.Frequency * 500));
                         if ((DateTime.Now.Ticks - this.LatestNavMapTimestamp) > (Frequency * 2000000))
                         {
                             navMapFeed.End().Wait();
                             Thread.Sleep((int)(this.Frequency * 500));
-                            if (!token.IsCancellationRequested)
+                            if (!token.IsCancellationRequested && cancellationTokenSource != null)
                                 navMapFeed.Start().Wait();
                         }
                     }
