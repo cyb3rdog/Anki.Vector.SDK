@@ -84,6 +84,9 @@ namespace Anki.Vector
         public async Task StartFeed(float frequency = 1f)
         {
             Frequency = frequency;
+            if (navMapFeed.IsActive)
+                await this.StopFeed().ConfigureAwait(true);
+
             cancellationTokenSource = new CancellationTokenSource();
             var token = cancellationTokenSource.Token;
             try
@@ -91,7 +94,7 @@ namespace Anki.Vector
                 await Task.Run(() =>
                 {
                     navMapFeed.Start().Wait();
-                    Thread.Sleep(2500);
+                    Thread.Sleep(3500);
                     OnPropertyChanged(nameof(IsFeedActive));
                     while (!token.IsCancellationRequested)
                     {
@@ -100,7 +103,8 @@ namespace Anki.Vector
                         {
                             navMapFeed.End().Wait();
                             Thread.Sleep((int)(this.Frequency * 500));
-                            navMapFeed.Start().Wait();
+                            if (!token.IsCancellationRequested)
+                                navMapFeed.Start().Wait();
                         }
                     }
                 });
@@ -126,7 +130,8 @@ namespace Anki.Vector
             cancellationTokenSource?.Dispose();
             cancellationTokenSource = null;
 
-            await navMapFeed.End().ConfigureAwait(false);
+            if (this.navMapFeed.IsActive)
+                await navMapFeed.End().ConfigureAwait(false);
 
             OnPropertyChanged(nameof(IsFeedActive));
         }
