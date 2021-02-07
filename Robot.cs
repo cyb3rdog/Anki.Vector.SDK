@@ -27,7 +27,7 @@ namespace Anki.Vector
     public enum ControlPriority
     {
         /// <summary>
-        /// Highest priority level. Suppresses most automatic physical reactions, use with caution. 
+        /// Highest priority level. Suppresses most automatic physical reactions, use with caution.
         /// </summary>
         OverrideBehaviors = 10,
 
@@ -95,7 +95,7 @@ namespace Anki.Vector
         public PhotoComponent Photos { get; }
 
         /// <summary>
-        /// Gets the events component 
+        /// Gets the events component
         /// </summary>
         public EventComponent Events { get; }
 
@@ -157,7 +157,7 @@ namespace Anki.Vector
         private int _carryingObjectId = -1;
 
         /// <summary>
-        /// Gets the current gyroscope reading (x, y, z) 
+        /// Gets the current gyroscope reading (x, y, z)
         /// </summary>
         public AngularVelocity Gyro { get => _gyro; private set => SetProperty(ref _gyro, value); }
         private AngularVelocity _gyro;
@@ -319,7 +319,7 @@ namespace Anki.Vector
             {
                 throw new VectorConfigurationException("No Robot Configuration found; please run the configuration tool to setup the robot connection.");
             }
-            
+
             // try each robot in order until the one is able to connect
             foreach (var configuration in configurations)
             {
@@ -361,7 +361,7 @@ namespace Anki.Vector
         /// <summary>
         /// Initializes a new instance of the <see cref="Robot"/> class.
         /// </summary>
-        public Robot() 
+        public Robot()
         {
             // Components
             this.Control = new ControlComponent(this);
@@ -449,11 +449,11 @@ namespace Anki.Vector
             // Reset disconnecting flag
             disconnecting = false;
 
-            // The robot IP address   
+            // The robot IP address
             Task<Client> connectionTask = null;
             var ipAddress = robotConfiguration.IPAddress;
 
-            // If using mDNS then lookup IP address 
+            // If using mDNS then lookup IP address
             if (useZeroConfig)
             {
                 // If an IP address is specified, try and connect to that IP while looking up additional IP
@@ -471,7 +471,7 @@ namespace Anki.Vector
                     {
                         // If IP address lookup completed first and IP doesn't match then try again below with new IP
                         ipAddress = ipAddressTask.Result;
-                        // Ensure ignored connection is disposed 
+                        // Ensure ignored connection is disposed
                         _ = connectionTask.ContinueWith(task =>
                         {
                             if (task.IsFaulted)
@@ -518,7 +518,7 @@ namespace Anki.Vector
         }
 
         /// <summary>
-        /// Connects to the robot using the remote connection information.  This is used for connecting to Vector when he's not on the LAN.  This requires port forwarding on your 
+        /// Connects to the robot using the remote connection information.  This is used for connecting to Vector when he's not on the LAN.  This requires port forwarding on your
         /// router to setup an external connection to Vector.  For connecting to Vector on the same network as this application, use the <see cref="Connect(IRobotConfiguration, int, bool)"/> method instead.
         /// </summary>
         /// <param name="robotConfiguration">The remote robot configuration.</param>
@@ -602,7 +602,7 @@ namespace Anki.Vector
             response.Status.EnsureSuccess();
             return response.List.ToList().AsReadOnly();
         }
-        
+
         /// <summary>
         /// Request the current setting of a feature flag.
         /// </summary>
@@ -650,6 +650,13 @@ namespace Anki.Vector
             return RobotSettings.FromJdoc(response.Doc);
         }
 
+        public async Task<AlexaAuthStatus> ReadAlexaAuthState()
+        {
+            var response = await RunMethod(client => client.GetAlexaAuthStateAsync(new AlexaAuthStateRequest())).ConfigureAwait(false);
+            response.Status.EnsureSuccess();
+            return new AlexaAuthStatus(response);
+        }
+
         /// <summary>
         /// Gets the robot lifetime stats.
         /// </summary>
@@ -671,7 +678,7 @@ namespace Anki.Vector
         {
             var response = await RunMethod(client => client.GetLatestAttentionTransferAsync(new LatestAttentionTransferRequest())).ConfigureAwait(false);
             response.Status.EnsureSuccess();
-            // There wasn't any reason given 
+            // There wasn't any reason given
             if (response.LatestAttentionTransfer.AttentionTransfer == null) return null;
             return new Types.LatestAttentionTransfer(response.LatestAttentionTransfer);
         }
@@ -826,24 +833,26 @@ namespace Anki.Vector
         /// <returns>A task that represents the asynchronous operation; the task result contains the result of the command.</returns>
         /// <exception cref="VectorNotConnectedException">Vector is not connected.</exception>
         /// <exception cref="VectorControlException">Unable to acquire control of Vector.</exception>
-        internal async Task<T> RunControlMethod<T>(Func<ExternalInterfaceClient, Task<T>> command, [CallerMemberName]string methodName = null)
+        internal async Task<T> RunControlMethod<T>(Func<ExternalInterfaceClient, Task<T>> command, [CallerMemberName] string methodName = null)
         {
             // Cannot run method if not connected
             if (!IsConnected) throw new VectorNotConnectedException("Vector is not connected.");
 
-            // If we don't have control and we aren't maintaining control then throw exception
-            if (!this.Control.HasControl && !Control.MaintainBehaviorControl)
-            {
-                throw new VectorControlException($"Method {methodName ?? "unknown"} requires behavior control.");
-            }
+            // If we don't have control we request it
 
+            bool hadControl = this.Control.HasControl;
             // If we don't have control, request it.
-            if (!this.Control.HasControl) await Control.RequestControl().ConfigureAwait(false);
+            if (!hadControl) await Control.RequestControl().ConfigureAwait(false);
 
             // If we still don't have control, throw exception
             if (!this.Control.HasControl) throw new VectorControlException("Unable to acquire control of Vector.");
 
-            return await client.RunCommand(command).ConfigureAwait(false);
+            T result = await client.RunCommand(command).ConfigureAwait(false);
+
+            // Release control if we didn't had it before
+            if (!hadControl) await this.Control.ReleaseControl();
+
+            return result;
         }
 
         /// <summary>
@@ -897,7 +906,7 @@ namespace Anki.Vector
             if (!IsConnected) throw new VectorNotConnectedException("Vector is not connected.");
             return client.RunCommand(command);
         }
-            
+
         #region Dispose Pattern
 
         /// <summary>

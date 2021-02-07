@@ -41,7 +41,7 @@ namespace Anki.Vector
         /// <summary>
         /// True if Vector is currently moving any of his motors (head, arm or wheels/treads).
         /// </summary>
-        public bool AreMotorsMoving => (status & ROBOT_STATUS_IS_MOVING) != 0;
+        public bool IsMoving => (status & ROBOT_STATUS_IS_MOVING) != 0;
 
         /// <summary>
         /// True if Vector is currently carrying a block.
@@ -121,7 +121,7 @@ namespace Anki.Vector
         /// <summary>
         /// True if Vector is in motion. This includes any of his motors (head, arm, wheels/tracks) and if he is being lifted, carried, or falling.
         /// </summary>
-        public bool IsRobotMoving => (status & ROBOT_STATUS_IS_MOTION_DETECTED) != 0;
+        public bool IsMotionDetected => (status & ROBOT_STATUS_IS_MOTION_DETECTED) != 0;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="RobotStatus"/> struct.
@@ -148,7 +148,7 @@ namespace Anki.Vector
         /// Returns a hash code for this instance.
         /// </summary>
         /// <returns>
-        /// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+        /// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
         /// </returns>
         public override int GetHashCode()
         {
