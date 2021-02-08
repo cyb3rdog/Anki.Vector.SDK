@@ -158,6 +158,12 @@ namespace Anki.Vector.GrpcUtil
             {
                 // Ignore cancellation exceptions
             }
+            catch (RpcException ex)
+            {
+                Exception = new Exceptions.VectorNotConnectedException("Connection Lost", ex);
+                exceptionHandler?.Invoke(Exception);
+                endTaskCompletionSource.TrySetException(Exception);
+            }
             catch (Exception ex)
             {
                 // All event loop exception are caught because exceptions don't propagate well on the background thread.
