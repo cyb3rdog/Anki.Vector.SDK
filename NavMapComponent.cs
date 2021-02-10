@@ -41,8 +41,7 @@ namespace Anki.Vector
         public NavMapGrid LatestNavMap { get => _latestNavMap; private set => SetProperty(ref _latestNavMap, value); }
         private NavMapGrid _latestNavMap = null;
 
-        public long LatestNavMapTimestamp { get => _latestNavMapTimestamp; private set => SetProperty(ref _latestNavMapTimestamp, value); }
-        private long _latestNavMapTimestamp = 0;
+        private long _internalLastTimestamp = 0;
 
         /// <summary>
         /// Occurs when nav map updated
@@ -61,7 +60,7 @@ namespace Anki.Vector
                 {
                     var navMapUpdateEventArgs = new NavMapUpdateEventArgs(response);
                     LatestNavMap = navMapUpdateEventArgs.NavMap;
-                    LatestNavMapTimestamp = DateTime.Now.Ticks;
+                    _internalLastTimestamp = DateTime.Now.Ticks;
                     NavMapUpdate?.Invoke(this, navMapUpdateEventArgs);
                 },
                 () => { return; },
@@ -93,21 +92,29 @@ namespace Anki.Vector
             {
                 await Task.Run(() =>
                 {
+                    _internalLastTimestamp = DateTime.Now.Ticks;
                     navMapFeed.Start().Wait();
-                    Thread.Sleep(3500);
+
                     OnPropertyChanged(nameof(IsFeedActive));
                     while ((!token.IsCancellationRequested && cancellationTokenSource != null))
                     {
-                        Thread.Sleep((int)(this.Frequency * 500));
-                        if ((DateTime.Now.Ticks - this.LatestNavMapTimestamp) > (Frequency * 2000000))
+                        Thread.Sleep(500);
+                        if (!this.Robot.IsConnected) break;
+                        if ((this.Robot.Status.IsInCalmPowerMode) || (this.Robot.Status.IsOnCharger))
+                            _internalLastTimestamp = DateTime.Now.Ticks;
+
+                        if ((DateTime.Now.Ticks - this._internalLastTimestamp) > (Frequency * 1000 * 10000))
                         {
                             navMapFeed.End().Wait();
-                            Thread.Sleep((int)(this.Frequency * 500));
+                            Thread.Sleep(500);
                             if (!token.IsCancellationRequested && cancellationTokenSource != null)
+                            {
+                                _internalLastTimestamp = DateTime.Now.Ticks;
                                 navMapFeed.Start().Wait();
+                            }
                         }
                     }
-                });
+                }).ConfigureAwait(false);
             }
             catch (Exception error)
             {
