@@ -171,19 +171,16 @@ namespace Anki.Vector
             return response.Status.Code.Convert();
         }
 
-        public async Task<StatusCode> SetScreenImage(ByteString imageData, TimeSpan? duration = null, bool interruptRunning = true)
+        public async Task<StatusCode> SetScreenImage(ByteString imageData, uint durationMs = 0, bool interruptRunning = true)
         {
-            var durationMS = duration == null ? 0 : duration.Value.TotalMilliseconds;
             var response = await Robot.RunMethod(client => client.DisplayFaceImageRGBAsync(new ExternalInterface.DisplayFaceImageRGBRequest()
             {
                 FaceData = imageData,
-                DurationMs = (uint)durationMS,
+                DurationMs = durationMs,
                 InterruptRunning = interruptRunning
             })).ConfigureAwait(false);
             return response.Status.Code.Convert();
         }
-
-      
 
         /// <summary>
         /// Called when disconnecting
