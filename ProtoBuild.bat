@@ -6,5 +6,6 @@ protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInter
 protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInterface ./proto/anki_vector/messaging/behavior.proto --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe
 protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInterface ./proto/anki_vector/messaging/nav_map.proto --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe
 protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInterface ./proto/anki_vector/messaging/settings.proto --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe
+protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInterface ./proto/anki_vector/messaging/onboarding.proto --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe
 protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInterface ./proto/anki_vector/messaging/shared.proto --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe
 protoc.exe -I./proto --csharp_out ./ExternalInterface --grpc_out ./ExternalInterface ./proto/anki_vector/messaging/external_interface.proto --plugin=protoc-gen-grpc=grpc_csharp_plugin.exe

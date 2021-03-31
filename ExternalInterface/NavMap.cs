@@ -43,7 +43,8 @@ namespace Anki.Vector.ExternalInterface {
             "WElNSVRZX0VYUExPUkVEEAUSIgoeTkFWX05PREVfT0JTVEFDTEVfVU5SRUNP",
             "R05JWkVEEAYSEgoOTkFWX05PREVfQ0xJRkYQBxIdChlOQVZfTk9ERV9JTlRF",
             "UkVTVElOR19FREdFEAgSIQodTkFWX05PREVfTk9OX0lOVEVSRVNUSU5HX0VE",
-            "R0UQCWIGcHJvdG8z"));
+            "R0UQCUI6WjhnaXRodWIuY29tL2RpZ2l0YWwtZHJlYW0tbGFicy92ZWN0b3It",
+            "Z28tc2RrL3BrZy92ZWN0b3JwYmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.NavNodeContentType), }, new pbr::GeneratedClrTypeInfo[] {

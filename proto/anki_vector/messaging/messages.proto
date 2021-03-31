@@ -15,8 +15,8 @@
 // External interface for robot <-> app and robot <-> sdk communication
 
 syntax = "proto3";
-
 package Anki.Vector.external_interface;
+option go_package = "github.com/digital-dream-labs/vector-go-sdk/pkg/vectorpb";
 
 import "anki_vector/messaging/response_status.proto";
 import "anki_vector/messaging/extensions.proto";
@@ -170,7 +170,7 @@ message MeetVictorFaceScanComplete
 
 message Status {
   oneof status_type {
-    FeatureStatus                   feature_status                   = 1; 
+    FeatureStatus                   feature_status                   = 1;
     MeetVictorFaceScanStarted       meet_victor_face_scan_started    = 2;
     MeetVictorFaceScanComplete      meet_victor_face_scan_complete   = 3;
     FaceEnrollmentCompleted         face_enrollment_completed        = 4;
@@ -251,7 +251,8 @@ message RobotState {
   TouchData touch_data = 17;
 }
 
-enum RobotStatus {
+enum RobotStatus
+{
   ROBOT_STATUS_NONE                    = 0x0;
   ROBOT_STATUS_IS_MOVING               = 0x1;
   ROBOT_STATUS_IS_CARRYING_BLOCK       = 0x2;
@@ -357,7 +358,8 @@ message UnexpectedMovement {
 
 // This is an int8 on the clad side.
 // Proto field names are prefixed with "EXPRESSION_"
-enum FacialExpression {
+enum FacialExpression
+{
   option allow_alias = true;
   EXPRESSION_UNKNOWN = 0;    // e.g. expression estimation disabled.
 
@@ -398,7 +400,8 @@ message RobotChangedObservedFaceID {
   int32   new_id = 2;
 }
 
-enum FaceEnrollmentResult {
+enum FaceEnrollmentResult
+{
   SUCCESS = 0;
 
   // Failures:
@@ -498,7 +501,8 @@ message EnrollFaceResponse {
   BehaviorResults result = 2;
 }
 
-enum BehaviorResults {
+enum BehaviorResults
+{
   BEHAVIOR_INVALID_STATE = 0;
   BEHAVIOR_COMPLETE_STATE = 1;
   BEHAVIOR_WONT_ACTIVATE_STATE = 2;
@@ -632,7 +636,7 @@ message PathMotionProfile {
   bool  is_custom = 11;
 }
 
-// These codes are duplicated from actionResults.clad file and need to be kept in sync 
+// These codes are duplicated from actionResults.clad file and need to be kept in sync
 // The possible results of running an action.
   message ActionResult {
   // The possible results of running an action.
@@ -960,7 +964,8 @@ message SayTextRequest {
 }
 
 message SayTextResponse {
-  enum UtteranceState {
+  enum UtteranceState
+  {
     INVALID = 0;
     GENERATING = 1;
     READY = 2;
@@ -1003,6 +1008,10 @@ enum AudioProcessingMode {
 // Request how the robot should process and send audio
 message AudioSendModeRequest {
   AudioProcessingMode mode = 1;
+}
+
+message AudioSendModeResponse {
+  ResponseStatus status = 1;
 }
 
 // Event sent when the robot changes the mode it's processing and sending audio
@@ -1092,7 +1101,8 @@ message ExternalAudioStreamResponse {
   }
 }
 
-enum MasterVolumeLevel {
+enum MasterVolumeLevel
+{
   VOLUME_LOW         = 0;
   VOLUME_MEDIUM_LOW  = 1;
   VOLUME_MEDIUM      = 2;
@@ -1197,7 +1207,8 @@ message VisionModesAutoDisabled
 
 // One frame of image data and associated metadata
 message ImageChunk {
-  enum ImageEncoding {
+  enum ImageEncoding
+  {
     NONE_IMAGE_ENCODING = 0;
     RAW_GRAY = 1; // no compression
     RAW_RGB = 2;  // no compression, just [RGBRGBRG...]
@@ -1234,7 +1245,8 @@ message CameraFeedResponse {
 
 // Request for a single image from the robot. Default resolution is 640*360,
 // enabling high resolution provides a 1280*720 image.
-message CaptureSingleImageRequest {
+message CaptureSingleImageRequest
+{
   bool enable_high_resolution = 1;              // (v1.7)
 }
 
@@ -1285,7 +1297,7 @@ message SetCameraSettingsResponse {
   string  status_message = 2;
 }
 
-// Event sent when camera exposure settings change (v1.7)
+// (v1.7) - Event sent when camera exposure settings change
 message CameraSettingsUpdate {
   float   gain = 1;
   uint32  exposure_ms = 2;
@@ -1303,6 +1315,8 @@ message SDKInitializationRequest {
 message SDKInitializationResponse {
   ResponseStatus status = 1;
 }
+
+
 
 message AppDisconnected{}
 

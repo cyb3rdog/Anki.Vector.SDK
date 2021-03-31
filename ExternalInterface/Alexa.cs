@@ -39,7 +39,9 @@ namespace Anki.Vector.ExternalInterface {
             "QWxleGFBdXRoU3RhdGUSFgoSQUxFWEFfQVVUSF9JTlZBTElEEAASHAoYQUxF",
             "WEFfQVVUSF9VTklOSVRJQUxJWkVEEAESHgoaQUxFWEFfQVVUSF9SRVFVRVNU",
             "SU5HX0FVVEgQAhIfChtBTEVYQV9BVVRIX1dBSVRJTkdfRk9SX0NPREUQAxIZ",
-            "ChVBTEVYQV9BVVRIX0FVVEhPUklaRUQQBGIGcHJvdG8z"));
+            "ChVBTEVYQV9BVVRIX0FVVEhPUklaRUQQBEI6WjhnaXRodWIuY29tL2RpZ2l0",
+            "YWwtZHJlYW0tbGFicy92ZWN0b3ItZ28tc2RrL3BrZy92ZWN0b3JwYmIGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.AlexaAuthState), }, new pbr::GeneratedClrTypeInfo[] {

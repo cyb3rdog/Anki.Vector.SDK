@@ -25,85 +25,87 @@ namespace Anki.Vector.ExternalInterface {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CiJhbmtpX3ZlY3Rvci9tZXNzYWdpbmcvc2hhcmVkLnByb3RvEh5BbmtpLlZl",
-            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UaJGFua2lfdmVjdG9yL21lc3NhZ2lu",
-            "Zy9iZWhhdmlvci5wcm90bxogYW5raV92ZWN0b3IvbWVzc2FnaW5nL2N1YmUu",
-            "cHJvdG8aIWFua2lfdmVjdG9yL21lc3NhZ2luZy9hbGV4YS5wcm90bxokYW5r",
-            "aV92ZWN0b3IvbWVzc2FnaW5nL21lc3NhZ2VzLnByb3RvGiRhbmtpX3ZlY3Rv",
-            "ci9tZXNzYWdpbmcvc2V0dGluZ3MucHJvdG8aJmFua2lfdmVjdG9yL21lc3Nh",
-            "Z2luZy9leHRlbnNpb25zLnByb3RvGithbmtpX3ZlY3Rvci9tZXNzYWdpbmcv",
-            "cmVzcG9uc2Vfc3RhdHVzLnByb3RvIkoKFlByb3RvY29sVmVyc2lvblJlcXVl",
-            "c3QSFgoOY2xpZW50X3ZlcnNpb24YASABKAMSGAoQbWluX2hvc3RfdmVyc2lv",
-            "bhgCIAEoAyKnAQoXUHJvdG9jb2xWZXJzaW9uUmVzcG9uc2USTgoGcmVzdWx0",
-            "GAEgASgOMj4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlByb3Rv",
-            "Y29sVmVyc2lvblJlc3BvbnNlLlJlc3VsdBIUCgxob3N0X3ZlcnNpb24YAiAB",
-            "KAMiJgoGUmVzdWx0Eg8KC1VOU1VQUE9SVEVEEAASCwoHU1VDQ0VTUxABImgK",
-            "EkNvbm5lY3Rpb25SZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZl",
-            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSEgoKaXNf",
-            "cHJpbWFyeRgCIAEoCCLRDgoFRXZlbnQSUAoTdGltZV9zdGFtcGVkX3N0YXR1",
-            "cxgBIAEoCzIxLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5UaW1l",
-            "U3RhbXBlZFN0YXR1c0gAEj0KCXdha2Vfd29yZBgDIAEoCzIoLkFua2kuVmVj",
-            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5XYWtlV29yZEgAEk8KEmF0dGVudGlv",
-            "bl90cmFuc2ZlchgEIAEoCzIxLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVy",
-            "ZmFjZS5BdHRlbnRpb25UcmFuc2ZlckgAElAKE3JvYm90X29ic2VydmVkX2Zh",
-            "Y2UYBSABKAsyMS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUm9i",
-            "b3RPYnNlcnZlZEZhY2VIABJkCh5yb2JvdF9jaGFuZ2VkX29ic2VydmVkX2Zh",
-            "Y2VfaWQYBiABKAsyOi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
-            "Um9ib3RDaGFuZ2VkT2JzZXJ2ZWRGYWNlSURIABJDCgxvYmplY3RfZXZlbnQY",
-            "ByABKAsyKy5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuT2JqZWN0",
-            "RXZlbnRIABJLChBzdGltdWxhdGlvbl9pbmZvGAggASgLMi8uQW5raS5WZWN0",
-            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlN0aW11bGF0aW9uSW5mb0gAEkEKC3Bo",
-            "b3RvX3Rha2VuGAkgASgLMiouQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
-            "YWNlLlBob3RvVGFrZW5IABJBCgtyb2JvdF9zdGF0ZRgKIAEoCzIqLkFua2ku",
-            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Sb2JvdFN0YXRlSAASQwoMY3Vi",
-            "ZV9iYXR0ZXJ5GAsgASgLMisuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
-            "YWNlLkN1YmVCYXR0ZXJ5SAASQwoKa2VlcF9hbGl2ZRgMIAEoCzItLkFua2ku",
-            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5LZWVwQWxpdmVQaW5nSAASUQoT",
-            "Y29ubmVjdGlvbl9yZXNwb25zZRgNIAEoCzIyLkFua2kuVmVjdG9yLmV4dGVy",
-            "bmFsX2ludGVyZmFjZS5Db25uZWN0aW9uUmVzcG9uc2VIABJFCg1qZG9jc19j",
-            "aGFuZ2VkGA4gASgLMiwuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
-            "Lkpkb2NzQ2hhbmdlZEgAEkoKEGFsZXhhX2F1dGhfZXZlbnQYDyABKAsyLi5B",
-            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWxleGFBdXRoRXZlbnRI",
-            "ABJSChRtaXJyb3JfbW9kZV9kaXNhYmxlZBgQIAEoCzIyLkFua2kuVmVjdG9y",
-            "LmV4dGVybmFsX2ludGVyZmFjZS5NaXJyb3JNb2RlRGlzYWJsZWRIABJdChp2",
-            "aXNpb25fbW9kZXNfYXV0b19kaXNhYmxlZBgRIAEoCzI3LkFua2kuVmVjdG9y",
-            "LmV4dGVybmFsX2ludGVyZmFjZS5WaXNpb25Nb2Rlc0F1dG9EaXNhYmxlZEgA",
-            "EmEKHGNoZWNrX3VwZGF0ZV9zdGF0dXNfcmVzcG9uc2UYEiABKAsyOS5Bbmtp",
-            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ2hlY2tVcGRhdGVTdGF0dXNS",
-            "ZXNwb25zZUgAEkEKC3VzZXJfaW50ZW50GBMgASgLMiouQW5raS5WZWN0b3Iu",
-            "ZXh0ZXJuYWxfaW50ZXJmYWNlLlVzZXJJbnRlbnRIABJUChVyb2JvdF9vYnNl",
-            "cnZlZF9tb3Rpb24YFCABKAsyMy5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
-            "cmZhY2UuUm9ib3RPYnNlcnZlZE1vdGlvbkgAEl0KGnJvYm90X2VyYXNlZF9l",
-            "bnJvbGxlZF9mYWNlGBUgASgLMjcuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50",
-            "ZXJmYWNlLlJvYm90RXJhc2VkRW5yb2xsZWRGYWNlSAASXwobcm9ib3RfcmVu",
-            "YW1lZF9lbnJvbGxlZF9mYWNlGBYgASgLMjguQW5raS5WZWN0b3IuZXh0ZXJu",
-            "YWxfaW50ZXJmYWNlLlJvYm90UmVuYW1lZEVucm9sbGVkRmFjZUgAElYKFmNh",
-            "bWVyYV9zZXR0aW5nc191cGRhdGUYFyABKAsyNC5BbmtpLlZlY3Rvci5leHRl",
-            "cm5hbF9pbnRlcmZhY2UuQ2FtZXJhU2V0dGluZ3NVcGRhdGVIABJRChN1bmV4",
-            "cGVjdGVkX21vdmVtZW50GBggASgLMjIuQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLlVuZXhwZWN0ZWRNb3ZlbWVudEgAQgwKCmV2ZW50X3R5cGUi",
-            "GgoKRmlsdGVyTGlzdBIMCgRsaXN0GAEgAygJIrYBCgxFdmVudFJlcXVlc3QS",
-            "QAoKd2hpdGVfbGlzdBgBIAEoCzIqLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5GaWx0ZXJMaXN0SAASQAoKYmxhY2tfbGlzdBgCIAEoCzIqLkFu",
-            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5GaWx0ZXJMaXN0SAASFQoN",
-            "Y29ubmVjdGlvbl9pZBgDIAEoCUILCglsaXN0X3R5cGUiiwEKDUV2ZW50UmVz",
-            "cG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEjQKBWV2ZW50GAIgASgLMiUuQW5r",
-            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV2ZW50OgSAph0BIkkKGVVz",
-            "ZXJBdXRoZW50aWNhdGlvblJlcXVlc3QSFwoPdXNlcl9zZXNzaW9uX2lkGAEg",
-            "ASgMEhMKC2NsaWVudF9uYW1lGAIgASgMIvABChpVc2VyQXV0aGVudGljYXRp",
-            "b25SZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRl",
-            "cm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSTQoEY29kZRgCIAEoDjI/",
-            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Vc2VyQXV0aGVudGlj",
-            "YXRpb25SZXNwb25zZS5Db2RlEhkKEWNsaWVudF90b2tlbl9ndWlkGAMgASgM",
-            "IigKBENvZGUSEAoMVU5BVVRIT1JJWkVEEAASDgoKQVVUSE9SSVpFRBABYgZw",
-            "cm90bzM="));
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UaIGFua2lfdmVjdG9yL21lc3NhZ2lu",
+            "Zy9jdWJlLnByb3RvGiFhbmtpX3ZlY3Rvci9tZXNzYWdpbmcvYWxleGEucHJv",
+            "dG8aJGFua2lfdmVjdG9yL21lc3NhZ2luZy9tZXNzYWdlcy5wcm90bxokYW5r",
+            "aV92ZWN0b3IvbWVzc2FnaW5nL3NldHRpbmdzLnByb3RvGiZhbmtpX3ZlY3Rv",
+            "ci9tZXNzYWdpbmcvb25ib2FyZGluZy5wcm90bxomYW5raV92ZWN0b3IvbWVz",
+            "c2FnaW5nL2V4dGVuc2lvbnMucHJvdG8aK2Fua2lfdmVjdG9yL21lc3NhZ2lu",
+            "Zy9yZXNwb25zZV9zdGF0dXMucHJvdG8iSgoWUHJvdG9jb2xWZXJzaW9uUmVx",
+            "dWVzdBIWCg5jbGllbnRfdmVyc2lvbhgBIAEoAxIYChBtaW5faG9zdF92ZXJz",
+            "aW9uGAIgASgDIqcBChdQcm90b2NvbFZlcnNpb25SZXNwb25zZRJOCgZyZXN1",
+            "bHQYASABKA4yPi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUHJv",
+            "dG9jb2xWZXJzaW9uUmVzcG9uc2UuUmVzdWx0EhQKDGhvc3RfdmVyc2lvbhgC",
+            "IAEoAyImCgZSZXN1bHQSDwoLVU5TVVBQT1JURUQQABILCgdTVUNDRVNTEAEi",
+            "aAoSQ29ubmVjdGlvblJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2ku",
+            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxISCgpp",
+            "c19wcmltYXJ5GAIgASgIIpMPCgVFdmVudBJQChN0aW1lX3N0YW1wZWRfc3Rh",
+            "dHVzGAEgASgLMjEuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlRp",
+            "bWVTdGFtcGVkU3RhdHVzSAASQAoKb25ib2FyZGluZxgCIAEoCzIqLkFua2ku",
+            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5PbmJvYXJkaW5nSAASPQoJd2Fr",
+            "ZV93b3JkGAMgASgLMiguQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
+            "Lldha2VXb3JkSAASTwoSYXR0ZW50aW9uX3RyYW5zZmVyGAQgASgLMjEuQW5r",
+            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkF0dGVudGlvblRyYW5zZmVy",
+            "SAASUAoTcm9ib3Rfb2JzZXJ2ZWRfZmFjZRgFIAEoCzIxLkFua2kuVmVjdG9y",
+            "LmV4dGVybmFsX2ludGVyZmFjZS5Sb2JvdE9ic2VydmVkRmFjZUgAEmQKHnJv",
+            "Ym90X2NoYW5nZWRfb2JzZXJ2ZWRfZmFjZV9pZBgGIAEoCzI6LkFua2kuVmVj",
+            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5Sb2JvdENoYW5nZWRPYnNlcnZlZEZh",
+            "Y2VJREgAEkMKDG9iamVjdF9ldmVudBgHIAEoCzIrLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5PYmplY3RFdmVudEgAEksKEHN0aW11bGF0aW9u",
+            "X2luZm8YCCABKAsyLy5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
+            "U3RpbXVsYXRpb25JbmZvSAASQQoLcGhvdG9fdGFrZW4YCSABKAsyKi5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUGhvdG9UYWtlbkgAEkEKC3Jv",
+            "Ym90X3N0YXRlGAogASgLMiouQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
+            "YWNlLlJvYm90U3RhdGVIABJDCgxjdWJlX2JhdHRlcnkYCyABKAsyKy5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ3ViZUJhdHRlcnlIABJDCgpr",
+            "ZWVwX2FsaXZlGAwgASgLMi0uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
+            "YWNlLktlZXBBbGl2ZVBpbmdIABJRChNjb25uZWN0aW9uX3Jlc3BvbnNlGA0g",
+            "ASgLMjIuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkNvbm5lY3Rp",
+            "b25SZXNwb25zZUgAEkUKDWpkb2NzX2NoYW5nZWQYDiABKAsyLC5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSmRvY3NDaGFuZ2VkSAASSgoQYWxl",
+            "eGFfYXV0aF9ldmVudBgPIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
+            "dGVyZmFjZS5BbGV4YUF1dGhFdmVudEgAElIKFG1pcnJvcl9tb2RlX2Rpc2Fi",
+            "bGVkGBAgASgLMjIuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLk1p",
+            "cnJvck1vZGVEaXNhYmxlZEgAEl0KGnZpc2lvbl9tb2Rlc19hdXRvX2Rpc2Fi",
+            "bGVkGBEgASgLMjcuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlZp",
+            "c2lvbk1vZGVzQXV0b0Rpc2FibGVkSAASYQocY2hlY2tfdXBkYXRlX3N0YXR1",
+            "c19yZXNwb25zZRgSIAEoCzI5LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVy",
+            "ZmFjZS5DaGVja1VwZGF0ZVN0YXR1c1Jlc3BvbnNlSAASQQoLdXNlcl9pbnRl",
+            "bnQYEyABKAsyKi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuVXNl",
+            "ckludGVudEgAElQKFXJvYm90X29ic2VydmVkX21vdGlvbhgUIAEoCzIzLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Sb2JvdE9ic2VydmVkTW90",
+            "aW9uSAASXQoacm9ib3RfZXJhc2VkX2Vucm9sbGVkX2ZhY2UYFSABKAsyNy5B",
+            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUm9ib3RFcmFzZWRFbnJv",
+            "bGxlZEZhY2VIABJfChtyb2JvdF9yZW5hbWVkX2Vucm9sbGVkX2ZhY2UYFiAB",
+            "KAsyOC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUm9ib3RSZW5h",
+            "bWVkRW5yb2xsZWRGYWNlSAASVgoWY2FtZXJhX3NldHRpbmdzX3VwZGF0ZRgX",
+            "IAEoCzI0LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5DYW1lcmFT",
+            "ZXR0aW5nc1VwZGF0ZUgAElEKE3VuZXhwZWN0ZWRfbW92ZW1lbnQYGCABKAsy",
+            "Mi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuVW5leHBlY3RlZE1v",
+            "dmVtZW50SABCDAoKZXZlbnRfdHlwZSIaCgpGaWx0ZXJMaXN0EgwKBGxpc3QY",
+            "ASADKAkitgEKDEV2ZW50UmVxdWVzdBJACgp3aGl0ZV9saXN0GAEgASgLMiou",
+            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkZpbHRlckxpc3RIABJA",
+            "CgpibGFja19saXN0GAIgASgLMiouQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50",
+            "ZXJmYWNlLkZpbHRlckxpc3RIABIVCg1jb25uZWN0aW9uX2lkGAMgASgJQgsK",
+            "CWxpc3RfdHlwZSKLAQoNRXZlbnRSZXNwb25zZRI+CgZzdGF0dXMYASABKAsy",
+            "Li5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0",
+            "dXMSNAoFZXZlbnQYAiABKAsyJS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
+            "cmZhY2UuRXZlbnQ6BICmHQEiSQoZVXNlckF1dGhlbnRpY2F0aW9uUmVxdWVz",
+            "dBIXCg91c2VyX3Nlc3Npb25faWQYASABKAwSEwoLY2xpZW50X25hbWUYAiAB",
+            "KAwi8AEKGlVzZXJBdXRoZW50aWNhdGlvblJlc3BvbnNlEj4KBnN0YXR1cxgB",
+            "IAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25z",
+            "ZVN0YXR1cxJNCgRjb2RlGAIgASgOMj8uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLlVzZXJBdXRoZW50aWNhdGlvblJlc3BvbnNlLkNvZGUSGQoR",
+            "Y2xpZW50X3Rva2VuX2d1aWQYAyABKAwiKAoEQ29kZRIQCgxVTkFVVEhPUkla",
+            "RUQQABIOCgpBVVRIT1JJWkVEEAFCOlo4Z2l0aHViLmNvbS9kaWdpdGFsLWRy",
+            "ZWFtLWxhYnMvdmVjdG9yLWdvLXNkay9wa2cvdmVjdG9ycGJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.BehaviorReflection.Descriptor, global::Anki.Vector.ExternalInterface.CubeReflection.Descriptor, global::Anki.Vector.ExternalInterface.AlexaReflection.Descriptor, global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor, global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor, global::Anki.Vector.ExternalInterface.ExtensionsReflection.Descriptor, global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.CubeReflection.Descriptor, global::Anki.Vector.ExternalInterface.AlexaReflection.Descriptor, global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor, global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor, global::Anki.Vector.ExternalInterface.OnboardingReflection.Descriptor, global::Anki.Vector.ExternalInterface.ExtensionsReflection.Descriptor, global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ProtocolVersionRequest), global::Anki.Vector.ExternalInterface.ProtocolVersionRequest.Parser, new[]{ "ClientVersion", "MinHostVersion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ProtocolVersionResponse), global::Anki.Vector.ExternalInterface.ProtocolVersionResponse.Parser, new[]{ "Result", "HostVersion" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.ProtocolVersionResponse.Types.Result) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.ConnectionResponse), global::Anki.Vector.ExternalInterface.ConnectionResponse.Parser, new[]{ "Status", "IsPrimary" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.Event), global::Anki.Vector.ExternalInterface.Event.Parser, new[]{ "TimeStampedStatus", "WakeWord", "AttentionTransfer", "RobotObservedFace", "RobotChangedObservedFaceId", "ObjectEvent", "StimulationInfo", "PhotoTaken", "RobotState", "CubeBattery", "KeepAlive", "ConnectionResponse", "JdocsChanged", "AlexaAuthEvent", "MirrorModeDisabled", "VisionModesAutoDisabled", "CheckUpdateStatusResponse", "UserIntent", "RobotObservedMotion", "RobotErasedEnrolledFace", "RobotRenamedEnrolledFace", "CameraSettingsUpdate", "UnexpectedMovement" }, new[]{ "EventType" }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.Event), global::Anki.Vector.ExternalInterface.Event.Parser, new[]{ "TimeStampedStatus", "Onboarding", "WakeWord", "AttentionTransfer", "RobotObservedFace", "RobotChangedObservedFaceId", "ObjectEvent", "StimulationInfo", "PhotoTaken", "RobotState", "CubeBattery", "KeepAlive", "ConnectionResponse", "JdocsChanged", "AlexaAuthEvent", "MirrorModeDisabled", "VisionModesAutoDisabled", "CheckUpdateStatusResponse", "UserIntent", "RobotObservedMotion", "RobotErasedEnrolledFace", "RobotRenamedEnrolledFace", "CameraSettingsUpdate", "UnexpectedMovement" }, new[]{ "EventType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.FilterList), global::Anki.Vector.ExternalInterface.FilterList.Parser, new[]{ "List" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EventRequest), global::Anki.Vector.ExternalInterface.EventRequest.Parser, new[]{ "WhiteList", "BlackList", "ConnectionId" }, new[]{ "ListType" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.EventResponse), global::Anki.Vector.ExternalInterface.EventResponse.Parser, new[]{ "Status", "Event" }, null, null, null),
@@ -636,6 +638,9 @@ namespace Anki.Vector.ExternalInterface {
         case EventTypeOneofCase.TimeStampedStatus:
           TimeStampedStatus = other.TimeStampedStatus.Clone();
           break;
+        case EventTypeOneofCase.Onboarding:
+          Onboarding = other.Onboarding.Clone();
+          break;
         case EventTypeOneofCase.WakeWord:
           WakeWord = other.WakeWord.Clone();
           break;
@@ -720,6 +725,17 @@ namespace Anki.Vector.ExternalInterface {
       set {
         eventType_ = value;
         eventTypeCase_ = value == null ? EventTypeOneofCase.None : EventTypeOneofCase.TimeStampedStatus;
+      }
+    }
+
+    /// <summary>Field number for the "onboarding" field.</summary>
+    public const int OnboardingFieldNumber = 2;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.Onboarding Onboarding {
+      get { return eventTypeCase_ == EventTypeOneofCase.Onboarding ? (global::Anki.Vector.ExternalInterface.Onboarding) eventType_ : null; }
+      set {
+        eventType_ = value;
+        eventTypeCase_ = value == null ? EventTypeOneofCase.None : EventTypeOneofCase.Onboarding;
       }
     }
 
@@ -973,6 +989,7 @@ namespace Anki.Vector.ExternalInterface {
     public enum EventTypeOneofCase {
       None = 0,
       TimeStampedStatus = 1,
+      Onboarding = 2,
       WakeWord = 3,
       AttentionTransfer = 4,
       RobotObservedFace = 5,
@@ -1022,6 +1039,7 @@ namespace Anki.Vector.ExternalInterface {
         return true;
       }
       if (!object.Equals(TimeStampedStatus, other.TimeStampedStatus)) return false;
+      if (!object.Equals(Onboarding, other.Onboarding)) return false;
       if (!object.Equals(WakeWord, other.WakeWord)) return false;
       if (!object.Equals(AttentionTransfer, other.AttentionTransfer)) return false;
       if (!object.Equals(RobotObservedFace, other.RobotObservedFace)) return false;
@@ -1052,6 +1070,7 @@ namespace Anki.Vector.ExternalInterface {
     public override int GetHashCode() {
       int hash = 1;
       if (eventTypeCase_ == EventTypeOneofCase.TimeStampedStatus) hash ^= TimeStampedStatus.GetHashCode();
+      if (eventTypeCase_ == EventTypeOneofCase.Onboarding) hash ^= Onboarding.GetHashCode();
       if (eventTypeCase_ == EventTypeOneofCase.WakeWord) hash ^= WakeWord.GetHashCode();
       if (eventTypeCase_ == EventTypeOneofCase.AttentionTransfer) hash ^= AttentionTransfer.GetHashCode();
       if (eventTypeCase_ == EventTypeOneofCase.RobotObservedFace) hash ^= RobotObservedFace.GetHashCode();
@@ -1091,6 +1110,10 @@ namespace Anki.Vector.ExternalInterface {
       if (eventTypeCase_ == EventTypeOneofCase.TimeStampedStatus) {
         output.WriteRawTag(10);
         output.WriteMessage(TimeStampedStatus);
+      }
+      if (eventTypeCase_ == EventTypeOneofCase.Onboarding) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Onboarding);
       }
       if (eventTypeCase_ == EventTypeOneofCase.WakeWord) {
         output.WriteRawTag(26);
@@ -1191,6 +1214,9 @@ namespace Anki.Vector.ExternalInterface {
       if (eventTypeCase_ == EventTypeOneofCase.TimeStampedStatus) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(TimeStampedStatus);
       }
+      if (eventTypeCase_ == EventTypeOneofCase.Onboarding) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Onboarding);
+      }
       if (eventTypeCase_ == EventTypeOneofCase.WakeWord) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(WakeWord);
       }
@@ -1274,6 +1300,12 @@ namespace Anki.Vector.ExternalInterface {
             TimeStampedStatus = new global::Anki.Vector.ExternalInterface.TimeStampedStatus();
           }
           TimeStampedStatus.MergeFrom(other.TimeStampedStatus);
+          break;
+        case EventTypeOneofCase.Onboarding:
+          if (Onboarding == null) {
+            Onboarding = new global::Anki.Vector.ExternalInterface.Onboarding();
+          }
+          Onboarding.MergeFrom(other.Onboarding);
           break;
         case EventTypeOneofCase.WakeWord:
           if (WakeWord == null) {
@@ -1427,6 +1459,15 @@ namespace Anki.Vector.ExternalInterface {
             }
             input.ReadMessage(subBuilder);
             TimeStampedStatus = subBuilder;
+            break;
+          }
+          case 18: {
+            global::Anki.Vector.ExternalInterface.Onboarding subBuilder = new global::Anki.Vector.ExternalInterface.Onboarding();
+            if (eventTypeCase_ == EventTypeOneofCase.Onboarding) {
+              subBuilder.MergeFrom(Onboarding);
+            }
+            input.ReadMessage(subBuilder);
+            Onboarding = subBuilder;
             break;
           }
           case 26: {

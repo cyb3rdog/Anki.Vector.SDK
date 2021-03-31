@@ -170,7 +170,8 @@ namespace Anki.Vector.ExternalInterface {
             "ChVERUxFVElPTl9NQVNLX1VOS05PV04QABImCiJERUxFVElPTl9NQVNLX0ZJ",
             "WEVEX0NVU1RPTV9PQkpFQ1RTEAESJwojREVMRVRJT05fTUFTS19DVVNUT01f",
             "TUFSS0VSX09CSkVDVFMQAhIcChhERUxFVElPTl9NQVNLX0FSQ0hFVFlQRVMQ",
-            "A2IGcHJvdG8z"));
+            "A0I6WjhnaXRodWIuY29tL2RpZ2l0YWwtZHJlYW0tbGFicy92ZWN0b3ItZ28t",
+            "c2RrL3BrZy92ZWN0b3JwYmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor, global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.ObjectType), typeof(global::Anki.Vector.ExternalInterface.CustomType), typeof(global::Anki.Vector.ExternalInterface.ObjectFamily), typeof(global::Anki.Vector.ExternalInterface.UpAxis), typeof(global::Anki.Vector.ExternalInterface.ObjectConstants), typeof(global::Anki.Vector.ExternalInterface.CustomObjectMarker), typeof(global::Anki.Vector.ExternalInterface.CustomObjectDeletionMode), }, new pbr::GeneratedClrTypeInfo[] {

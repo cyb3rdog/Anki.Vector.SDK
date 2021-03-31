@@ -30,8 +30,9 @@ namespace Anki.Vector.ExternalInterface {
             "bnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMuU3RhdHVzQ29kZSKMAQoKU3RhdHVz",
             "Q29kZRILCgdVTktOT1dOEAASFQoRUkVTUE9OU0VfUkVDRUlWRUQQARIWChJS",
             "RVFVRVNUX1BST0NFU1NJTkcQAhIGCgJPSxADEg0KCUZPUkJJRERFThBkEg0K",
-            "CU5PVF9GT1VORBBlEhwKGEVSUk9SX1VQREFURV9JTl9QUk9HUkVTUxBmYgZw",
-            "cm90bzM="));
+            "CU5PVF9GT1VORBBlEhwKGEVSUk9SX1VQREFURV9JTl9QUk9HUkVTUxBmQjpa",
+            "OGdpdGh1Yi5jb20vZGlnaXRhbC1kcmVhbS1sYWJzL3ZlY3Rvci1nby1zZGsv",
+            "cGtnL3ZlY3RvcnBiYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {

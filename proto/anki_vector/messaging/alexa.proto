@@ -15,10 +15,11 @@
 // Alexa messages
 
 syntax = "proto3";
-
 package Anki.Vector.external_interface;
+option go_package = "github.com/digital-dream-labs/vector-go-sdk/pkg/vectorpb";
 
-import "anki_vector/messaging/response_status.proto";  
+
+import "anki_vector/messaging/response_status.proto";
 
 
 enum AlexaAuthState {
@@ -38,13 +39,13 @@ enum AlexaAuthState {
 message AlexaAuthStateRequest {
 }
 
-message AlexaAuthStateResponse { 
+message AlexaAuthStateResponse {
   ResponseStatus   status       = 1;
   AlexaAuthState   auth_state   = 2;
   string           extra        = 3;
 }
 
-message AlexaOptInRequest { 
+message AlexaOptInRequest {
   bool opt_in = 1;
 }
 

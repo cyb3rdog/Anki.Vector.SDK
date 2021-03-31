@@ -15,8 +15,8 @@
 // Add a decorator for streamed message handling in app
 
 syntax = "proto3";
-
 package Anki.Vector.external_interface;
+option go_package = "github.com/digital-dream-labs/vector-go-sdk/pkg/vectorpb";
 
 import "google/protobuf/descriptor.proto";
 

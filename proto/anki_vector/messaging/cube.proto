@@ -15,8 +15,8 @@
 // External interface for robot <-> app and robot <-> sdk communication
 
 syntax = "proto3";
-
 package Anki.Vector.external_interface;
+option go_package = "github.com/digital-dream-labs/vector-go-sdk/pkg/vectorpb";
 
 import "anki_vector/messaging/messages.proto";
 import "anki_vector/messaging/response_status.proto";
@@ -121,7 +121,7 @@ enum ObjectType
   // Light Cube (a.k.a. Active Block)
   //
   BLOCK_LIGHTCUBE1 = 2;
-  
+
   CHARGER_BASIC = 6;
 
   FIRST_CUSTOM_OBJECT_TYPE = 15;

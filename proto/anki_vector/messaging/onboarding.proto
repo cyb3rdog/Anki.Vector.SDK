@@ -1,0 +1,178 @@
+// Copyright (c) 2018 Anki, Inc.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License in the file LICENSE.txt or at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// Onboarding messages
+
+syntax = "proto3";
+package Anki.Vector.external_interface;
+
+import "anki_vector/messaging/messages.proto";
+import "anki_vector/messaging/response_status.proto";
+
+message Onboarding {
+  oneof onboarding_type {
+    OnboardingState                    onboarding_state              = 1;
+    OnboardingWakeUpFinished           onboarding_wake_up_finished   = 9;
+    Onboarding1p0ChargingInfo          onboarding_1p0_charging_info  = 10;
+    // 1p0 backward compatibility messages ^^^
+  }
+}
+
+message RobotHistoryRequest {
+}
+
+message RobotHistoryResponse {
+  repeated TimeStampedStatus messages = 1;
+}
+
+enum OnboardingStages
+{
+  NotStarted = 0;
+  TimedOut = 1;
+  // Maintain this numbering for backward compatibility
+  Complete = 3;
+  DevDoNothing = 4;
+}
+
+message OnboardingState {
+  OnboardingStages stage = 1;
+}
+
+message OnboardingStateRequest {
+}
+
+message OnboardingStateResponse {
+  ResponseStatus status = 1;
+  OnboardingState onboarding_state = 2;
+}
+
+enum OnboardingPhase
+{
+  InvalidPhase = 0;
+  Default = 1;
+  LookAtPhone = 2;
+  WakeUp = 3;
+  LookAtUser = 4;
+  TeachWakeWord = 5;
+  TeachComeHere = 6;
+  TeachMeetVictor = 7;
+}
+
+enum OnboardingPhaseState
+{
+  PhaseInvalid    = 0;
+  PhasePending    = 1;
+  PhaseInProgress = 2;
+  PhaseComplete   = 3;
+}
+
+message OnboardingSetPhaseRequest {
+  OnboardingPhase phase = 1;
+}
+
+message OnboardingSetPhaseResponse {
+  ResponseStatus status = 1;
+  OnboardingPhase phase = 2;
+  OnboardingPhaseState phase_state = 3;
+}
+
+message OnboardingPhaseProgressRequest {
+}
+
+message OnboardingPhaseProgressResponse {
+  ResponseStatus status = 1;
+  OnboardingPhase last_set_phase = 2;
+  OnboardingPhaseState last_set_phase_state = 3;
+  int32 percent_completed = 4;
+}
+
+message OnboardingChargeInfoRequest {
+}
+
+message OnboardingChargeInfoResponse {
+  ResponseStatus status = 1;
+  bool on_charger = 2;
+  bool needs_to_charge = 3;
+  float required_charge_time = 4;
+}
+
+message OnboardingSkipOnboarding {
+}
+
+message OnboardingRestart {
+}
+
+message OnboardingMarkCompleteAndExit {
+}
+
+message OnboardingInputRequest {
+  oneof oneof_message_type {
+    OnboardingCompleteRequest      onboarding_complete_request        = 1;
+    OnboardingWakeUpRequest        onboarding_wake_up_request         = 2;
+    OnboardingSkipOnboarding       onboarding_skip_onboarding         = 7;
+    OnboardingRestart              onboarding_restart                 = 8;
+    OnboardingWakeUpStartedRequest onboarding_wake_up_started_request = 9;
+    // 1p0 backward compatibility messages ^^^
+    OnboardingSetPhaseRequest      onboarding_set_phase_request      = 10;
+    OnboardingPhaseProgressRequest onboarding_phase_progress_request = 11;
+    OnboardingChargeInfoRequest    onboarding_charge_info_request    = 12;
+    OnboardingMarkCompleteAndExit  onboarding_mark_complete_and_exit = 13;
+  }
+}
+
+message OnboardingInputResponse {
+  ResponseStatus status = 1;
+  oneof oneof_message_type {
+    OnboardingCompleteResponse      onboarding_complete_response        = 2;
+    OnboardingWakeUpResponse        onboarding_wake_up_response         = 3;
+    OnboardingWakeUpStartedResponse onboarding_wake_up_started_response = 6;
+    // 1p0 backward compatibility messages ^^^
+    OnboardingSetPhaseResponse      onboarding_set_phase_response      = 7;
+    OnboardingPhaseProgressResponse onboarding_phase_progress_response = 8;
+    OnboardingChargeInfoResponse    onboarding_charge_info_response     = 9;
+  }
+}
+
+// 1p0 backward compatibility messages - - - - -
+message OnboardingCompleteRequest {
+}
+
+message OnboardingCompleteResponse {
+  bool completed = 1;
+}
+
+message OnboardingWakeUpStartedRequest {
+}
+
+message OnboardingWakeUpStartedResponse {
+  bool already_started = 1;
+}
+
+message OnboardingWakeUpRequest {
+}
+
+message OnboardingWakeUpResponse {
+  bool waking_up = 1;
+  Onboarding1p0ChargingInfo charging_info = 2;
+}
+
+message Onboarding1p0ChargingInfo {
+  bool on_charger = 1;
+  bool needs_to_charge = 2;
+  float suggested_charger_time = 3;
+}
+
+message OnboardingWakeUpFinished {
+}
+// 1p0 backward compatibility messages - - - - -

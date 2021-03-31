@@ -15,8 +15,8 @@
 // Response status
 
 syntax = "proto3";
-
 package Anki.Vector.external_interface;
+option go_package = "github.com/digital-dream-labs/vector-go-sdk/pkg/vectorpb";
 
 // A shared response message sent back as part of most requests.
 // This will indicate the generic state of the request.

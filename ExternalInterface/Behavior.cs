@@ -45,7 +45,8 @@ namespace Anki.Vector.ExternalInterface {
             "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5LZWVwQWxpdmVQaW5nSAASYgobcmVz",
             "ZXJ2ZWRfY29udHJvbF9sb3N0X2V2ZW50GAQgASgLMjsuQW5raS5WZWN0b3Iu",
             "ZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc2VydmVkQ29udHJvbExvc3RSZXNwb25z",
-            "ZUgAQg8KDXJlc3BvbnNlX3R5cGViBnByb3RvMw=="));
+            "ZUgAQg8KDXJlc3BvbnNlX3R5cGVCOlo4Z2l0aHViLmNvbS9kaWdpdGFsLWRy",
+            "ZWFtLWxhYnMvdmVjdG9yLWdvLXNkay9wa2cvdmVjdG9ycGJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
@@ -315,7 +316,7 @@ namespace Anki.Vector.ExternalInterface {
         /// </summary>
         [pbr::OriginalName("UNKNOWN")] Unknown = 0,
         /// <summary>
-        /// Highest priority level. Suppresses most automatic physical reactions, use with caution. 
+        /// Highest priority level. Suppresses most automatic physical reactions, use with caution.
         /// </summary>
         [pbr::OriginalName("OVERRIDE_BEHAVIORS")] OverrideBehaviors = 10,
         /// <summary>
@@ -761,7 +762,7 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
-  /// The ability to reserve control before/after SDK scripts has been lost.  
+  /// The ability to reserve control before/after SDK scripts has been lost.
   /// This control can be regained through another ControlRequest.
   /// </summary>
   public sealed partial class ReservedControlLostResponse : pb::IMessage<ReservedControlLostResponse> {

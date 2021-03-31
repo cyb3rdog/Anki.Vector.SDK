@@ -385,208 +385,211 @@ namespace Anki.Vector.ExternalInterface {
             "ZV9ldmVudBgFIAEoAhIRCgltaW5fdmFsdWUYBiABKAISEQoJbWF4X3ZhbHVl",
             "GAcgASgCIlkKFEF1ZGlvU2VuZE1vZGVSZXF1ZXN0EkEKBG1vZGUYASABKA4y",
             "My5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQXVkaW9Qcm9jZXNz",
-            "aW5nTW9kZSJZChRBdWRpb1NlbmRNb2RlQ2hhbmdlZBJBCgRtb2RlGAEgASgO",
-            "MjMuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkF1ZGlvUHJvY2Vz",
-            "c2luZ01vZGUi6AEKCkF1ZGlvQ2h1bmsSGAoQcm9ib3RfdGltZV9zdGFtcBgB",
-            "IAEoDRIQCghncm91cF9pZBgCIAEoDRIQCghjaHVua19pZBgDIAEoDRIZChFh",
-            "dWRpb19jaHVua19jb3VudBgEIAEoDRIUCgxzaWduYWxfcG93ZXIYBSABKAwS",
-            "GwoTZGlyZWN0aW9uX3N0cmVuZ3RocxgGIAEoDBIYChBzb3VyY2VfZGlyZWN0",
-            "aW9uGAcgASgNEhkKEXNvdXJjZV9jb25maWRlbmNlGAggASgNEhkKEW5vaXNl",
-            "X2Zsb29yX3Bvd2VyGAkgASgNIhIKEEF1ZGlvRmVlZFJlcXVlc3QiyAEKEUF1",
-            "ZGlvRmVlZFJlc3BvbnNlEhgKEHJvYm90X3RpbWVfc3RhbXAYASABKA0SEAoI",
-            "Z3JvdXBfaWQYAiABKA0SFAoMc2lnbmFsX3Bvd2VyGAMgASgMEhsKE2RpcmVj",
-            "dGlvbl9zdHJlbmd0aHMYBCABKAwSGAoQc291cmNlX2RpcmVjdGlvbhgFIAEo",
-            "DRIZChFzb3VyY2VfY29uZmlkZW5jZRgGIAEoDRIZChFub2lzZV9mbG9vcl9w",
-            "b3dlchgHIAEoDToEgKYdASJMChpFeHRlcm5hbEF1ZGlvU3RyZWFtUHJlcGFy",
-            "ZRIYChBhdWRpb19mcmFtZV9yYXRlGAEgASgNEhQKDGF1ZGlvX3ZvbHVtZRgC",
-            "IAEoDSJXChhFeHRlcm5hbEF1ZGlvU3RyZWFtQ2h1bmsSHgoWYXVkaW9fY2h1",
-            "bmtfc2l6ZV9ieXRlcxgBIAEoDRIbChNhdWRpb19jaHVua19zYW1wbGVzGAIg",
-            "ASgMIh0KG0V4dGVybmFsQXVkaW9TdHJlYW1Db21wbGV0ZSIbChlFeHRlcm5h",
-            "bEF1ZGlvU3RyZWFtQ2FuY2VsIp4DChpFeHRlcm5hbEF1ZGlvU3RyZWFtUmVx",
-            "dWVzdBJaChRhdWRpb19zdHJlYW1fcHJlcGFyZRgBIAEoCzI6LkFua2kuVmVj",
-            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFtUHJl",
-            "cGFyZUgAElYKEmF1ZGlvX3N0cmVhbV9jaHVuaxgCIAEoCzI4LkFua2kuVmVj",
-            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFtQ2h1",
-            "bmtIABJcChVhdWRpb19zdHJlYW1fY29tcGxldGUYAyABKAsyOy5BbmtpLlZl",
-            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuRXh0ZXJuYWxBdWRpb1N0cmVhbUNv",
-            "bXBsZXRlSAASWAoTYXVkaW9fc3RyZWFtX2NhbmNlbBgEIAEoCzI5LkFua2ku",
+            "aW5nTW9kZSJXChVBdWRpb1NlbmRNb2RlUmVzcG9uc2USPgoGc3RhdHVzGAEg",
+            "ASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNl",
+            "U3RhdHVzIlkKFEF1ZGlvU2VuZE1vZGVDaGFuZ2VkEkEKBG1vZGUYASABKA4y",
+            "My5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQXVkaW9Qcm9jZXNz",
+            "aW5nTW9kZSLoAQoKQXVkaW9DaHVuaxIYChByb2JvdF90aW1lX3N0YW1wGAEg",
+            "ASgNEhAKCGdyb3VwX2lkGAIgASgNEhAKCGNodW5rX2lkGAMgASgNEhkKEWF1",
+            "ZGlvX2NodW5rX2NvdW50GAQgASgNEhQKDHNpZ25hbF9wb3dlchgFIAEoDBIb",
+            "ChNkaXJlY3Rpb25fc3RyZW5ndGhzGAYgASgMEhgKEHNvdXJjZV9kaXJlY3Rp",
+            "b24YByABKA0SGQoRc291cmNlX2NvbmZpZGVuY2UYCCABKA0SGQoRbm9pc2Vf",
+            "Zmxvb3JfcG93ZXIYCSABKA0iEgoQQXVkaW9GZWVkUmVxdWVzdCLIAQoRQXVk",
+            "aW9GZWVkUmVzcG9uc2USGAoQcm9ib3RfdGltZV9zdGFtcBgBIAEoDRIQCghn",
+            "cm91cF9pZBgCIAEoDRIUCgxzaWduYWxfcG93ZXIYAyABKAwSGwoTZGlyZWN0",
+            "aW9uX3N0cmVuZ3RocxgEIAEoDBIYChBzb3VyY2VfZGlyZWN0aW9uGAUgASgN",
+            "EhkKEXNvdXJjZV9jb25maWRlbmNlGAYgASgNEhkKEW5vaXNlX2Zsb29yX3Bv",
+            "d2VyGAcgASgNOgSAph0BIkwKGkV4dGVybmFsQXVkaW9TdHJlYW1QcmVwYXJl",
+            "EhgKEGF1ZGlvX2ZyYW1lX3JhdGUYASABKA0SFAoMYXVkaW9fdm9sdW1lGAIg",
+            "ASgNIlcKGEV4dGVybmFsQXVkaW9TdHJlYW1DaHVuaxIeChZhdWRpb19jaHVu",
+            "a19zaXplX2J5dGVzGAEgASgNEhsKE2F1ZGlvX2NodW5rX3NhbXBsZXMYAiAB",
+            "KAwiHQobRXh0ZXJuYWxBdWRpb1N0cmVhbUNvbXBsZXRlIhsKGUV4dGVybmFs",
+            "QXVkaW9TdHJlYW1DYW5jZWwingMKGkV4dGVybmFsQXVkaW9TdHJlYW1SZXF1",
+            "ZXN0EloKFGF1ZGlvX3N0cmVhbV9wcmVwYXJlGAEgASgLMjouQW5raS5WZWN0",
+            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV4dGVybmFsQXVkaW9TdHJlYW1QcmVw",
+            "YXJlSAASVgoSYXVkaW9fc3RyZWFtX2NodW5rGAIgASgLMjguQW5raS5WZWN0",
+            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV4dGVybmFsQXVkaW9TdHJlYW1DaHVu",
+            "a0gAElwKFWF1ZGlvX3N0cmVhbV9jb21wbGV0ZRgDIAEoCzI7LkFua2kuVmVj",
+            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFtQ29t",
+            "cGxldGVIABJYChNhdWRpb19zdHJlYW1fY2FuY2VsGAQgASgLMjkuQW5raS5W",
+            "ZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV4dGVybmFsQXVkaW9TdHJlYW1D",
+            "YW5jZWxIAEIUChJhdWRpb19yZXF1ZXN0X3R5cGUiJQojRXh0ZXJuYWxBdWRp",
+            "b1N0cmVhbVBsYXliYWNrQ29tcGxldGUiJAoiRXh0ZXJuYWxBdWRpb1N0cmVh",
+            "bVBsYXliYWNrRmFpbHVyZSJcCiBFeHRlcm5hbEF1ZGlvU3RyZWFtQnVmZmVy",
+            "T3ZlcnJ1bhIaChJhdWRpb19zYW1wbGVzX3NlbnQYASABKA0SHAoUYXVkaW9f",
+            "c2FtcGxlc19wbGF5ZWQYAiABKA0i+QIKG0V4dGVybmFsQXVkaW9TdHJlYW1S",
+            "ZXNwb25zZRJtCh5hdWRpb19zdHJlYW1fcGxheWJhY2tfY29tcGxldGUYASAB",
+            "KAsyQy5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuRXh0ZXJuYWxB",
+            "dWRpb1N0cmVhbVBsYXliYWNrQ29tcGxldGVIABJnChthdWRpb19zdHJlYW1f",
+            "YnVmZmVyX292ZXJydW4YAiABKAsyQC5BbmtpLlZlY3Rvci5leHRlcm5hbF9p",
+            "bnRlcmZhY2UuRXh0ZXJuYWxBdWRpb1N0cmVhbUJ1ZmZlck92ZXJydW5IABJr",
+            "Ch1hdWRpb19zdHJlYW1fcGxheWJhY2tfZmFpbHllchgDIAEoCzJCLkFua2ku",
             "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5FeHRlcm5hbEF1ZGlvU3RyZWFt",
-            "Q2FuY2VsSABCFAoSYXVkaW9fcmVxdWVzdF90eXBlIiUKI0V4dGVybmFsQXVk",
-            "aW9TdHJlYW1QbGF5YmFja0NvbXBsZXRlIiQKIkV4dGVybmFsQXVkaW9TdHJl",
-            "YW1QbGF5YmFja0ZhaWx1cmUiXAogRXh0ZXJuYWxBdWRpb1N0cmVhbUJ1ZmZl",
-            "ck92ZXJydW4SGgoSYXVkaW9fc2FtcGxlc19zZW50GAEgASgNEhwKFGF1ZGlv",
-            "X3NhbXBsZXNfcGxheWVkGAIgASgNIvkCChtFeHRlcm5hbEF1ZGlvU3RyZWFt",
-            "UmVzcG9uc2USbQoeYXVkaW9fc3RyZWFtX3BsYXliYWNrX2NvbXBsZXRlGAEg",
-            "ASgLMkMuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV4dGVybmFs",
-            "QXVkaW9TdHJlYW1QbGF5YmFja0NvbXBsZXRlSAASZwobYXVkaW9fc3RyZWFt",
-            "X2J1ZmZlcl9vdmVycnVuGAIgASgLMkAuQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLkV4dGVybmFsQXVkaW9TdHJlYW1CdWZmZXJPdmVycnVuSAAS",
-            "awodYXVkaW9fc3RyZWFtX3BsYXliYWNrX2ZhaWx5ZXIYAyABKAsyQi5Bbmtp",
-            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuRXh0ZXJuYWxBdWRpb1N0cmVh",
-            "bVBsYXliYWNrRmFpbHVyZUgAQhUKE2F1ZGlvX3Jlc3BvbnNlX3R5cGUiXgoT",
-            "TWFzdGVyVm9sdW1lUmVxdWVzdBJHCgx2b2x1bWVfbGV2ZWwYASABKA4yMS5B",
-            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuTWFzdGVyVm9sdW1lTGV2",
-            "ZWwiVgoUTWFzdGVyVm9sdW1lUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4u",
-            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVz",
-            "Ii4KHEVuYWJsZU1hcmtlckRldGVjdGlvblJlcXVlc3QSDgoGZW5hYmxlGAEg",
-            "ASgIIl8KHUVuYWJsZU1hcmtlckRldGVjdGlvblJlc3BvbnNlEj4KBnN0YXR1",
-            "cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNw",
-            "b25zZVN0YXR1cyKxAQoaRW5hYmxlRmFjZURldGVjdGlvblJlcXVlc3QSDgoG",
-            "ZW5hYmxlGAEgASgIEh4KFmVuYWJsZV9zbWlsZV9kZXRlY3Rpb24YAiABKAgS",
-            "JAocZW5hYmxlX2V4cHJlc3Npb25fZXN0aW1hdGlvbhgDIAEoCBIeChZlbmFi",
-            "bGVfYmxpbmtfZGV0ZWN0aW9uGAQgASgIEh0KFWVuYWJsZV9nYXplX2RldGVj",
-            "dGlvbhgFIAEoCCJdChtFbmFibGVGYWNlRGV0ZWN0aW9uUmVzcG9uc2USPgoG",
-            "c3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
-            "LlJlc3BvbnNlU3RhdHVzIi4KHEVuYWJsZU1vdGlvbkRldGVjdGlvblJlcXVl",
-            "c3QSDgoGZW5hYmxlGAEgASgIIl8KHUVuYWJsZU1vdGlvbkRldGVjdGlvblJl",
-            "c3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFs",
-            "X2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyIpChdFbmFibGVNaXJyb3JNb2Rl",
-            "UmVxdWVzdBIOCgZlbmFibGUYASABKAgiWgoYRW5hYmxlTWlycm9yTW9kZVJl",
-            "c3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFs",
-            "X2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyIUChJNaXJyb3JNb2RlRGlzYWJs",
-            "ZWQiTQobRW5hYmxlSW1hZ2VTdHJlYW1pbmdSZXF1ZXN0Eg4KBmVuYWJsZRgB",
-            "IAEoCBIeChZlbmFibGVfaGlnaF9yZXNvbHV0aW9uGAIgASgIIl4KHEVuYWJs",
-            "ZUltYWdlU3RyZWFtaW5nUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5r",
-            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIiAK",
-            "HklzSW1hZ2VTdHJlYW1pbmdFbmFibGVkUmVxdWVzdCJFCh9Jc0ltYWdlU3Ry",
-            "ZWFtaW5nRW5hYmxlZFJlc3BvbnNlEiIKGmlzX2ltYWdlX3N0cmVhbWluZ19l",
-            "bmFibGVkGAEgASgIIhkKF1Zpc2lvbk1vZGVzQXV0b0Rpc2FibGVkItEDCgpJ",
-            "bWFnZUNodW5rEhgKEGZyYW1lX3RpbWVfc3RhbXAYASABKA0SEAoIaW1hZ2Vf",
-            "aWQYAiABKA0SDQoFd2lkdGgYAyABKA0SDgoGaGVpZ2h0GAQgASgNElAKDmlt",
-            "YWdlX2VuY29kaW5nGAUgASgOMjguQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50",
-            "ZXJmYWNlLkltYWdlQ2h1bmsuSW1hZ2VFbmNvZGluZxIVCg1kaXNwbGF5X2lu",
-            "ZGV4GAYgASgNEhkKEWltYWdlX2NodW5rX2NvdW50GAcgASgNEhAKCGNodW5r",
-            "X2lkGAggASgNEgwKBGRhdGEYCSABKAwi0wEKDUltYWdlRW5jb2RpbmcSFwoT",
-            "Tk9ORV9JTUFHRV9FTkNPRElORxAAEgwKCFJBV19HUkFZEAESCwoHUkFXX1JH",
-            "QhACEggKBFlVWVYQAxIMCghZVVY0MjBTUBAEEgkKBUJBWUVSEAUSDQoJSlBF",
-            "R19HUkFZEAYSDgoKSlBFR19DT0xPUhAHEhkKFUpQRUdfQ09MT1JfSEFMRl9X",
-            "SURUSBAIEhcKE0pQRUdfTUlOSU1JWkVEX0dSQVkQCRIYChRKUEVHX01JTklN",
-            "SVpFRF9DT0xPUhAKIhMKEUNhbWVyYUZlZWRSZXF1ZXN0IqYBChJDYW1lcmFG",
-            "ZWVkUmVzcG9uc2USGAoQZnJhbWVfdGltZV9zdGFtcBgBIAEoDRIQCghpbWFn",
-            "ZV9pZBgCIAEoDRJQCg5pbWFnZV9lbmNvZGluZxgDIAEoDjI4LkFua2kuVmVj",
-            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5JbWFnZUNodW5rLkltYWdlRW5jb2Rp",
-            "bmcSDAoEZGF0YRgEIAEoDDoEgKYdASI7ChlDYXB0dXJlU2luZ2xlSW1hZ2VS",
-            "ZXF1ZXN0Eh4KFmVuYWJsZV9oaWdoX3Jlc29sdXRpb24YASABKAgi6AEKGkNh",
-            "cHR1cmVTaW5nbGVJbWFnZVJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFu",
-            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxIY",
-            "ChBmcmFtZV90aW1lX3N0YW1wGAIgASgNEhAKCGltYWdlX2lkGAMgASgNElAK",
-            "DmltYWdlX2VuY29kaW5nGAQgASgOMjguQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
-            "aW50ZXJmYWNlLkltYWdlQ2h1bmsuSW1hZ2VFbmNvZGluZxIMCgRkYXRhGAUg",
-            "ASgMIjUKElNldEV5ZUNvbG9yUmVxdWVzdBILCgNodWUYASABKAISEgoKc2F0",
-            "dXJhdGlvbhgCIAEoAiJVChNTZXRFeWVDb2xvclJlc3BvbnNlEj4KBnN0YXR1",
-            "cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNw",
-            "b25zZVN0YXR1cyIVChNDYW1lcmFDb25maWdSZXF1ZXN0IoQCChRDYW1lcmFD",
-            "b25maWdSZXNwb25zZRIWCg5mb2NhbF9sZW5ndGhfeBgBIAEoAhIWCg5mb2Nh",
-            "bF9sZW5ndGhfeRgCIAEoAhIQCghjZW50ZXJfeBgDIAEoAhIQCghjZW50ZXJf",
-            "eRgEIAEoAhINCgVmb3ZfeBgFIAEoAhINCgVmb3ZfeRgGIAEoAhIjChttaW5f",
-            "Y2FtZXJhX2V4cG9zdXJlX3RpbWVfbXMYByABKA0SIwobbWF4X2NhbWVyYV9l",
-            "eHBvc3VyZV90aW1lX21zGAggASgNEhcKD21pbl9jYW1lcmFfZ2FpbhgJIAEo",
-            "AhIXCg9tYXhfY2FtZXJhX2dhaW4YCiABKAIiWwoYU2V0Q2FtZXJhU2V0dGlu",
-            "Z3NSZXF1ZXN0EgwKBGdhaW4YASABKAISEwoLZXhwb3N1cmVfbXMYAiABKA0S",
-            "HAoUZW5hYmxlX2F1dG9fZXhwb3N1cmUYAyABKAgicwoZU2V0Q2FtZXJhU2V0",
-            "dGluZ3NSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMSFgoOc3RhdHVzX21l",
-            "c3NhZ2UYAiABKAkiWAoUQ2FtZXJhU2V0dGluZ3NVcGRhdGUSDAoEZ2FpbhgB",
-            "IAEoAhITCgtleHBvc3VyZV9tcxgCIAEoDRIdChVhdXRvX2V4cG9zdXJlX2Vu",
-            "YWJsZWQYAyABKAgilgEKGFNES0luaXRpYWxpemF0aW9uUmVxdWVzdBIaChJz",
-            "ZGtfbW9kdWxlX3ZlcnNpb24YASABKAkSFgoOcHl0aG9uX3ZlcnNpb24YAiAB",
-            "KAkSHQoVcHl0aG9uX2ltcGxlbWVudGF0aW9uGAMgASgJEhIKCm9zX3ZlcnNp",
-            "b24YBCABKAkSEwoLY3B1X3ZlcnNpb24YBSABKAkiWwoZU0RLSW5pdGlhbGl6",
-            "YXRpb25SZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMiEQoPQXBwRGlzY29u",
-            "bmVjdGVkIjEKEEFwcEludGVudFJlcXVlc3QSDgoGaW50ZW50GAEgASgJEg0K",
-            "BXBhcmFtGAIgASgJIlMKEUFwcEludGVudFJlc3BvbnNlEj4KBnN0YXR1cxgB",
-            "IAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25z",
-            "ZVN0YXR1cyI1Cg1GZWF0dXJlU3RhdHVzEhQKDGZlYXR1cmVfbmFtZRgBIAEo",
-            "CRIOCgZzb3VyY2UYAiABKAkiKgoSRmVhdHVyZUZsYWdSZXF1ZXN0EhQKDGZl",
-            "YXR1cmVfbmFtZRgBIAEoCSKFAQoTRmVhdHVyZUZsYWdSZXNwb25zZRI+CgZz",
+            "UGxheWJhY2tGYWlsdXJlSABCFQoTYXVkaW9fcmVzcG9uc2VfdHlwZSJeChNN",
+            "YXN0ZXJWb2x1bWVSZXF1ZXN0EkcKDHZvbHVtZV9sZXZlbBgBIAEoDjIxLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5NYXN0ZXJWb2x1bWVMZXZl",
+            "bCJWChRNYXN0ZXJWb2x1bWVSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5B",
+            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMi",
+            "LgocRW5hYmxlTWFya2VyRGV0ZWN0aW9uUmVxdWVzdBIOCgZlbmFibGUYASAB",
+            "KAgiXwodRW5hYmxlTWFya2VyRGV0ZWN0aW9uUmVzcG9uc2USPgoGc3RhdHVz",
+            "GAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3Bv",
+            "bnNlU3RhdHVzIrEBChpFbmFibGVGYWNlRGV0ZWN0aW9uUmVxdWVzdBIOCgZl",
+            "bmFibGUYASABKAgSHgoWZW5hYmxlX3NtaWxlX2RldGVjdGlvbhgCIAEoCBIk",
+            "ChxlbmFibGVfZXhwcmVzc2lvbl9lc3RpbWF0aW9uGAMgASgIEh4KFmVuYWJs",
+            "ZV9ibGlua19kZXRlY3Rpb24YBCABKAgSHQoVZW5hYmxlX2dhemVfZGV0ZWN0",
+            "aW9uGAUgASgIIl0KG0VuYWJsZUZhY2VEZXRlY3Rpb25SZXNwb25zZRI+CgZz",
             "dGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
-            "UmVzcG9uc2VTdGF0dXMSFQoNdmFsaWRfZmVhdHVyZRgCIAEoCBIXCg9mZWF0",
-            "dXJlX2VuYWJsZWQYAyABKAgiLgoWRmVhdHVyZUZsYWdMaXN0UmVxdWVzdBIU",
-            "CgxyZXF1ZXN0X2xpc3QYASADKAkiZwoXRmVhdHVyZUZsYWdMaXN0UmVzcG9u",
-            "c2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50",
-            "ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEgwKBGxpc3QYAiADKAkicQoRQXR0ZW50",
-            "aW9uVHJhbnNmZXISRwoGcmVhc29uGAEgASgOMjcuQW5raS5WZWN0b3IuZXh0",
-            "ZXJuYWxfaW50ZXJmYWNlLkF0dGVudGlvblRyYW5zZmVyUmVhc29uEhMKC3Nl",
-            "Y29uZHNfYWdvGAIgASgCIiAKHkxhdGVzdEF0dGVudGlvblRyYW5zZmVyUmVx",
-            "dWVzdCKAAQoXTGF0ZXN0QXR0ZW50aW9uVHJhbnNmZXISTwoSYXR0ZW50aW9u",
-            "X3RyYW5zZmVyGAEgASgLMjEuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
-            "YWNlLkF0dGVudGlvblRyYW5zZmVySABCFAoSb25lb2ZfbWVzc2FnZV90eXBl",
-            "Ir0BCh9MYXRlc3RBdHRlbnRpb25UcmFuc2ZlclJlc3BvbnNlEj4KBnN0YXR1",
-            "cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNw",
-            "b25zZVN0YXR1cxJaChlsYXRlc3RfYXR0ZW50aW9uX3RyYW5zZmVyGAIgASgL",
-            "MjcuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkxhdGVzdEF0dGVu",
-            "dGlvblRyYW5zZmVyIhkKF1VwZGF0ZUFuZFJlc3RhcnRSZXF1ZXN0IloKGFVw",
-            "ZGF0ZUFuZFJlc3RhcnRSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5Bbmtp",
-            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMiGgoY",
-            "Q2hlY2tVcGRhdGVTdGF0dXNSZXF1ZXN0IssCChlDaGVja1VwZGF0ZVN0YXR1",
-            "c1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVy",
-            "bmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxJdCg11cGRhdGVfc3RhdHVz",
-            "GAIgASgOMkYuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkNoZWNr",
-            "VXBkYXRlU3RhdHVzUmVzcG9uc2UuVXBkYXRlU3RhdHVzEhAKCGV4cGVjdGVk",
-            "GAMgASgDEhAKCHByb2dyZXNzGAQgASgDEhYKDnVwZGF0ZV92ZXJzaW9uGAUg",
-            "ASgJIk0KDFVwZGF0ZVN0YXR1cxINCglOT19VUERBVEUQABIUChBSRUFEWV9U",
-            "T19JTlNUQUxMEAESGAoUSU5fUFJPR1JFU1NfRE9XTkxPQUQQAjoEgKYdASIT",
-            "ChFDaGVja0Nsb3VkUmVxdWVzdCLtAgoSQ2hlY2tDbG91ZFJlc3BvbnNlEj4K",
-            "BnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFj",
-            "ZS5SZXNwb25zZVN0YXR1cxJPCgRjb2RlGAIgASgOMkEuQW5raS5WZWN0b3Iu",
-            "ZXh0ZXJuYWxfaW50ZXJmYWNlLkNoZWNrQ2xvdWRSZXNwb25zZS5Db25uZWN0",
-            "aW9uQ29kZRIWCg5zdGF0dXNfbWVzc2FnZRgDIAEoCRITCgtudW1fcGFja2V0",
-            "cxgEIAEoBRIYChBleHBlY3RlZF9wYWNrZXRzGAUgASgFIn8KDkNvbm5lY3Rp",
-            "b25Db2RlEgsKB1VOS05PV04QABINCglBVkFJTEFCTEUQARIUChBCQURfQ09O",
-            "TkVDVElWSVRZEAISDgoKRkFJTEVEX1RMUxADEg8KC0ZBSUxFRF9BVVRIEAQS",
-            "GgoWSU5TVUZGSUNJRU5UX0JBTkRXSURUSBAFKtwECgtSb2JvdFN0YXR1cxIV",
-            "ChFST0JPVF9TVEFUVVNfTk9ORRAAEhoKFlJPQk9UX1NUQVRVU19JU19NT1ZJ",
-            "TkcQARIiCh5ST0JPVF9TVEFUVVNfSVNfQ0FSUllJTkdfQkxPQ0sQAhImCiJS",
-            "T0JPVF9TVEFUVVNfSVNfUElDS0lOR19PUl9QTEFDSU5HEAQSHQoZUk9CT1Rf",
-            "U1RBVFVTX0lTX1BJQ0tFRF9VUBAIEiIKHlJPQk9UX1NUQVRVU19JU19CVVRU",
-            "T05fUFJFU1NFRBAQEhsKF1JPQk9UX1NUQVRVU19JU19GQUxMSU5HECASHQoZ",
-            "Uk9CT1RfU1RBVFVTX0lTX0FOSU1BVElORxBAEhwKF1JPQk9UX1NUQVRVU19J",
-            "U19QQVRISU5HEIABEh0KGFJPQk9UX1NUQVRVU19MSUZUX0lOX1BPUxCAAhId",
-            "ChhST0JPVF9TVEFUVVNfSEVBRF9JTl9QT1MQgAQSIQocUk9CT1RfU1RBVFVT",
-            "X0NBTE1fUE9XRVJfTU9ERRCACBIfChpST0JPVF9TVEFUVVNfSVNfT05fQ0hB",
-            "UkdFUhCAIBIdChhST0JPVF9TVEFUVVNfSVNfQ0hBUkdJTkcQgEASIQobUk9C",
-            "T1RfU1RBVFVTX0NMSUZGX0RFVEVDVEVEEICAARIkCh5ST0JPVF9TVEFUVVNf",
-            "QVJFX1dIRUVMU19NT1ZJTkcQgIACEiAKGlJPQk9UX1NUQVRVU19JU19CRUlO",
-            "R19IRUxEEICABBIlCh9ST0JPVF9TVEFUVVNfSVNfTU9USU9OX0RFVEVDVEVE",
-            "EICACCqNAQoWVW5leHBlY3RlZE1vdmVtZW50VHlwZRIWChJUVVJORURfQlVU",
-            "X1NUT1BQRUQQABIcChhUVVJORURfSU5fU0FNRV9ESVJFQ1RJT04QARIgChxU",
-            "VVJORURfSU5fT1BQT1NJVEVfRElSRUNUSU9OEAISGwoXUk9UQVRJTkdfV0lU",
-            "SE9VVF9NT1RPUlMQAypPChZVbmV4cGVjdGVkTW92ZW1lbnRTaWRlEgsKB1VO",
-            "S05PV04QABIJCgVGUk9OVBABEggKBEJBQ0sQAhIICgRMRUZUEAMSCQoFUklH",
-            "SFQQBCq9AQoQRmFjaWFsRXhwcmVzc2lvbhIWChJFWFBSRVNTSU9OX1VOS05P",
-            "V04QABIWChJFWFBSRVNTSU9OX05FVVRSQUwQARIYChRFWFBSRVNTSU9OX0hB",
-            "UFBJTkVTUxACEhcKE0VYUFJFU1NJT05fU1VSUFJJU0UQAxIUChBFWFBSRVNT",
-            "SU9OX0FOR0VSEAQSFgoSRVhQUkVTU0lPTl9TQURORVNTEAUSFAoQRVhQUkVT",
-            "U0lPTl9DT1VOVBAFGgIQASrMAQoURmFjZUVucm9sbG1lbnRSZXN1bHQSCwoH",
-            "U1VDQ0VTUxAAEhIKDlNBV19XUk9OR19GQUNFEAESFgoSU0FXX01VTFRJUExF",
-            "X0ZBQ0VTEAISDQoJVElNRURfT1VUEAMSDwoLU0FWRV9GQUlMRUQQBBIOCgpJ",
-            "TkNPTVBMRVRFEAUSDQoJQ0FOQ0VMTEVEEAYSDwoLTkFNRV9JTl9VU0UQBxIW",
-            "ChJOQU1FRF9TVE9SQUdFX0ZVTEwQCBITCg9VTktOT1dOX0ZBSUxVUkUQCSps",
-            "Cg9CZWhhdmlvclJlc3VsdHMSGgoWQkVIQVZJT1JfSU5WQUxJRF9TVEFURRAA",
-            "EhsKF0JFSEFWSU9SX0NPTVBMRVRFX1NUQVRFEAESIAocQkVIQVZJT1JfV09O",
-            "VF9BQ1RJVkFURV9TVEFURRACKlMKEkFjdGlvblRhZ0NvbnN0YW50cxITCg9J",
-            "TlZBTElEX1NES19UQUcQABITCg1GSVJTVF9TREtfVEFHEIGJehITCgxMQVNU",
-            "X1NES19UQUcQwI23ASqeAQoNQWxpZ25tZW50VHlwZRIaChZBTElHTk1FTlRf",
-            "VFlQRV9VTktOT1dOEAASHgoaQUxJR05NRU5UX1RZUEVfTElGVF9GSU5HRVIQ",
-            "ARIdChlBTElHTk1FTlRfVFlQRV9MSUZUX1BMQVRFEAISFwoTQUxJR05NRU5U",
-            "X1RZUEVfQk9EWRADEhkKFUFMSUdOTUVOVF9UWVBFX0NVU1RPTRAEKnMKDEJh",
-            "dHRlcnlMZXZlbBIZChVCQVRURVJZX0xFVkVMX1VOS05PV04QABIVChFCQVRU",
-            "RVJZX0xFVkVMX0xPVxABEhkKFUJBVFRFUllfTEVWRUxfTk9NSU5BTBACEhYK",
-            "EkJBVFRFUllfTEVWRUxfRlVMTBADKswBCg5BdWRpb0NvbnN0YW50cxIYChRB",
-            "VURJT19DT05TVEFOVFNfTlVMTBAAEhwKGE1JQ19ERVRFQ1RJT05fRElSRUNU",
-            "SU9OUxAMEiUKIFNBTVBMRV9DT1VOVFNfUEVSX0VOR0lORV9NRVNTQUdFEKAB",
-            "EiIKHVNBTVBMRV9DT1VOVFNfUEVSX1NES19NRVNTQUdFEMAMEhsKFk1JQ1JP",
-            "UEhPTkVfU0FNUExFX1JBVEUQiXoSGgoVUFJPQ0VTU0VEX1NBTVBMRV9SQVRF",
-            "EIB9KoUBChNBdWRpb1Byb2Nlc3NpbmdNb2RlEhEKDUFVRElPX1VOS05PV04Q",
-            "ABINCglBVURJT19PRkYQARITCg9BVURJT19GQVNUX01PREUQAhIaChZBVURJ",
-            "T19ESVJFQ1RJT05BTF9NT0RFEAMSGwoXQVVESU9fVk9JQ0VfREVURUNUX01P",
-            "REUQBCp2ChFNYXN0ZXJWb2x1bWVMZXZlbBIOCgpWT0xVTUVfTE9XEAASFQoR",
-            "Vk9MVU1FX01FRElVTV9MT1cQARIRCg1WT0xVTUVfTUVESVVNEAISFgoSVk9M",
-            "VU1FX01FRElVTV9ISUdIEAMSDwoLVk9MVU1FX0hJR0gQBCpeChdBdHRlbnRp",
-            "b25UcmFuc2ZlclJlYXNvbhILCgdJbnZhbGlkEAASFQoRTm9DbG91ZENvbm5l",
-            "Y3Rpb24QARIKCgZOb1dpZmkQAhITCg9Vbm1hdGNoZWRJbnRlbnQQA2IGcHJv",
-            "dG8z"));
+            "UmVzcG9uc2VTdGF0dXMiLgocRW5hYmxlTW90aW9uRGV0ZWN0aW9uUmVxdWVz",
+            "dBIOCgZlbmFibGUYASABKAgiXwodRW5hYmxlTW90aW9uRGV0ZWN0aW9uUmVz",
+            "cG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIikKF0VuYWJsZU1pcnJvck1vZGVS",
+            "ZXF1ZXN0Eg4KBmVuYWJsZRgBIAEoCCJaChhFbmFibGVNaXJyb3JNb2RlUmVz",
+            "cG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxf",
+            "aW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzIhQKEk1pcnJvck1vZGVEaXNhYmxl",
+            "ZCJNChtFbmFibGVJbWFnZVN0cmVhbWluZ1JlcXVlc3QSDgoGZW5hYmxlGAEg",
+            "ASgIEh4KFmVuYWJsZV9oaWdoX3Jlc29sdXRpb24YAiABKAgiXgocRW5hYmxl",
+            "SW1hZ2VTdHJlYW1pbmdSZXNwb25zZRI+CgZzdGF0dXMYASABKAsyLi5Bbmtp",
+            "LlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9uc2VTdGF0dXMiIAoe",
+            "SXNJbWFnZVN0cmVhbWluZ0VuYWJsZWRSZXF1ZXN0IkUKH0lzSW1hZ2VTdHJl",
+            "YW1pbmdFbmFibGVkUmVzcG9uc2USIgoaaXNfaW1hZ2Vfc3RyZWFtaW5nX2Vu",
+            "YWJsZWQYASABKAgiGQoXVmlzaW9uTW9kZXNBdXRvRGlzYWJsZWQi0QMKCklt",
+            "YWdlQ2h1bmsSGAoQZnJhbWVfdGltZV9zdGFtcBgBIAEoDRIQCghpbWFnZV9p",
+            "ZBgCIAEoDRINCgV3aWR0aBgDIAEoDRIOCgZoZWlnaHQYBCABKA0SUAoOaW1h",
+            "Z2VfZW5jb2RpbmcYBSABKA4yOC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
+            "cmZhY2UuSW1hZ2VDaHVuay5JbWFnZUVuY29kaW5nEhUKDWRpc3BsYXlfaW5k",
+            "ZXgYBiABKA0SGQoRaW1hZ2VfY2h1bmtfY291bnQYByABKA0SEAoIY2h1bmtf",
+            "aWQYCCABKA0SDAoEZGF0YRgJIAEoDCLTAQoNSW1hZ2VFbmNvZGluZxIXChNO",
+            "T05FX0lNQUdFX0VOQ09ESU5HEAASDAoIUkFXX0dSQVkQARILCgdSQVdfUkdC",
+            "EAISCAoEWVVZVhADEgwKCFlVVjQyMFNQEAQSCQoFQkFZRVIQBRINCglKUEVH",
+            "X0dSQVkQBhIOCgpKUEVHX0NPTE9SEAcSGQoVSlBFR19DT0xPUl9IQUxGX1dJ",
+            "RFRIEAgSFwoTSlBFR19NSU5JTUlaRURfR1JBWRAJEhgKFEpQRUdfTUlOSU1J",
+            "WkVEX0NPTE9SEAoiEwoRQ2FtZXJhRmVlZFJlcXVlc3QipgEKEkNhbWVyYUZl",
+            "ZWRSZXNwb25zZRIYChBmcmFtZV90aW1lX3N0YW1wGAEgASgNEhAKCGltYWdl",
+            "X2lkGAIgASgNElAKDmltYWdlX2VuY29kaW5nGAMgASgOMjguQW5raS5WZWN0",
+            "b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkltYWdlQ2h1bmsuSW1hZ2VFbmNvZGlu",
+            "ZxIMCgRkYXRhGAQgASgMOgSAph0BIjsKGUNhcHR1cmVTaW5nbGVJbWFnZVJl",
+            "cXVlc3QSHgoWZW5hYmxlX2hpZ2hfcmVzb2x1dGlvbhgBIAEoCCLoAQoaQ2Fw",
+            "dHVyZVNpbmdsZUltYWdlUmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5r",
+            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEhgK",
+            "EGZyYW1lX3RpbWVfc3RhbXAYAiABKA0SEAoIaW1hZ2VfaWQYAyABKA0SUAoO",
+            "aW1hZ2VfZW5jb2RpbmcYBCABKA4yOC5BbmtpLlZlY3Rvci5leHRlcm5hbF9p",
+            "bnRlcmZhY2UuSW1hZ2VDaHVuay5JbWFnZUVuY29kaW5nEgwKBGRhdGEYBSAB",
+            "KAwiNQoSU2V0RXllQ29sb3JSZXF1ZXN0EgsKA2h1ZRgBIAEoAhISCgpzYXR1",
+            "cmF0aW9uGAIgASgCIlUKE1NldEV5ZUNvbG9yUmVzcG9uc2USPgoGc3RhdHVz",
+            "GAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3Bv",
+            "bnNlU3RhdHVzIhUKE0NhbWVyYUNvbmZpZ1JlcXVlc3QihAIKFENhbWVyYUNv",
+            "bmZpZ1Jlc3BvbnNlEhYKDmZvY2FsX2xlbmd0aF94GAEgASgCEhYKDmZvY2Fs",
+            "X2xlbmd0aF95GAIgASgCEhAKCGNlbnRlcl94GAMgASgCEhAKCGNlbnRlcl95",
+            "GAQgASgCEg0KBWZvdl94GAUgASgCEg0KBWZvdl95GAYgASgCEiMKG21pbl9j",
+            "YW1lcmFfZXhwb3N1cmVfdGltZV9tcxgHIAEoDRIjChttYXhfY2FtZXJhX2V4",
+            "cG9zdXJlX3RpbWVfbXMYCCABKA0SFwoPbWluX2NhbWVyYV9nYWluGAkgASgC",
+            "EhcKD21heF9jYW1lcmFfZ2FpbhgKIAEoAiJbChhTZXRDYW1lcmFTZXR0aW5n",
+            "c1JlcXVlc3QSDAoEZ2FpbhgBIAEoAhITCgtleHBvc3VyZV9tcxgCIAEoDRIc",
+            "ChRlbmFibGVfYXV0b19leHBvc3VyZRgDIAEoCCJzChlTZXRDYW1lcmFTZXR0",
+            "aW5nc1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxIWCg5zdGF0dXNfbWVz",
+            "c2FnZRgCIAEoCSJYChRDYW1lcmFTZXR0aW5nc1VwZGF0ZRIMCgRnYWluGAEg",
+            "ASgCEhMKC2V4cG9zdXJlX21zGAIgASgNEh0KFWF1dG9fZXhwb3N1cmVfZW5h",
+            "YmxlZBgDIAEoCCKWAQoYU0RLSW5pdGlhbGl6YXRpb25SZXF1ZXN0EhoKEnNk",
+            "a19tb2R1bGVfdmVyc2lvbhgBIAEoCRIWCg5weXRob25fdmVyc2lvbhgCIAEo",
+            "CRIdChVweXRob25faW1wbGVtZW50YXRpb24YAyABKAkSEgoKb3NfdmVyc2lv",
+            "bhgEIAEoCRITCgtjcHVfdmVyc2lvbhgFIAEoCSJbChlTREtJbml0aWFsaXph",
+            "dGlvblJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyIRCg9BcHBEaXNjb25u",
+            "ZWN0ZWQiMQoQQXBwSW50ZW50UmVxdWVzdBIOCgZpbnRlbnQYASABKAkSDQoF",
+            "cGFyYW0YAiABKAkiUwoRQXBwSW50ZW50UmVzcG9uc2USPgoGc3RhdHVzGAEg",
+            "ASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNl",
+            "U3RhdHVzIjUKDUZlYXR1cmVTdGF0dXMSFAoMZmVhdHVyZV9uYW1lGAEgASgJ",
+            "Eg4KBnNvdXJjZRgCIAEoCSIqChJGZWF0dXJlRmxhZ1JlcXVlc3QSFAoMZmVh",
+            "dHVyZV9uYW1lGAEgASgJIoUBChNGZWF0dXJlRmxhZ1Jlc3BvbnNlEj4KBnN0",
+            "YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5S",
+            "ZXNwb25zZVN0YXR1cxIVCg12YWxpZF9mZWF0dXJlGAIgASgIEhcKD2ZlYXR1",
+            "cmVfZW5hYmxlZBgDIAEoCCIuChZGZWF0dXJlRmxhZ0xpc3RSZXF1ZXN0EhQK",
+            "DHJlcXVlc3RfbGlzdBgBIAMoCSJnChdGZWF0dXJlRmxhZ0xpc3RSZXNwb25z",
+            "ZRI+CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
+            "cmZhY2UuUmVzcG9uc2VTdGF0dXMSDAoEbGlzdBgCIAMoCSJxChFBdHRlbnRp",
+            "b25UcmFuc2ZlchJHCgZyZWFzb24YASABKA4yNy5BbmtpLlZlY3Rvci5leHRl",
+            "cm5hbF9pbnRlcmZhY2UuQXR0ZW50aW9uVHJhbnNmZXJSZWFzb24SEwoLc2Vj",
+            "b25kc19hZ28YAiABKAIiIAoeTGF0ZXN0QXR0ZW50aW9uVHJhbnNmZXJSZXF1",
+            "ZXN0IoABChdMYXRlc3RBdHRlbnRpb25UcmFuc2ZlchJPChJhdHRlbnRpb25f",
+            "dHJhbnNmZXIYASABKAsyMS5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZh",
+            "Y2UuQXR0ZW50aW9uVHJhbnNmZXJIAEIUChJvbmVvZl9tZXNzYWdlX3R5cGUi",
+            "vQEKH0xhdGVzdEF0dGVudGlvblRyYW5zZmVyUmVzcG9uc2USPgoGc3RhdHVz",
+            "GAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3Bv",
+            "bnNlU3RhdHVzEloKGWxhdGVzdF9hdHRlbnRpb25fdHJhbnNmZXIYAiABKAsy",
+            "Ny5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuTGF0ZXN0QXR0ZW50",
+            "aW9uVHJhbnNmZXIiGQoXVXBkYXRlQW5kUmVzdGFydFJlcXVlc3QiWgoYVXBk",
+            "YXRlQW5kUmVzdGFydFJlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2ku",
+            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cyIaChhD",
+            "aGVja1VwZGF0ZVN0YXR1c1JlcXVlc3QiywIKGUNoZWNrVXBkYXRlU3RhdHVz",
+            "UmVzcG9uc2USPgoGc3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJu",
+            "YWxfaW50ZXJmYWNlLlJlc3BvbnNlU3RhdHVzEl0KDXVwZGF0ZV9zdGF0dXMY",
+            "AiABKA4yRi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQ2hlY2tV",
+            "cGRhdGVTdGF0dXNSZXNwb25zZS5VcGRhdGVTdGF0dXMSEAoIZXhwZWN0ZWQY",
+            "AyABKAMSEAoIcHJvZ3Jlc3MYBCABKAMSFgoOdXBkYXRlX3ZlcnNpb24YBSAB",
+            "KAkiTQoMVXBkYXRlU3RhdHVzEg0KCU5PX1VQREFURRAAEhQKEFJFQURZX1RP",
+            "X0lOU1RBTEwQARIYChRJTl9QUk9HUkVTU19ET1dOTE9BRBACOgSAph0BIhMK",
+            "EUNoZWNrQ2xvdWRSZXF1ZXN0Iu0CChJDaGVja0Nsb3VkUmVzcG9uc2USPgoG",
+            "c3RhdHVzGAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNl",
+            "LlJlc3BvbnNlU3RhdHVzEk8KBGNvZGUYAiABKA4yQS5BbmtpLlZlY3Rvci5l",
+            "eHRlcm5hbF9pbnRlcmZhY2UuQ2hlY2tDbG91ZFJlc3BvbnNlLkNvbm5lY3Rp",
+            "b25Db2RlEhYKDnN0YXR1c19tZXNzYWdlGAMgASgJEhMKC251bV9wYWNrZXRz",
+            "GAQgASgFEhgKEGV4cGVjdGVkX3BhY2tldHMYBSABKAUifwoOQ29ubmVjdGlv",
+            "bkNvZGUSCwoHVU5LTk9XThAAEg0KCUFWQUlMQUJMRRABEhQKEEJBRF9DT05O",
+            "RUNUSVZJVFkQAhIOCgpGQUlMRURfVExTEAMSDwoLRkFJTEVEX0FVVEgQBBIa",
+            "ChZJTlNVRkZJQ0lFTlRfQkFORFdJRFRIEAUq3AQKC1JvYm90U3RhdHVzEhUK",
+            "EVJPQk9UX1NUQVRVU19OT05FEAASGgoWUk9CT1RfU1RBVFVTX0lTX01PVklO",
+            "RxABEiIKHlJPQk9UX1NUQVRVU19JU19DQVJSWUlOR19CTE9DSxACEiYKIlJP",
+            "Qk9UX1NUQVRVU19JU19QSUNLSU5HX09SX1BMQUNJTkcQBBIdChlST0JPVF9T",
+            "VEFUVVNfSVNfUElDS0VEX1VQEAgSIgoeUk9CT1RfU1RBVFVTX0lTX0JVVFRP",
+            "Tl9QUkVTU0VEEBASGwoXUk9CT1RfU1RBVFVTX0lTX0ZBTExJTkcQIBIdChlS",
+            "T0JPVF9TVEFUVVNfSVNfQU5JTUFUSU5HEEASHAoXUk9CT1RfU1RBVFVTX0lT",
+            "X1BBVEhJTkcQgAESHQoYUk9CT1RfU1RBVFVTX0xJRlRfSU5fUE9TEIACEh0K",
+            "GFJPQk9UX1NUQVRVU19IRUFEX0lOX1BPUxCABBIhChxST0JPVF9TVEFUVVNf",
+            "Q0FMTV9QT1dFUl9NT0RFEIAIEh8KGlJPQk9UX1NUQVRVU19JU19PTl9DSEFS",
+            "R0VSEIAgEh0KGFJPQk9UX1NUQVRVU19JU19DSEFSR0lORxCAQBIhChtST0JP",
+            "VF9TVEFUVVNfQ0xJRkZfREVURUNURUQQgIABEiQKHlJPQk9UX1NUQVRVU19B",
+            "UkVfV0hFRUxTX01PVklORxCAgAISIAoaUk9CT1RfU1RBVFVTX0lTX0JFSU5H",
+            "X0hFTEQQgIAEEiUKH1JPQk9UX1NUQVRVU19JU19NT1RJT05fREVURUNURUQQ",
+            "gIAIKo0BChZVbmV4cGVjdGVkTW92ZW1lbnRUeXBlEhYKElRVUk5FRF9CVVRf",
+            "U1RPUFBFRBAAEhwKGFRVUk5FRF9JTl9TQU1FX0RJUkVDVElPThABEiAKHFRV",
+            "Uk5FRF9JTl9PUFBPU0lURV9ESVJFQ1RJT04QAhIbChdST1RBVElOR19XSVRI",
+            "T1VUX01PVE9SUxADKk8KFlVuZXhwZWN0ZWRNb3ZlbWVudFNpZGUSCwoHVU5L",
+            "Tk9XThAAEgkKBUZST05UEAESCAoEQkFDSxACEggKBExFRlQQAxIJCgVSSUdI",
+            "VBAEKr0BChBGYWNpYWxFeHByZXNzaW9uEhYKEkVYUFJFU1NJT05fVU5LTk9X",
+            "ThAAEhYKEkVYUFJFU1NJT05fTkVVVFJBTBABEhgKFEVYUFJFU1NJT05fSEFQ",
+            "UElORVNTEAISFwoTRVhQUkVTU0lPTl9TVVJQUklTRRADEhQKEEVYUFJFU1NJ",
+            "T05fQU5HRVIQBBIWChJFWFBSRVNTSU9OX1NBRE5FU1MQBRIUChBFWFBSRVNT",
+            "SU9OX0NPVU5UEAUaAhABKswBChRGYWNlRW5yb2xsbWVudFJlc3VsdBILCgdT",
+            "VUNDRVNTEAASEgoOU0FXX1dST05HX0ZBQ0UQARIWChJTQVdfTVVMVElQTEVf",
+            "RkFDRVMQAhINCglUSU1FRF9PVVQQAxIPCgtTQVZFX0ZBSUxFRBAEEg4KCklO",
+            "Q09NUExFVEUQBRINCglDQU5DRUxMRUQQBhIPCgtOQU1FX0lOX1VTRRAHEhYK",
+            "Ek5BTUVEX1NUT1JBR0VfRlVMTBAIEhMKD1VOS05PV05fRkFJTFVSRRAJKmwK",
+            "D0JlaGF2aW9yUmVzdWx0cxIaChZCRUhBVklPUl9JTlZBTElEX1NUQVRFEAAS",
+            "GwoXQkVIQVZJT1JfQ09NUExFVEVfU1RBVEUQARIgChxCRUhBVklPUl9XT05U",
+            "X0FDVElWQVRFX1NUQVRFEAIqUwoSQWN0aW9uVGFnQ29uc3RhbnRzEhMKD0lO",
+            "VkFMSURfU0RLX1RBRxAAEhMKDUZJUlNUX1NES19UQUcQgYl6EhMKDExBU1Rf",
+            "U0RLX1RBRxDAjbcBKp4BCg1BbGlnbm1lbnRUeXBlEhoKFkFMSUdOTUVOVF9U",
+            "WVBFX1VOS05PV04QABIeChpBTElHTk1FTlRfVFlQRV9MSUZUX0ZJTkdFUhAB",
+            "Eh0KGUFMSUdOTUVOVF9UWVBFX0xJRlRfUExBVEUQAhIXChNBTElHTk1FTlRf",
+            "VFlQRV9CT0RZEAMSGQoVQUxJR05NRU5UX1RZUEVfQ1VTVE9NEAQqcwoMQmF0",
+            "dGVyeUxldmVsEhkKFUJBVFRFUllfTEVWRUxfVU5LTk9XThAAEhUKEUJBVFRF",
+            "UllfTEVWRUxfTE9XEAESGQoVQkFUVEVSWV9MRVZFTF9OT01JTkFMEAISFgoS",
+            "QkFUVEVSWV9MRVZFTF9GVUxMEAMqzAEKDkF1ZGlvQ29uc3RhbnRzEhgKFEFV",
+            "RElPX0NPTlNUQU5UU19OVUxMEAASHAoYTUlDX0RFVEVDVElPTl9ESVJFQ1RJ",
+            "T05TEAwSJQogU0FNUExFX0NPVU5UU19QRVJfRU5HSU5FX01FU1NBR0UQoAES",
+            "IgodU0FNUExFX0NPVU5UU19QRVJfU0RLX01FU1NBR0UQwAwSGwoWTUlDUk9Q",
+            "SE9ORV9TQU1QTEVfUkFURRCJehIaChVQUk9DRVNTRURfU0FNUExFX1JBVEUQ",
+            "gH0qhQEKE0F1ZGlvUHJvY2Vzc2luZ01vZGUSEQoNQVVESU9fVU5LTk9XThAA",
+            "Eg0KCUFVRElPX09GRhABEhMKD0FVRElPX0ZBU1RfTU9ERRACEhoKFkFVRElP",
+            "X0RJUkVDVElPTkFMX01PREUQAxIbChdBVURJT19WT0lDRV9ERVRFQ1RfTU9E",
+            "RRAEKnYKEU1hc3RlclZvbHVtZUxldmVsEg4KClZPTFVNRV9MT1cQABIVChFW",
+            "T0xVTUVfTUVESVVNX0xPVxABEhEKDVZPTFVNRV9NRURJVU0QAhIWChJWT0xV",
+            "TUVfTUVESVVNX0hJR0gQAxIPCgtWT0xVTUVfSElHSBAEKl4KF0F0dGVudGlv",
+            "blRyYW5zZmVyUmVhc29uEgsKB0ludmFsaWQQABIVChFOb0Nsb3VkQ29ubmVj",
+            "dGlvbhABEgoKBk5vV2lmaRACEhMKD1VubWF0Y2hlZEludGVudBADQjpaOGdp",
+            "dGh1Yi5jb20vZGlnaXRhbC1kcmVhbS1sYWJzL3ZlY3Rvci1nby1zZGsvcGtn",
+            "L3ZlY3RvcnBiYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, global::Anki.Vector.ExternalInterface.ExtensionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.RobotStatus), typeof(global::Anki.Vector.ExternalInterface.UnexpectedMovementType), typeof(global::Anki.Vector.ExternalInterface.UnexpectedMovementSide), typeof(global::Anki.Vector.ExternalInterface.FacialExpression), typeof(global::Anki.Vector.ExternalInterface.FaceEnrollmentResult), typeof(global::Anki.Vector.ExternalInterface.BehaviorResults), typeof(global::Anki.Vector.ExternalInterface.ActionTagConstants), typeof(global::Anki.Vector.ExternalInterface.AlignmentType), typeof(global::Anki.Vector.ExternalInterface.BatteryLevel), typeof(global::Anki.Vector.ExternalInterface.AudioConstants), typeof(global::Anki.Vector.ExternalInterface.AudioProcessingMode), typeof(global::Anki.Vector.ExternalInterface.MasterVolumeLevel), typeof(global::Anki.Vector.ExternalInterface.AttentionTransferReason), }, new pbr::GeneratedClrTypeInfo[] {
@@ -709,6 +712,7 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.SayTextResponse), global::Anki.Vector.ExternalInterface.SayTextResponse.Parser, new[]{ "Status", "State" }, null, new[]{ typeof(global::Anki.Vector.ExternalInterface.SayTextResponse.Types.UtteranceState) }, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.StimulationInfo), global::Anki.Vector.ExternalInterface.StimulationInfo.Parser, new[]{ "EmotionEvents", "Value", "Velocity", "Accel", "ValueBeforeEvent", "MinValue", "MaxValue" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioSendModeRequest), global::Anki.Vector.ExternalInterface.AudioSendModeRequest.Parser, new[]{ "Mode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioSendModeResponse), global::Anki.Vector.ExternalInterface.AudioSendModeResponse.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioSendModeChanged), global::Anki.Vector.ExternalInterface.AudioSendModeChanged.Parser, new[]{ "Mode" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioChunk), global::Anki.Vector.ExternalInterface.AudioChunk.Parser, new[]{ "RobotTimeStamp", "GroupId", "ChunkId", "AudioChunkCount", "SignalPower", "DirectionStrengths", "SourceDirection", "SourceConfidence", "NoiseFloorPower" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AudioFeedRequest), global::Anki.Vector.ExternalInterface.AudioFeedRequest.Parser, null, null, null, null),
@@ -15299,7 +15303,7 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
-  /// These codes are duplicated from actionResults.clad file and need to be kept in sync 
+  /// These codes are duplicated from actionResults.clad file and need to be kept in sync
   /// The possible results of running an action.
   /// </summary>
   public sealed partial class ActionResult : pb::IMessage<ActionResult> {
@@ -23265,6 +23269,141 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  public sealed partial class AudioSendModeResponse : pb::IMessage<AudioSendModeResponse> {
+    private static readonly pb::MessageParser<AudioSendModeResponse> _parser = new pb::MessageParser<AudioSendModeResponse>(() => new AudioSendModeResponse());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AudioSendModeResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[119]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AudioSendModeResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AudioSendModeResponse(AudioSendModeResponse other) : this() {
+      status_ = other.status_ != null ? other.status_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AudioSendModeResponse Clone() {
+      return new AudioSendModeResponse(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private global::Anki.Vector.ExternalInterface.ResponseStatus status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Anki.Vector.ExternalInterface.ResponseStatus Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AudioSendModeResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AudioSendModeResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Status, other.Status)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (status_ != null) hash ^= Status.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (status_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Status);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (status_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Status);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AudioSendModeResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.status_ != null) {
+        if (status_ == null) {
+          status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+        }
+        Status.MergeFrom(other.Status);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (status_ == null) {
+              status_ = new global::Anki.Vector.ExternalInterface.ResponseStatus();
+            }
+            input.ReadMessage(status_);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   /// <summary>
   /// Event sent when the robot changes the mode it's processing and sending audio
   /// </summary>
@@ -23276,7 +23415,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[119]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[120]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23408,7 +23547,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[120]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[121]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23791,7 +23930,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[121]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[122]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -23895,7 +24034,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[122]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[123]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24216,7 +24355,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[123]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[124]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24382,7 +24521,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[124]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[125]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24548,7 +24687,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[125]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[126]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24652,7 +24791,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[126]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[127]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -24756,7 +24895,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[127]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[128]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25041,7 +25180,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[128]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[129]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25145,7 +25284,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[129]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[130]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25249,7 +25388,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[130]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[131]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25409,7 +25548,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[131]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[132]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25652,7 +25791,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[132]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[133]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25781,7 +25920,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[133]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[134]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -25919,7 +26058,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[134]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[135]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26048,7 +26187,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[135]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[136]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26186,7 +26325,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[136]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[137]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26427,7 +26566,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[137]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[138]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26565,7 +26704,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[138]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[139]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26694,7 +26833,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[139]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[140]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26833,7 +26972,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[140]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[141]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -26962,7 +27101,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[141]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[142]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27101,7 +27240,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[142]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[143]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27205,7 +27344,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[143]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[144]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27362,7 +27501,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[144]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[145]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27500,7 +27639,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[145]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[146]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27604,7 +27743,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[146]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[147]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27737,7 +27876,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[147]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[148]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -27841,7 +27980,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[148]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[149]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28227,7 +28366,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[149]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[150]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28328,7 +28467,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[150]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[151]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28545,7 +28684,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[151]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[152]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28677,7 +28816,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[152]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[153]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -28924,7 +29063,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[153]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[154]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29081,7 +29220,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[154]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[155]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29219,7 +29358,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[155]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[156]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29323,7 +29462,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[156]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[157]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29713,7 +29852,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[157]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[158]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -29901,7 +30040,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[158]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[159]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30057,7 +30196,7 @@ namespace Anki.Vector.ExternalInterface {
   }
 
   /// <summary>
-  /// Event sent when camera exposure settings change (v1.7)
+  /// (v1.7) - Event sent when camera exposure settings change
   /// </summary>
   public sealed partial class CameraSettingsUpdate : pb::IMessage<CameraSettingsUpdate> {
     private static readonly pb::MessageParser<CameraSettingsUpdate> _parser = new pb::MessageParser<CameraSettingsUpdate>(() => new CameraSettingsUpdate());
@@ -30067,7 +30206,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[159]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[160]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30252,7 +30391,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[160]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[161]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30493,7 +30632,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[161]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[162]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30628,7 +30767,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[162]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[163]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30729,7 +30868,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[163]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[164]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -30886,7 +31025,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[164]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[165]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31021,7 +31160,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[165]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[166]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31181,7 +31320,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[166]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[167]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31310,7 +31449,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[167]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[168]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31501,7 +31640,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[168]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[169]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31622,7 +31761,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[169]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[170]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31777,7 +31916,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[170]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[171]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -31934,7 +32073,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[171]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[172]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32035,7 +32174,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[172]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[173]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32200,7 +32339,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[173]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[174]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32369,7 +32508,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[174]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[175]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32470,7 +32609,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[175]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[176]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32605,7 +32744,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[176]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[177]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32706,7 +32845,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[177]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[178]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -32966,7 +33105,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[178]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[179]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -33067,7 +33206,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[179]; }
+      get { return global::Anki.Vector.ExternalInterface.MessagesReflection.Descriptor.MessageTypes[180]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

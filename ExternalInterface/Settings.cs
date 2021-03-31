@@ -26,78 +26,83 @@ namespace Anki.Vector.ExternalInterface {
           string.Concat(
             "CiRhbmtpX3ZlY3Rvci9tZXNzYWdpbmcvc2V0dGluZ3MucHJvdG8SHkFua2ku",
             "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZRorYW5raV92ZWN0b3IvbWVzc2Fn",
-            "aW5nL3Jlc3BvbnNlX3N0YXR1cy5wcm90byLiAgoTUm9ib3RTZXR0aW5nc0Nv",
-            "bmZpZxIVCg1jbG9ja18yNF9ob3VyGAEgASgIEjsKCWV5ZV9jb2xvchgCIAEo",
-            "DjIoLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5FeWVDb2xvchIY",
-            "ChBkZWZhdWx0X2xvY2F0aW9uGAMgASgJEhYKDmRpc3RfaXNfbWV0cmljGAQg",
-            "ASgIEg4KBmxvY2FsZRgFIAEoCRI9Cg1tYXN0ZXJfdm9sdW1lGAYgASgOMiYu",
-            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlZvbHVtZRIaChJ0ZW1w",
-            "X2lzX2ZhaHJlbmhlaXQYByABKAgSEQoJdGltZV96b25lGAggASgJEkcKD2J1",
-            "dHRvbl93YWtld29yZBgJIAEoDjIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5CdXR0b25XYWtlV29yZCJ1ChVBY2NvdW50U2V0dGluZ3NDb25m",
-            "aWcSGQoPZGF0YV9jb2xsZWN0aW9uGAEgASgISAASFAoKYXBwX2xvY2FsZRgC",
-            "IAEoCUgBQhcKFW9uZW9mX2RhdGFfY29sbGVjdGlvbkISChBvbmVvZl9hcHBf",
-            "bG9jYWxlIk4KFlVzZXJFbnRpdGxlbWVudHNDb25maWcSGgoQa2lja3N0YXJ0",
-            "ZXJfZXllcxgBIAEoCEgAQhgKFm9uZW9mX2tpY2tzdGFydGVyX2V5ZXMiWwoE",
-            "SmRvYxITCgtkb2NfdmVyc2lvbhgBIAEoBBITCgtmbXRfdmVyc2lvbhgCIAEo",
-            "BBIXCg9jbGllbnRfbWV0YWRhdGEYAyABKAkSEAoIanNvbl9kb2MYBCABKAki",
-            "ewoJTmFtZWRKZG9jEjsKCWpkb2NfdHlwZRgBIAEoDjIoLkFua2kuVmVjdG9y",
-            "LmV4dGVybmFsX2ludGVyZmFjZS5KZG9jVHlwZRIxCgNkb2MYAiABKAsyJC5B",
-            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSmRvYyJQChBQdWxsSmRv",
-            "Y3NSZXF1ZXN0EjwKCmpkb2NfdHlwZXMYASADKA4yKC5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuSmRvY1R5cGUikwEKEVB1bGxKZG9jc1Jlc3Bv",
-            "bnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVybmFsX2lu",
-            "dGVyZmFjZS5SZXNwb25zZVN0YXR1cxI+CgtuYW1lZF9qZG9jcxgCIAMoCzIp",
-            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5OYW1lZEpkb2MiXgoV",
-            "VXBkYXRlU2V0dGluZ3NSZXF1ZXN0EkUKCHNldHRpbmdzGAEgASgLMjMuQW5r",
-            "aS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJvYm90U2V0dGluZ3NDb25m",
-            "aWcixQEKFlVwZGF0ZVNldHRpbmdzUmVzcG9uc2USPgoGc3RhdHVzGAEgASgL",
-            "Mi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3BvbnNlU3Rh",
-            "dHVzEjgKBGNvZGUYAiABKA4yKi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRl",
-            "cmZhY2UuUmVzdWx0Q29kZRIxCgNkb2MYAyABKAsyJC5BbmtpLlZlY3Rvci5l",
-            "eHRlcm5hbF9pbnRlcmZhY2UuSmRvYyJvChxVcGRhdGVBY2NvdW50U2V0dGlu",
-            "Z3NSZXF1ZXN0Ek8KEGFjY291bnRfc2V0dGluZ3MYASABKAsyNS5BbmtpLlZl",
-            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWNjb3VudFNldHRpbmdzQ29uZmln",
-            "IswBCh1VcGRhdGVBY2NvdW50U2V0dGluZ3NSZXNwb25zZRI+CgZzdGF0dXMY",
-            "ASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuUmVzcG9u",
-            "c2VTdGF0dXMSOAoEY29kZRgCIAEoDjIqLkFua2kuVmVjdG9yLmV4dGVybmFs",
-            "X2ludGVyZmFjZS5SZXN1bHRDb2RlEjEKA2RvYxgDIAEoCzIkLkFua2kuVmVj",
-            "dG9yLmV4dGVybmFsX2ludGVyZmFjZS5KZG9jInIKHVVwZGF0ZVVzZXJFbnRp",
-            "dGxlbWVudHNSZXF1ZXN0ElEKEXVzZXJfZW50aXRsZW1lbnRzGAEgASgLMjYu",
-            "QW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlVzZXJFbnRpdGxlbWVu",
-            "dHNDb25maWcizQEKHlVwZGF0ZVVzZXJFbnRpdGxlbWVudHNSZXNwb25zZRI+",
-            "CgZzdGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZh",
-            "Y2UuUmVzcG9uc2VTdGF0dXMSOAoEY29kZRgCIAEoDjIqLkFua2kuVmVjdG9y",
-            "LmV4dGVybmFsX2ludGVyZmFjZS5SZXN1bHRDb2RlEjEKA2RvYxgDIAEoCzIk",
-            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5KZG9jIkwKDEpkb2Nz",
-            "Q2hhbmdlZBI8CgpqZG9jX3R5cGVzGAEgAygOMiguQW5raS5WZWN0b3IuZXh0",
-            "ZXJuYWxfaW50ZXJmYWNlLkpkb2NUeXBlKiUKCkFwaVZlcnNpb24SCwoHSU5W",
-            "QUxJRBAAEgoKBkxBVEVTVBABKlIKBlZvbHVtZRIICgRNVVRFEAASBwoDTE9X",
-            "EAESDgoKTUVESVVNX0xPVxACEgoKBk1FRElVTRADEg8KC01FRElVTV9ISUdI",
-            "EAQSCAoESElHSBAFKmUKCEpkb2NUeXBlEhIKDlJPQk9UX1NFVFRJTkdTEAAS",
-            "GAoUUk9CT1RfTElGRVRJTUVfU1RBVFMQARIUChBBQ0NPVU5UX1NFVFRJTkdT",
-            "EAISFQoRVVNFUl9FTlRJVExFTUVOVFMQAyo7ChFKZG9jUmVzb2x2ZU1ldGhv",
-            "ZBIRCg1QVVNIX1RPX0NMT1VEEAASEwoPUFVMTF9GUk9NX0NMT1VEEAEqtQEK",
-            "DFJvYm90U2V0dGluZxIRCg1jbG9ja18yNF9ob3VyEAASDQoJZXllX2NvbG9y",
-            "EAESFAoQZGVmYXVsdF9sb2NhdGlvbhACEhIKDmRpc3RfaXNfbWV0cmljEAMS",
-            "CgoGbG9jYWxlEAQSEQoNbWFzdGVyX3ZvbHVtZRAFEhYKEnRlbXBfaXNfZmFo",
-            "cmVuaGVpdBAGEg0KCXRpbWVfem9uZRAHEhMKD2J1dHRvbl93YWtld29yZBAI",
-            "KqsBCghFeWVDb2xvchIRCg1USVBfT1ZFUl9URUFMEAASEgoOT1ZFUkZJVF9P",
-            "UkFOR0UQARISCg5VTkNBTk5ZX1lFTExPVxACEhMKD05PTl9MSU5FQVJfTElN",
-            "RRADEhgKFFNJTkdVTEFSSVRZX1NBUFBISVJFEAQSGQoVRkFMU0VfUE9TSVRJ",
-            "VkVfUFVSUExFEAUSGgoWQ09ORlVTSU9OX01BVFJJWF9HUkVFThAGKksKDkJ1",
-            "dHRvbldha2VXb3JkEh4KGkJVVFRPTl9XQUtFV09SRF9IRVlfVkVDVE9SEAAS",
-            "GQoVQlVUVE9OX1dBS0VXT1JEX0FMRVhBEAEqNQoOQWNjb3VudFNldHRpbmcS",
-            "EwoPREFUQV9DT0xMRUNUSU9OEAASDgoKQVBQX0xPQ0FMRRABKicKD1VzZXJF",
-            "bnRpdGxlbWVudBIUChBLSUNLU1RBUlRFUl9FWUVTEAAqQQoKUmVzdWx0Q29k",
+            "aW5nL3Jlc3BvbnNlX3N0YXR1cy5wcm90byK/BAoTUm9ib3RTZXR0aW5nc0Nv",
+            "bmZpZxIXCg1jbG9ja18yNF9ob3VyGAEgASgISAASPQoJZXllX2NvbG9yGAIg",
+            "ASgOMiguQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLkV5ZUNvbG9y",
+            "SAESGgoQZGVmYXVsdF9sb2NhdGlvbhgDIAEoCUgCEhgKDmRpc3RfaXNfbWV0",
+            "cmljGAQgASgISAMSEAoGbG9jYWxlGAUgASgJSAQSPwoNbWFzdGVyX3ZvbHVt",
+            "ZRgGIAEoDjImLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5Wb2x1",
+            "bWVIBRIcChJ0ZW1wX2lzX2ZhaHJlbmhlaXQYByABKAhIBhITCgl0aW1lX3pv",
+            "bmUYCCABKAlIBxJJCg9idXR0b25fd2FrZXdvcmQYCSABKA4yLi5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQnV0dG9uV2FrZVdvcmRICEIVChNv",
+            "bmVvZl9jbG9ja18yNF9ob3VyQhEKD29uZW9mX2V5ZV9jb2xvckIYChZvbmVv",
+            "Zl9kZWZhdWx0X2xvY2F0aW9uQhYKFG9uZW9mX2Rpc3RfaXNfbWV0cmljQg4K",
+            "DG9uZW9mX2xvY2FsZUIVChNvbmVvZl9tYXN0ZXJfdm9sdW1lQhoKGG9uZW9m",
+            "X3RlbXBfaXNfZmFocmVuaGVpdEIRCg9vbmVvZl90aW1lX3pvbmVCFwoVb25l",
+            "b2ZfYnV0dG9uX3dha2V3b3JkInUKFUFjY291bnRTZXR0aW5nc0NvbmZpZxIZ",
+            "Cg9kYXRhX2NvbGxlY3Rpb24YASABKAhIABIUCgphcHBfbG9jYWxlGAIgASgJ",
+            "SAFCFwoVb25lb2ZfZGF0YV9jb2xsZWN0aW9uQhIKEG9uZW9mX2FwcF9sb2Nh",
+            "bGUiWwoESmRvYxITCgtkb2NfdmVyc2lvbhgBIAEoBBITCgtmbXRfdmVyc2lv",
+            "bhgCIAEoBBIXCg9jbGllbnRfbWV0YWRhdGEYAyABKAkSEAoIanNvbl9kb2MY",
+            "BCABKAkiewoJTmFtZWRKZG9jEjsKCWpkb2NfdHlwZRgBIAEoDjIoLkFua2ku",
+            "VmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5KZG9jVHlwZRIxCgNkb2MYAiAB",
+            "KAsyJC5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSmRvYyJQChBQ",
+            "dWxsSmRvY3NSZXF1ZXN0EjwKCmpkb2NfdHlwZXMYASADKA4yKC5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSmRvY1R5cGUikwEKEVB1bGxKZG9j",
+            "c1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIuLkFua2kuVmVjdG9yLmV4dGVy",
+            "bmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1cxI+CgtuYW1lZF9qZG9jcxgC",
+            "IAMoCzIpLkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5OYW1lZEpk",
+            "b2MiXgoVVXBkYXRlU2V0dGluZ3NSZXF1ZXN0EkUKCHNldHRpbmdzGAEgASgL",
+            "MjMuQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJvYm90U2V0dGlu",
+            "Z3NDb25maWcixQEKFlVwZGF0ZVNldHRpbmdzUmVzcG9uc2USPgoGc3RhdHVz",
+            "GAEgASgLMi4uQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJmYWNlLlJlc3Bv",
+            "bnNlU3RhdHVzEjgKBGNvZGUYAiABKA4yKi5BbmtpLlZlY3Rvci5leHRlcm5h",
+            "bF9pbnRlcmZhY2UuUmVzdWx0Q29kZRIxCgNkb2MYAyABKAsyJC5BbmtpLlZl",
+            "Y3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuSmRvYyJvChxVcGRhdGVBY2NvdW50",
+            "U2V0dGluZ3NSZXF1ZXN0Ek8KEGFjY291bnRfc2V0dGluZ3MYASABKAsyNS5B",
+            "bmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2UuQWNjb3VudFNldHRpbmdz",
+            "Q29uZmlnIswBCh1VcGRhdGVBY2NvdW50U2V0dGluZ3NSZXNwb25zZRI+CgZz",
+            "dGF0dXMYASABKAsyLi5BbmtpLlZlY3Rvci5leHRlcm5hbF9pbnRlcmZhY2Uu",
+            "UmVzcG9uc2VTdGF0dXMSOAoEY29kZRgCIAEoDjIqLkFua2kuVmVjdG9yLmV4",
+            "dGVybmFsX2ludGVyZmFjZS5SZXN1bHRDb2RlEjEKA2RvYxgDIAEoCzIkLkFu",
+            "a2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5KZG9jIkwKDEpkb2NzQ2hh",
+            "bmdlZBI8CgpqZG9jX3R5cGVzGAEgAygOMiguQW5raS5WZWN0b3IuZXh0ZXJu",
+            "YWxfaW50ZXJmYWNlLkpkb2NUeXBlIk4KFlVzZXJFbnRpdGxlbWVudHNDb25m",
+            "aWcSGgoQa2lja3N0YXJ0ZXJfZXllcxgBIAEoCEgAQhgKFm9uZW9mX2tpY2tz",
+            "dGFydGVyX2V5ZXMicgodVXBkYXRlVXNlckVudGl0bGVtZW50c1JlcXVlc3QS",
+            "UQoRdXNlcl9lbnRpdGxlbWVudHMYASABKAsyNi5BbmtpLlZlY3Rvci5leHRl",
+            "cm5hbF9pbnRlcmZhY2UuVXNlckVudGl0bGVtZW50c0NvbmZpZyLNAQoeVXBk",
+            "YXRlVXNlckVudGl0bGVtZW50c1Jlc3BvbnNlEj4KBnN0YXR1cxgBIAEoCzIu",
+            "LkFua2kuVmVjdG9yLmV4dGVybmFsX2ludGVyZmFjZS5SZXNwb25zZVN0YXR1",
+            "cxI4CgRjb2RlGAIgASgOMiouQW5raS5WZWN0b3IuZXh0ZXJuYWxfaW50ZXJm",
+            "YWNlLlJlc3VsdENvZGUSMQoDZG9jGAMgASgLMiQuQW5raS5WZWN0b3IuZXh0",
+            "ZXJuYWxfaW50ZXJmYWNlLkpkb2MqJQoKQXBpVmVyc2lvbhILCgdJTlZBTElE",
+            "EAASCgoGTEFURVNUEAEqUgoGVm9sdW1lEggKBE1VVEUQABIHCgNMT1cQARIO",
+            "CgpNRURJVU1fTE9XEAISCgoGTUVESVVNEAMSDwoLTUVESVVNX0hJR0gQBBII",
+            "CgRISUdIEAUqZQoISmRvY1R5cGUSEgoOUk9CT1RfU0VUVElOR1MQABIYChRS",
+            "T0JPVF9MSUZFVElNRV9TVEFUUxABEhQKEEFDQ09VTlRfU0VUVElOR1MQAhIV",
+            "ChFVU0VSX0VOVElUTEVNRU5UUxADKjsKEUpkb2NSZXNvbHZlTWV0aG9kEhEK",
+            "DVBVU0hfVE9fQ0xPVUQQABITCg9QVUxMX0ZST01fQ0xPVUQQASq1AQoMUm9i",
+            "b3RTZXR0aW5nEhEKDWNsb2NrXzI0X2hvdXIQABINCglleWVfY29sb3IQARIU",
+            "ChBkZWZhdWx0X2xvY2F0aW9uEAISEgoOZGlzdF9pc19tZXRyaWMQAxIKCgZs",
+            "b2NhbGUQBBIRCg1tYXN0ZXJfdm9sdW1lEAUSFgoSdGVtcF9pc19mYWhyZW5o",
+            "ZWl0EAYSDQoJdGltZV96b25lEAcSEwoPYnV0dG9uX3dha2V3b3JkEAgqqwEK",
+            "CEV5ZUNvbG9yEhEKDVRJUF9PVkVSX1RFQUwQABISCg5PVkVSRklUX09SQU5H",
+            "RRABEhIKDlVOQ0FOTllfWUVMTE9XEAISEwoPTk9OX0xJTkVBUl9MSU1FEAMS",
+            "GAoUU0lOR1VMQVJJVFlfU0FQUEhJUkUQBBIZChVGQUxTRV9QT1NJVElWRV9Q",
+            "VVJQTEUQBRIaChZDT05GVVNJT05fTUFUUklYX0dSRUVOEAYqSwoOQnV0dG9u",
+            "V2FrZVdvcmQSHgoaQlVUVE9OX1dBS0VXT1JEX0hFWV9WRUNUT1IQABIZChVC",
+            "VVRUT05fV0FLRVdPUkRfQUxFWEEQASo1Cg5BY2NvdW50U2V0dGluZxITCg9E",
+            "QVRBX0NPTExFQ1RJT04QABIOCgpBUFBfTE9DQUxFEAEqQQoKUmVzdWx0Q29k",
             "ZRIVChFTRVRUSU5HU19BQ0NFUFRFRBAAEhwKGEVSUk9SX1VQREFURV9JTl9Q",
-            "Uk9HUkVTUxABYgZwcm90bzM="));
+            "Uk9HUkVTUxABKicKD1VzZXJFbnRpdGxlbWVudBIUChBLSUNLU1RBUlRFUl9F",
+            "WUVTEABCOlo4Z2l0aHViLmNvbS9kaWdpdGFsLWRyZWFtLWxhYnMvdmVjdG9y",
+            "LWdvLXNkay9wa2cvdmVjdG9ycGJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Anki.Vector.ExternalInterface.ResponseStatusReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.ApiVersion), typeof(global::Anki.Vector.ExternalInterface.Volume), typeof(global::Anki.Vector.ExternalInterface.JdocType), typeof(global::Anki.Vector.ExternalInterface.JdocResolveMethod), typeof(global::Anki.Vector.ExternalInterface.RobotSetting), typeof(global::Anki.Vector.ExternalInterface.EyeColor), typeof(global::Anki.Vector.ExternalInterface.ButtonWakeWord), typeof(global::Anki.Vector.ExternalInterface.AccountSetting), typeof(global::Anki.Vector.ExternalInterface.UserEntitlement), typeof(global::Anki.Vector.ExternalInterface.ResultCode), }, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RobotSettingsConfig), global::Anki.Vector.ExternalInterface.RobotSettingsConfig.Parser, new[]{ "Clock24Hour", "EyeColor", "DefaultLocation", "DistIsMetric", "Locale", "MasterVolume", "TempIsFahrenheit", "TimeZone", "ButtonWakeword" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Anki.Vector.ExternalInterface.ApiVersion), typeof(global::Anki.Vector.ExternalInterface.Volume), typeof(global::Anki.Vector.ExternalInterface.JdocType), typeof(global::Anki.Vector.ExternalInterface.JdocResolveMethod), typeof(global::Anki.Vector.ExternalInterface.RobotSetting), typeof(global::Anki.Vector.ExternalInterface.EyeColor), typeof(global::Anki.Vector.ExternalInterface.ButtonWakeWord), typeof(global::Anki.Vector.ExternalInterface.AccountSetting), typeof(global::Anki.Vector.ExternalInterface.ResultCode), typeof(global::Anki.Vector.ExternalInterface.UserEntitlement), }, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.RobotSettingsConfig), global::Anki.Vector.ExternalInterface.RobotSettingsConfig.Parser, new[]{ "Clock24Hour", "EyeColor", "DefaultLocation", "DistIsMetric", "Locale", "MasterVolume", "TempIsFahrenheit", "TimeZone", "ButtonWakeword" }, new[]{ "OneofClock24Hour", "OneofEyeColor", "OneofDefaultLocation", "OneofDistIsMetric", "OneofLocale", "OneofMasterVolume", "OneofTempIsFahrenheit", "OneofTimeZone", "OneofButtonWakeword" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.AccountSettingsConfig), global::Anki.Vector.ExternalInterface.AccountSettingsConfig.Parser, new[]{ "DataCollection", "AppLocale" }, new[]{ "OneofDataCollection", "OneofAppLocale" }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UserEntitlementsConfig), global::Anki.Vector.ExternalInterface.UserEntitlementsConfig.Parser, new[]{ "KickstarterEyes" }, new[]{ "OneofKickstarterEyes" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.Jdoc), global::Anki.Vector.ExternalInterface.Jdoc.Parser, new[]{ "DocVersion", "FmtVersion", "ClientMetadata", "JsonDoc" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.NamedJdoc), global::Anki.Vector.ExternalInterface.NamedJdoc.Parser, new[]{ "JdocType", "Doc" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.PullJdocsRequest), global::Anki.Vector.ExternalInterface.PullJdocsRequest.Parser, new[]{ "JdocTypes" }, null, null, null),
@@ -106,9 +111,10 @@ namespace Anki.Vector.ExternalInterface {
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UpdateSettingsResponse), global::Anki.Vector.ExternalInterface.UpdateSettingsResponse.Parser, new[]{ "Status", "Code", "Doc" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UpdateAccountSettingsRequest), global::Anki.Vector.ExternalInterface.UpdateAccountSettingsRequest.Parser, new[]{ "AccountSettings" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UpdateAccountSettingsResponse), global::Anki.Vector.ExternalInterface.UpdateAccountSettingsResponse.Parser, new[]{ "Status", "Code", "Doc" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.JdocsChanged), global::Anki.Vector.ExternalInterface.JdocsChanged.Parser, new[]{ "JdocTypes" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UserEntitlementsConfig), global::Anki.Vector.ExternalInterface.UserEntitlementsConfig.Parser, new[]{ "KickstarterEyes" }, new[]{ "OneofKickstarterEyes" }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UpdateUserEntitlementsRequest), global::Anki.Vector.ExternalInterface.UpdateUserEntitlementsRequest.Parser, new[]{ "UserEntitlements" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UpdateUserEntitlementsResponse), global::Anki.Vector.ExternalInterface.UpdateUserEntitlementsResponse.Parser, new[]{ "Status", "Code", "Doc" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.JdocsChanged), global::Anki.Vector.ExternalInterface.JdocsChanged.Parser, new[]{ "JdocTypes" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Anki.Vector.ExternalInterface.UpdateUserEntitlementsResponse), global::Anki.Vector.ExternalInterface.UpdateUserEntitlementsResponse.Parser, new[]{ "Status", "Code", "Doc" }, null, null, null)
           }));
     }
     #endregion
@@ -178,21 +184,18 @@ namespace Anki.Vector.ExternalInterface {
     [pbr::OriginalName("APP_LOCALE")] AppLocale = 1,
   }
 
-  public enum UserEntitlement {
-    [pbr::OriginalName("KICKSTARTER_EYES")] KickstarterEyes = 0,
-  }
-
   public enum ResultCode {
     [pbr::OriginalName("SETTINGS_ACCEPTED")] SettingsAccepted = 0,
     [pbr::OriginalName("ERROR_UPDATE_IN_PROGRESS")] ErrorUpdateInProgress = 1,
   }
 
+  public enum UserEntitlement {
+    [pbr::OriginalName("KICKSTARTER_EYES")] KickstarterEyes = 0,
+  }
+
   #endregion
 
   #region Messages
-  /// <summary>
-  /// Updated by wayne@codaris.com
-  /// </summary>
   public sealed partial class RobotSettingsConfig : pb::IMessage<RobotSettingsConfig> {
     private static readonly pb::MessageParser<RobotSettingsConfig> _parser = new pb::MessageParser<RobotSettingsConfig>(() => new RobotSettingsConfig());
     private pb::UnknownFieldSet _unknownFields;
@@ -218,15 +221,60 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public RobotSettingsConfig(RobotSettingsConfig other) : this() {
-      clock24Hour_ = other.clock24Hour_;
-      eyeColor_ = other.eyeColor_;
-      defaultLocation_ = other.defaultLocation_;
-      distIsMetric_ = other.distIsMetric_;
-      locale_ = other.locale_;
-      masterVolume_ = other.masterVolume_;
-      tempIsFahrenheit_ = other.tempIsFahrenheit_;
-      timeZone_ = other.timeZone_;
-      buttonWakeword_ = other.buttonWakeword_;
+      switch (other.OneofClock24HourCase) {
+        case OneofClock24HourOneofCase.Clock24Hour:
+          Clock24Hour = other.Clock24Hour;
+          break;
+      }
+
+      switch (other.OneofEyeColorCase) {
+        case OneofEyeColorOneofCase.EyeColor:
+          EyeColor = other.EyeColor;
+          break;
+      }
+
+      switch (other.OneofDefaultLocationCase) {
+        case OneofDefaultLocationOneofCase.DefaultLocation:
+          DefaultLocation = other.DefaultLocation;
+          break;
+      }
+
+      switch (other.OneofDistIsMetricCase) {
+        case OneofDistIsMetricOneofCase.DistIsMetric:
+          DistIsMetric = other.DistIsMetric;
+          break;
+      }
+
+      switch (other.OneofLocaleCase) {
+        case OneofLocaleOneofCase.Locale:
+          Locale = other.Locale;
+          break;
+      }
+
+      switch (other.OneofMasterVolumeCase) {
+        case OneofMasterVolumeOneofCase.MasterVolume:
+          MasterVolume = other.MasterVolume;
+          break;
+      }
+
+      switch (other.OneofTempIsFahrenheitCase) {
+        case OneofTempIsFahrenheitOneofCase.TempIsFahrenheit:
+          TempIsFahrenheit = other.TempIsFahrenheit;
+          break;
+      }
+
+      switch (other.OneofTimeZoneCase) {
+        case OneofTimeZoneOneofCase.TimeZone:
+          TimeZone = other.TimeZone;
+          break;
+      }
+
+      switch (other.OneofButtonWakewordCase) {
+        case OneofButtonWakewordOneofCase.ButtonWakeword:
+          ButtonWakeword = other.ButtonWakeword;
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -237,101 +285,263 @@ namespace Anki.Vector.ExternalInterface {
 
     /// <summary>Field number for the "clock_24_hour" field.</summary>
     public const int Clock24HourFieldNumber = 1;
-    private bool clock24Hour_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool Clock24Hour {
-      get { return clock24Hour_; }
+      get { return oneofClock24HourCase_ == OneofClock24HourOneofCase.Clock24Hour ? (bool) oneofClock24Hour_ : false; }
       set {
-        clock24Hour_ = value;
+        oneofClock24Hour_ = value;
+        oneofClock24HourCase_ = OneofClock24HourOneofCase.Clock24Hour;
       }
     }
 
     /// <summary>Field number for the "eye_color" field.</summary>
     public const int EyeColorFieldNumber = 2;
-    private global::Anki.Vector.ExternalInterface.EyeColor eyeColor_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.EyeColor EyeColor {
-      get { return eyeColor_; }
+      get { return oneofEyeColorCase_ == OneofEyeColorOneofCase.EyeColor ? (global::Anki.Vector.ExternalInterface.EyeColor) oneofEyeColor_ : 0; }
       set {
-        eyeColor_ = value;
+        oneofEyeColor_ = value;
+        oneofEyeColorCase_ = OneofEyeColorOneofCase.EyeColor;
       }
     }
 
     /// <summary>Field number for the "default_location" field.</summary>
     public const int DefaultLocationFieldNumber = 3;
-    private string defaultLocation_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string DefaultLocation {
-      get { return defaultLocation_; }
+      get { return oneofDefaultLocationCase_ == OneofDefaultLocationOneofCase.DefaultLocation ? (string) oneofDefaultLocation_ : ""; }
       set {
-        defaultLocation_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        oneofDefaultLocation_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        oneofDefaultLocationCase_ = OneofDefaultLocationOneofCase.DefaultLocation;
       }
     }
 
     /// <summary>Field number for the "dist_is_metric" field.</summary>
     public const int DistIsMetricFieldNumber = 4;
-    private bool distIsMetric_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool DistIsMetric {
-      get { return distIsMetric_; }
+      get { return oneofDistIsMetricCase_ == OneofDistIsMetricOneofCase.DistIsMetric ? (bool) oneofDistIsMetric_ : false; }
       set {
-        distIsMetric_ = value;
+        oneofDistIsMetric_ = value;
+        oneofDistIsMetricCase_ = OneofDistIsMetricOneofCase.DistIsMetric;
       }
     }
 
     /// <summary>Field number for the "locale" field.</summary>
     public const int LocaleFieldNumber = 5;
-    private string locale_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Locale {
-      get { return locale_; }
+      get { return oneofLocaleCase_ == OneofLocaleOneofCase.Locale ? (string) oneofLocale_ : ""; }
       set {
-        locale_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        oneofLocale_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        oneofLocaleCase_ = OneofLocaleOneofCase.Locale;
       }
     }
 
     /// <summary>Field number for the "master_volume" field.</summary>
     public const int MasterVolumeFieldNumber = 6;
-    private global::Anki.Vector.ExternalInterface.Volume masterVolume_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.Volume MasterVolume {
-      get { return masterVolume_; }
+      get { return oneofMasterVolumeCase_ == OneofMasterVolumeOneofCase.MasterVolume ? (global::Anki.Vector.ExternalInterface.Volume) oneofMasterVolume_ : 0; }
       set {
-        masterVolume_ = value;
+        oneofMasterVolume_ = value;
+        oneofMasterVolumeCase_ = OneofMasterVolumeOneofCase.MasterVolume;
       }
     }
 
     /// <summary>Field number for the "temp_is_fahrenheit" field.</summary>
     public const int TempIsFahrenheitFieldNumber = 7;
-    private bool tempIsFahrenheit_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public bool TempIsFahrenheit {
-      get { return tempIsFahrenheit_; }
+      get { return oneofTempIsFahrenheitCase_ == OneofTempIsFahrenheitOneofCase.TempIsFahrenheit ? (bool) oneofTempIsFahrenheit_ : false; }
       set {
-        tempIsFahrenheit_ = value;
+        oneofTempIsFahrenheit_ = value;
+        oneofTempIsFahrenheitCase_ = OneofTempIsFahrenheitOneofCase.TempIsFahrenheit;
       }
     }
 
     /// <summary>Field number for the "time_zone" field.</summary>
     public const int TimeZoneFieldNumber = 8;
-    private string timeZone_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string TimeZone {
-      get { return timeZone_; }
+      get { return oneofTimeZoneCase_ == OneofTimeZoneOneofCase.TimeZone ? (string) oneofTimeZone_ : ""; }
       set {
-        timeZone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        oneofTimeZone_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        oneofTimeZoneCase_ = OneofTimeZoneOneofCase.TimeZone;
       }
     }
 
     /// <summary>Field number for the "button_wakeword" field.</summary>
     public const int ButtonWakewordFieldNumber = 9;
-    private global::Anki.Vector.ExternalInterface.ButtonWakeWord buttonWakeword_ = 0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Anki.Vector.ExternalInterface.ButtonWakeWord ButtonWakeword {
-      get { return buttonWakeword_; }
+      get { return oneofButtonWakewordCase_ == OneofButtonWakewordOneofCase.ButtonWakeword ? (global::Anki.Vector.ExternalInterface.ButtonWakeWord) oneofButtonWakeword_ : 0; }
       set {
-        buttonWakeword_ = value;
+        oneofButtonWakeword_ = value;
+        oneofButtonWakewordCase_ = OneofButtonWakewordOneofCase.ButtonWakeword;
       }
+    }
+
+    private object oneofClock24Hour_;
+    /// <summary>Enum of possible cases for the "oneof_clock_24_hour" oneof.</summary>
+    public enum OneofClock24HourOneofCase {
+      None = 0,
+      Clock24Hour = 1,
+    }
+    private OneofClock24HourOneofCase oneofClock24HourCase_ = OneofClock24HourOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofClock24HourOneofCase OneofClock24HourCase {
+      get { return oneofClock24HourCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofClock24Hour() {
+      oneofClock24HourCase_ = OneofClock24HourOneofCase.None;
+      oneofClock24Hour_ = null;
+    }
+
+    private object oneofEyeColor_;
+    /// <summary>Enum of possible cases for the "oneof_eye_color" oneof.</summary>
+    public enum OneofEyeColorOneofCase {
+      None = 0,
+      EyeColor = 2,
+    }
+    private OneofEyeColorOneofCase oneofEyeColorCase_ = OneofEyeColorOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofEyeColorOneofCase OneofEyeColorCase {
+      get { return oneofEyeColorCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofEyeColor() {
+      oneofEyeColorCase_ = OneofEyeColorOneofCase.None;
+      oneofEyeColor_ = null;
+    }
+
+    private object oneofDefaultLocation_;
+    /// <summary>Enum of possible cases for the "oneof_default_location" oneof.</summary>
+    public enum OneofDefaultLocationOneofCase {
+      None = 0,
+      DefaultLocation = 3,
+    }
+    private OneofDefaultLocationOneofCase oneofDefaultLocationCase_ = OneofDefaultLocationOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofDefaultLocationOneofCase OneofDefaultLocationCase {
+      get { return oneofDefaultLocationCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofDefaultLocation() {
+      oneofDefaultLocationCase_ = OneofDefaultLocationOneofCase.None;
+      oneofDefaultLocation_ = null;
+    }
+
+    private object oneofDistIsMetric_;
+    /// <summary>Enum of possible cases for the "oneof_dist_is_metric" oneof.</summary>
+    public enum OneofDistIsMetricOneofCase {
+      None = 0,
+      DistIsMetric = 4,
+    }
+    private OneofDistIsMetricOneofCase oneofDistIsMetricCase_ = OneofDistIsMetricOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofDistIsMetricOneofCase OneofDistIsMetricCase {
+      get { return oneofDistIsMetricCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofDistIsMetric() {
+      oneofDistIsMetricCase_ = OneofDistIsMetricOneofCase.None;
+      oneofDistIsMetric_ = null;
+    }
+
+    private object oneofLocale_;
+    /// <summary>Enum of possible cases for the "oneof_locale" oneof.</summary>
+    public enum OneofLocaleOneofCase {
+      None = 0,
+      Locale = 5,
+    }
+    private OneofLocaleOneofCase oneofLocaleCase_ = OneofLocaleOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofLocaleOneofCase OneofLocaleCase {
+      get { return oneofLocaleCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofLocale() {
+      oneofLocaleCase_ = OneofLocaleOneofCase.None;
+      oneofLocale_ = null;
+    }
+
+    private object oneofMasterVolume_;
+    /// <summary>Enum of possible cases for the "oneof_master_volume" oneof.</summary>
+    public enum OneofMasterVolumeOneofCase {
+      None = 0,
+      MasterVolume = 6,
+    }
+    private OneofMasterVolumeOneofCase oneofMasterVolumeCase_ = OneofMasterVolumeOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofMasterVolumeOneofCase OneofMasterVolumeCase {
+      get { return oneofMasterVolumeCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofMasterVolume() {
+      oneofMasterVolumeCase_ = OneofMasterVolumeOneofCase.None;
+      oneofMasterVolume_ = null;
+    }
+
+    private object oneofTempIsFahrenheit_;
+    /// <summary>Enum of possible cases for the "oneof_temp_is_fahrenheit" oneof.</summary>
+    public enum OneofTempIsFahrenheitOneofCase {
+      None = 0,
+      TempIsFahrenheit = 7,
+    }
+    private OneofTempIsFahrenheitOneofCase oneofTempIsFahrenheitCase_ = OneofTempIsFahrenheitOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofTempIsFahrenheitOneofCase OneofTempIsFahrenheitCase {
+      get { return oneofTempIsFahrenheitCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofTempIsFahrenheit() {
+      oneofTempIsFahrenheitCase_ = OneofTempIsFahrenheitOneofCase.None;
+      oneofTempIsFahrenheit_ = null;
+    }
+
+    private object oneofTimeZone_;
+    /// <summary>Enum of possible cases for the "oneof_time_zone" oneof.</summary>
+    public enum OneofTimeZoneOneofCase {
+      None = 0,
+      TimeZone = 8,
+    }
+    private OneofTimeZoneOneofCase oneofTimeZoneCase_ = OneofTimeZoneOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofTimeZoneOneofCase OneofTimeZoneCase {
+      get { return oneofTimeZoneCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofTimeZone() {
+      oneofTimeZoneCase_ = OneofTimeZoneOneofCase.None;
+      oneofTimeZone_ = null;
+    }
+
+    private object oneofButtonWakeword_;
+    /// <summary>Enum of possible cases for the "oneof_button_wakeword" oneof.</summary>
+    public enum OneofButtonWakewordOneofCase {
+      None = 0,
+      ButtonWakeword = 9,
+    }
+    private OneofButtonWakewordOneofCase oneofButtonWakewordCase_ = OneofButtonWakewordOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofButtonWakewordOneofCase OneofButtonWakewordCase {
+      get { return oneofButtonWakewordCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofButtonWakeword() {
+      oneofButtonWakewordCase_ = OneofButtonWakewordOneofCase.None;
+      oneofButtonWakeword_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -356,21 +566,39 @@ namespace Anki.Vector.ExternalInterface {
       if (TempIsFahrenheit != other.TempIsFahrenheit) return false;
       if (TimeZone != other.TimeZone) return false;
       if (ButtonWakeword != other.ButtonWakeword) return false;
+      if (OneofClock24HourCase != other.OneofClock24HourCase) return false;
+      if (OneofEyeColorCase != other.OneofEyeColorCase) return false;
+      if (OneofDefaultLocationCase != other.OneofDefaultLocationCase) return false;
+      if (OneofDistIsMetricCase != other.OneofDistIsMetricCase) return false;
+      if (OneofLocaleCase != other.OneofLocaleCase) return false;
+      if (OneofMasterVolumeCase != other.OneofMasterVolumeCase) return false;
+      if (OneofTempIsFahrenheitCase != other.OneofTempIsFahrenheitCase) return false;
+      if (OneofTimeZoneCase != other.OneofTimeZoneCase) return false;
+      if (OneofButtonWakewordCase != other.OneofButtonWakewordCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (Clock24Hour != false) hash ^= Clock24Hour.GetHashCode();
-      if (EyeColor != 0) hash ^= EyeColor.GetHashCode();
-      if (DefaultLocation.Length != 0) hash ^= DefaultLocation.GetHashCode();
-      if (DistIsMetric != false) hash ^= DistIsMetric.GetHashCode();
-      if (Locale.Length != 0) hash ^= Locale.GetHashCode();
-      if (MasterVolume != 0) hash ^= MasterVolume.GetHashCode();
-      if (TempIsFahrenheit != false) hash ^= TempIsFahrenheit.GetHashCode();
-      if (TimeZone.Length != 0) hash ^= TimeZone.GetHashCode();
-      if (ButtonWakeword != 0) hash ^= ButtonWakeword.GetHashCode();
+      if (oneofClock24HourCase_ == OneofClock24HourOneofCase.Clock24Hour) hash ^= Clock24Hour.GetHashCode();
+      if (oneofEyeColorCase_ == OneofEyeColorOneofCase.EyeColor) hash ^= EyeColor.GetHashCode();
+      if (oneofDefaultLocationCase_ == OneofDefaultLocationOneofCase.DefaultLocation) hash ^= DefaultLocation.GetHashCode();
+      if (oneofDistIsMetricCase_ == OneofDistIsMetricOneofCase.DistIsMetric) hash ^= DistIsMetric.GetHashCode();
+      if (oneofLocaleCase_ == OneofLocaleOneofCase.Locale) hash ^= Locale.GetHashCode();
+      if (oneofMasterVolumeCase_ == OneofMasterVolumeOneofCase.MasterVolume) hash ^= MasterVolume.GetHashCode();
+      if (oneofTempIsFahrenheitCase_ == OneofTempIsFahrenheitOneofCase.TempIsFahrenheit) hash ^= TempIsFahrenheit.GetHashCode();
+      if (oneofTimeZoneCase_ == OneofTimeZoneOneofCase.TimeZone) hash ^= TimeZone.GetHashCode();
+      if (oneofButtonWakewordCase_ == OneofButtonWakewordOneofCase.ButtonWakeword) hash ^= ButtonWakeword.GetHashCode();
+      hash ^= (int) oneofClock24HourCase_;
+      hash ^= (int) oneofEyeColorCase_;
+      hash ^= (int) oneofDefaultLocationCase_;
+      hash ^= (int) oneofDistIsMetricCase_;
+      hash ^= (int) oneofLocaleCase_;
+      hash ^= (int) oneofMasterVolumeCase_;
+      hash ^= (int) oneofTempIsFahrenheitCase_;
+      hash ^= (int) oneofTimeZoneCase_;
+      hash ^= (int) oneofButtonWakewordCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -384,39 +612,39 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Clock24Hour != false) {
+      if (oneofClock24HourCase_ == OneofClock24HourOneofCase.Clock24Hour) {
         output.WriteRawTag(8);
         output.WriteBool(Clock24Hour);
       }
-      if (EyeColor != 0) {
+      if (oneofEyeColorCase_ == OneofEyeColorOneofCase.EyeColor) {
         output.WriteRawTag(16);
         output.WriteEnum((int) EyeColor);
       }
-      if (DefaultLocation.Length != 0) {
+      if (oneofDefaultLocationCase_ == OneofDefaultLocationOneofCase.DefaultLocation) {
         output.WriteRawTag(26);
         output.WriteString(DefaultLocation);
       }
-      if (DistIsMetric != false) {
+      if (oneofDistIsMetricCase_ == OneofDistIsMetricOneofCase.DistIsMetric) {
         output.WriteRawTag(32);
         output.WriteBool(DistIsMetric);
       }
-      if (Locale.Length != 0) {
+      if (oneofLocaleCase_ == OneofLocaleOneofCase.Locale) {
         output.WriteRawTag(42);
         output.WriteString(Locale);
       }
-      if (MasterVolume != 0) {
+      if (oneofMasterVolumeCase_ == OneofMasterVolumeOneofCase.MasterVolume) {
         output.WriteRawTag(48);
         output.WriteEnum((int) MasterVolume);
       }
-      if (TempIsFahrenheit != false) {
+      if (oneofTempIsFahrenheitCase_ == OneofTempIsFahrenheitOneofCase.TempIsFahrenheit) {
         output.WriteRawTag(56);
         output.WriteBool(TempIsFahrenheit);
       }
-      if (TimeZone.Length != 0) {
+      if (oneofTimeZoneCase_ == OneofTimeZoneOneofCase.TimeZone) {
         output.WriteRawTag(66);
         output.WriteString(TimeZone);
       }
-      if (ButtonWakeword != 0) {
+      if (oneofButtonWakewordCase_ == OneofButtonWakewordOneofCase.ButtonWakeword) {
         output.WriteRawTag(72);
         output.WriteEnum((int) ButtonWakeword);
       }
@@ -428,31 +656,31 @@ namespace Anki.Vector.ExternalInterface {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (Clock24Hour != false) {
+      if (oneofClock24HourCase_ == OneofClock24HourOneofCase.Clock24Hour) {
         size += 1 + 1;
       }
-      if (EyeColor != 0) {
+      if (oneofEyeColorCase_ == OneofEyeColorOneofCase.EyeColor) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) EyeColor);
       }
-      if (DefaultLocation.Length != 0) {
+      if (oneofDefaultLocationCase_ == OneofDefaultLocationOneofCase.DefaultLocation) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(DefaultLocation);
       }
-      if (DistIsMetric != false) {
+      if (oneofDistIsMetricCase_ == OneofDistIsMetricOneofCase.DistIsMetric) {
         size += 1 + 1;
       }
-      if (Locale.Length != 0) {
+      if (oneofLocaleCase_ == OneofLocaleOneofCase.Locale) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Locale);
       }
-      if (MasterVolume != 0) {
+      if (oneofMasterVolumeCase_ == OneofMasterVolumeOneofCase.MasterVolume) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MasterVolume);
       }
-      if (TempIsFahrenheit != false) {
+      if (oneofTempIsFahrenheitCase_ == OneofTempIsFahrenheitOneofCase.TempIsFahrenheit) {
         size += 1 + 1;
       }
-      if (TimeZone.Length != 0) {
+      if (oneofTimeZoneCase_ == OneofTimeZoneOneofCase.TimeZone) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(TimeZone);
       }
-      if (ButtonWakeword != 0) {
+      if (oneofButtonWakewordCase_ == OneofButtonWakewordOneofCase.ButtonWakeword) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ButtonWakeword);
       }
       if (_unknownFields != null) {
@@ -466,33 +694,60 @@ namespace Anki.Vector.ExternalInterface {
       if (other == null) {
         return;
       }
-      if (other.Clock24Hour != false) {
-        Clock24Hour = other.Clock24Hour;
+      switch (other.OneofClock24HourCase) {
+        case OneofClock24HourOneofCase.Clock24Hour:
+          Clock24Hour = other.Clock24Hour;
+          break;
       }
-      if (other.EyeColor != 0) {
-        EyeColor = other.EyeColor;
+
+      switch (other.OneofEyeColorCase) {
+        case OneofEyeColorOneofCase.EyeColor:
+          EyeColor = other.EyeColor;
+          break;
       }
-      if (other.DefaultLocation.Length != 0) {
-        DefaultLocation = other.DefaultLocation;
+
+      switch (other.OneofDefaultLocationCase) {
+        case OneofDefaultLocationOneofCase.DefaultLocation:
+          DefaultLocation = other.DefaultLocation;
+          break;
       }
-      if (other.DistIsMetric != false) {
-        DistIsMetric = other.DistIsMetric;
+
+      switch (other.OneofDistIsMetricCase) {
+        case OneofDistIsMetricOneofCase.DistIsMetric:
+          DistIsMetric = other.DistIsMetric;
+          break;
       }
-      if (other.Locale.Length != 0) {
-        Locale = other.Locale;
+
+      switch (other.OneofLocaleCase) {
+        case OneofLocaleOneofCase.Locale:
+          Locale = other.Locale;
+          break;
       }
-      if (other.MasterVolume != 0) {
-        MasterVolume = other.MasterVolume;
+
+      switch (other.OneofMasterVolumeCase) {
+        case OneofMasterVolumeOneofCase.MasterVolume:
+          MasterVolume = other.MasterVolume;
+          break;
       }
-      if (other.TempIsFahrenheit != false) {
-        TempIsFahrenheit = other.TempIsFahrenheit;
+
+      switch (other.OneofTempIsFahrenheitCase) {
+        case OneofTempIsFahrenheitOneofCase.TempIsFahrenheit:
+          TempIsFahrenheit = other.TempIsFahrenheit;
+          break;
       }
-      if (other.TimeZone.Length != 0) {
-        TimeZone = other.TimeZone;
+
+      switch (other.OneofTimeZoneCase) {
+        case OneofTimeZoneOneofCase.TimeZone:
+          TimeZone = other.TimeZone;
+          break;
       }
-      if (other.ButtonWakeword != 0) {
-        ButtonWakeword = other.ButtonWakeword;
+
+      switch (other.OneofButtonWakewordCase) {
+        case OneofButtonWakewordOneofCase.ButtonWakeword:
+          ButtonWakeword = other.ButtonWakeword;
+          break;
       }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -509,7 +764,8 @@ namespace Anki.Vector.ExternalInterface {
             break;
           }
           case 16: {
-            eyeColor_ = (global::Anki.Vector.ExternalInterface.EyeColor) input.ReadEnum();
+            oneofEyeColor_ = input.ReadEnum();
+            oneofEyeColorCase_ = OneofEyeColorOneofCase.EyeColor;
             break;
           }
           case 26: {
@@ -525,7 +781,8 @@ namespace Anki.Vector.ExternalInterface {
             break;
           }
           case 48: {
-            masterVolume_ = (global::Anki.Vector.ExternalInterface.Volume) input.ReadEnum();
+            oneofMasterVolume_ = input.ReadEnum();
+            oneofMasterVolumeCase_ = OneofMasterVolumeOneofCase.MasterVolume;
             break;
           }
           case 56: {
@@ -537,7 +794,8 @@ namespace Anki.Vector.ExternalInterface {
             break;
           }
           case 72: {
-            buttonWakeword_ = (global::Anki.Vector.ExternalInterface.ButtonWakeWord) input.ReadEnum();
+            oneofButtonWakeword_ = input.ReadEnum();
+            oneofButtonWakewordCase_ = OneofButtonWakewordOneofCase.ButtonWakeword;
             break;
           }
         }
@@ -759,163 +1017,6 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
-  public sealed partial class UserEntitlementsConfig : pb::IMessage<UserEntitlementsConfig> {
-    private static readonly pb::MessageParser<UserEntitlementsConfig> _parser = new pb::MessageParser<UserEntitlementsConfig>(() => new UserEntitlementsConfig());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UserEntitlementsConfig> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[2]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserEntitlementsConfig() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserEntitlementsConfig(UserEntitlementsConfig other) : this() {
-      switch (other.OneofKickstarterEyesCase) {
-        case OneofKickstarterEyesOneofCase.KickstarterEyes:
-          KickstarterEyes = other.KickstarterEyes;
-          break;
-      }
-
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserEntitlementsConfig Clone() {
-      return new UserEntitlementsConfig(this);
-    }
-
-    /// <summary>Field number for the "kickstarter_eyes" field.</summary>
-    public const int KickstarterEyesFieldNumber = 1;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool KickstarterEyes {
-      get { return oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes ? (bool) oneofKickstarterEyes_ : false; }
-      set {
-        oneofKickstarterEyes_ = value;
-        oneofKickstarterEyesCase_ = OneofKickstarterEyesOneofCase.KickstarterEyes;
-      }
-    }
-
-    private object oneofKickstarterEyes_;
-    /// <summary>Enum of possible cases for the "oneof_kickstarter_eyes" oneof.</summary>
-    public enum OneofKickstarterEyesOneofCase {
-      None = 0,
-      KickstarterEyes = 1,
-    }
-    private OneofKickstarterEyesOneofCase oneofKickstarterEyesCase_ = OneofKickstarterEyesOneofCase.None;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public OneofKickstarterEyesOneofCase OneofKickstarterEyesCase {
-      get { return oneofKickstarterEyesCase_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void ClearOneofKickstarterEyes() {
-      oneofKickstarterEyesCase_ = OneofKickstarterEyesOneofCase.None;
-      oneofKickstarterEyes_ = null;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as UserEntitlementsConfig);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UserEntitlementsConfig other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (KickstarterEyes != other.KickstarterEyes) return false;
-      if (OneofKickstarterEyesCase != other.OneofKickstarterEyesCase) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes) hash ^= KickstarterEyes.GetHashCode();
-      hash ^= (int) oneofKickstarterEyesCase_;
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      if (oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes) {
-        output.WriteRawTag(8);
-        output.WriteBool(KickstarterEyes);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      if (oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UserEntitlementsConfig other) {
-      if (other == null) {
-        return;
-      }
-      switch (other.OneofKickstarterEyesCase) {
-        case OneofKickstarterEyesOneofCase.KickstarterEyes:
-          KickstarterEyes = other.KickstarterEyes;
-          break;
-      }
-
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            KickstarterEyes = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
   public sealed partial class Jdoc : pb::IMessage<Jdoc> {
     private static readonly pb::MessageParser<Jdoc> _parser = new pb::MessageParser<Jdoc>(() => new Jdoc());
     private pb::UnknownFieldSet _unknownFields;
@@ -924,7 +1025,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1137,7 +1238,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1300,7 +1401,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1422,7 +1523,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1577,7 +1678,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1712,7 +1813,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1909,7 +2010,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2044,7 +2145,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2233,6 +2334,285 @@ namespace Anki.Vector.ExternalInterface {
 
   }
 
+  public sealed partial class JdocsChanged : pb::IMessage<JdocsChanged> {
+    private static readonly pb::MessageParser<JdocsChanged> _parser = new pb::MessageParser<JdocsChanged>(() => new JdocsChanged());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<JdocsChanged> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public JdocsChanged() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public JdocsChanged(JdocsChanged other) : this() {
+      jdocTypes_ = other.jdocTypes_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public JdocsChanged Clone() {
+      return new JdocsChanged(this);
+    }
+
+    /// <summary>Field number for the "jdoc_types" field.</summary>
+    public const int JdocTypesFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::Anki.Vector.ExternalInterface.JdocType> _repeated_jdocTypes_codec
+        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Anki.Vector.ExternalInterface.JdocType) x);
+    private readonly pbc::RepeatedField<global::Anki.Vector.ExternalInterface.JdocType> jdocTypes_ = new pbc::RepeatedField<global::Anki.Vector.ExternalInterface.JdocType>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::Anki.Vector.ExternalInterface.JdocType> JdocTypes {
+      get { return jdocTypes_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as JdocsChanged);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(JdocsChanged other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!jdocTypes_.Equals(other.jdocTypes_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= jdocTypes_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      jdocTypes_.WriteTo(output, _repeated_jdocTypes_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      size += jdocTypes_.CalculateSize(_repeated_jdocTypes_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(JdocsChanged other) {
+      if (other == null) {
+        return;
+      }
+      jdocTypes_.Add(other.jdocTypes_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10:
+          case 8: {
+            jdocTypes_.AddEntriesFrom(input, _repeated_jdocTypes_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class UserEntitlementsConfig : pb::IMessage<UserEntitlementsConfig> {
+    private static readonly pb::MessageParser<UserEntitlementsConfig> _parser = new pb::MessageParser<UserEntitlementsConfig>(() => new UserEntitlementsConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<UserEntitlementsConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserEntitlementsConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserEntitlementsConfig(UserEntitlementsConfig other) : this() {
+      switch (other.OneofKickstarterEyesCase) {
+        case OneofKickstarterEyesOneofCase.KickstarterEyes:
+          KickstarterEyes = other.KickstarterEyes;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public UserEntitlementsConfig Clone() {
+      return new UserEntitlementsConfig(this);
+    }
+
+    /// <summary>Field number for the "kickstarter_eyes" field.</summary>
+    public const int KickstarterEyesFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool KickstarterEyes {
+      get { return oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes ? (bool) oneofKickstarterEyes_ : false; }
+      set {
+        oneofKickstarterEyes_ = value;
+        oneofKickstarterEyesCase_ = OneofKickstarterEyesOneofCase.KickstarterEyes;
+      }
+    }
+
+    private object oneofKickstarterEyes_;
+    /// <summary>Enum of possible cases for the "oneof_kickstarter_eyes" oneof.</summary>
+    public enum OneofKickstarterEyesOneofCase {
+      None = 0,
+      KickstarterEyes = 1,
+    }
+    private OneofKickstarterEyesOneofCase oneofKickstarterEyesCase_ = OneofKickstarterEyesOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public OneofKickstarterEyesOneofCase OneofKickstarterEyesCase {
+      get { return oneofKickstarterEyesCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearOneofKickstarterEyes() {
+      oneofKickstarterEyesCase_ = OneofKickstarterEyesOneofCase.None;
+      oneofKickstarterEyes_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as UserEntitlementsConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(UserEntitlementsConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (KickstarterEyes != other.KickstarterEyes) return false;
+      if (OneofKickstarterEyesCase != other.OneofKickstarterEyesCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes) hash ^= KickstarterEyes.GetHashCode();
+      hash ^= (int) oneofKickstarterEyesCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes) {
+        output.WriteRawTag(8);
+        output.WriteBool(KickstarterEyes);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (oneofKickstarterEyesCase_ == OneofKickstarterEyesOneofCase.KickstarterEyes) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(UserEntitlementsConfig other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.OneofKickstarterEyesCase) {
+        case OneofKickstarterEyesOneofCase.KickstarterEyes:
+          KickstarterEyes = other.KickstarterEyes;
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            KickstarterEyes = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class UpdateUserEntitlementsRequest : pb::IMessage<UpdateUserEntitlementsRequest> {
     private static readonly pb::MessageParser<UpdateUserEntitlementsRequest> _parser = new pb::MessageParser<UpdateUserEntitlementsRequest>(() => new UpdateUserEntitlementsRequest());
     private pb::UnknownFieldSet _unknownFields;
@@ -2241,7 +2621,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2376,7 +2756,7 @@ namespace Anki.Vector.ExternalInterface {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2557,128 +2937,6 @@ namespace Anki.Vector.ExternalInterface {
               doc_ = new global::Anki.Vector.ExternalInterface.Jdoc();
             }
             input.ReadMessage(doc_);
-            break;
-          }
-        }
-      }
-    }
-
-  }
-
-  public sealed partial class JdocsChanged : pb::IMessage<JdocsChanged> {
-    private static readonly pb::MessageParser<JdocsChanged> _parser = new pb::MessageParser<JdocsChanged>(() => new JdocsChanged());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<JdocsChanged> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::Anki.Vector.ExternalInterface.SettingsReflection.Descriptor.MessageTypes[13]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public JdocsChanged() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public JdocsChanged(JdocsChanged other) : this() {
-      jdocTypes_ = other.jdocTypes_.Clone();
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public JdocsChanged Clone() {
-      return new JdocsChanged(this);
-    }
-
-    /// <summary>Field number for the "jdoc_types" field.</summary>
-    public const int JdocTypesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Anki.Vector.ExternalInterface.JdocType> _repeated_jdocTypes_codec
-        = pb::FieldCodec.ForEnum(10, x => (int) x, x => (global::Anki.Vector.ExternalInterface.JdocType) x);
-    private readonly pbc::RepeatedField<global::Anki.Vector.ExternalInterface.JdocType> jdocTypes_ = new pbc::RepeatedField<global::Anki.Vector.ExternalInterface.JdocType>();
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public pbc::RepeatedField<global::Anki.Vector.ExternalInterface.JdocType> JdocTypes {
-      get { return jdocTypes_; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override bool Equals(object other) {
-      return Equals(other as JdocsChanged);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(JdocsChanged other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if(!jdocTypes_.Equals(other.jdocTypes_)) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override int GetHashCode() {
-      int hash = 1;
-      hash ^= jdocTypes_.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void WriteTo(pb::CodedOutputStream output) {
-      jdocTypes_.WriteTo(output, _repeated_jdocTypes_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int CalculateSize() {
-      int size = 0;
-      size += jdocTypes_.CalculateSize(_repeated_jdocTypes_codec);
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(JdocsChanged other) {
-      if (other == null) {
-        return;
-      }
-      jdocTypes_.Add(other.jdocTypes_);
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(pb::CodedInputStream input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 10:
-          case 8: {
-            jdocTypes_.AddEntriesFrom(input, _repeated_jdocTypes_codec);
             break;
           }
         }
