@@ -241,12 +241,48 @@ namespace Anki.Vector
                             throw new VectorAuthenticationException(VectorAuthenticationFailureType.Login, "Invalid response from Anki accounts API", ex);
                         }
                     }
-                } 
+                }
                 catch (Exception ex)
                 {
                     if (ex is VectorAuthenticationException) throw;
                     throw new VectorAuthenticationException(VectorAuthenticationFailureType.Login, "Failure to connect to Anki accounts API", ex);
                 }
+            }
+        }
+
+
+        /// <summary>
+        /// Checks the Robot Availability
+        /// </summary>
+        /// <param name="certificate">The SSL certificate for the robot.</param>
+        /// <param name="robotName">Name of the robot.</param>
+        /// <param name="host">The host name or IP address with optional port.</param>
+        /// <returns>
+        /// A task that represents the asynchronous operation; the task result contains the authentication token.
+        /// </returns>
+        public static async Task<bool> IsRobotReachable(string certificate, string robotName, string host)
+        {
+            //if (string.IsNullOrEmpty(certificate)) throw new ArgumentException("SSL certificate must be provided.", nameof(certificate));
+            if (string.IsNullOrEmpty(robotName)) throw new ArgumentException("Robot name must be provided.", "Robot Name");
+            if (!RobotNameIsValid(robotName)) throw new ArgumentException("Robot name is not in the correct format.", "Robot Name");
+            if (string.IsNullOrWhiteSpace(host)) throw new ArgumentNullException(nameof(host), "Host must be provided.");
+
+            Client client = null;
+            try
+            {
+                try
+                {
+                    client = await Client.ConnectForAuth(certificate, host, robotName, 15_000).ConfigureAwait(false);
+                    return (client != null);
+                }
+                catch (Exception ex)
+                {
+                    throw new VectorAuthenticationException(VectorAuthenticationFailureType.Connection, "Unable to establish a connection to Vector.", ex);
+                }
+            }
+            finally
+            {
+                client?.Dispose();
             }
         }
 

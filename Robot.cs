@@ -251,6 +251,11 @@ namespace Anki.Vector
         public Version FirmwareVersion { get; private set; }
 
         /// <summary>
+        /// Get the connected robot Name.  Populated when connected.
+        /// </summary>
+        public string RobotName { get; private set; }
+
+        /// <summary>
         /// The timeout for calls and connections in milliseconds
         /// </summary>
         internal const int DefaultConnectionTimeout = 5_000;
@@ -512,6 +517,8 @@ namespace Anki.Vector
             {
                 connectionTask = Client.Connect(robotConfiguration, ipAddress, timeout);
             }
+
+            RobotName = robotConfiguration.RobotName;
 
             // Start the event loop
             await StartConnection(await connectionTask.ConfigureAwait(false)).ConfigureAwait(false);
@@ -796,6 +803,7 @@ namespace Anki.Vector
             Proximity = new ProximitySensorData();
             RightWheelSpeedMmps = 0;
             Touch = new TouchSensorData();
+            RobotName = string.Empty;
 
             client.Dispose();
             client = null;
