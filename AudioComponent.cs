@@ -31,6 +31,20 @@ namespace Anki.Vector
         High = 4
     }
 
+    public enum AudioProcessingMode
+    {
+        /// <summary>Error value</summary>
+        AudioUnknown = 0,
+        /// <summary>Deactivates audio SDK mode</summary>
+        AudioOff = 1,
+        /// <summary>Unprocessed single microphone data - most performant on robot</summary>
+        AudioFastMode = 2,
+        /// <summary>Beamforming support for focusing on specific direction - sounds cleanest</summary>
+        AudioDirectionalMode = 3,
+        /// <summary>Multi-microphone non-beamforming - best for voice detection programs</summary>
+        AudioVoiceDetectMode = 4,
+    }
+
     /// <summary>
     /// The playback result
     /// </summary>
@@ -48,7 +62,7 @@ namespace Anki.Vector
 
     /// <summary>
     /// Support for Vector’s speakers
-    /// <para>Vector's speakers can be used for playing user-provided audio.  You can use the <see cref="PlayStream(Stream, uint, uint)"/> method to play a stream of 
+    /// <para>Vector's speakers can be used for playing user-provided audio.  You can use the <see cref="PlayStream(Stream, uint, uint)"/> method to play a stream of
     /// 16bit mono audio data.</para>
     /// </summary>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1001:Types that own disposable fields should be disposable", Justification = "Component is disposed by Teardown method.")]
@@ -98,7 +112,6 @@ namespace Anki.Vector
         /// Occurs when audio received.
         /// </summary>
         [EditorBrowsable(EditorBrowsableState.Never)]
-        [Obsolete("The audio feed on Vector was never enabled", true)]
         public event EventHandler<AudioReceivedEventArgs> AudioReceived;
 
         /// <summary>
@@ -113,14 +126,30 @@ namespace Anki.Vector
         public bool IsPlaybackActive => playbackFeed.IsActive;
 
         /// <summary>
+        /// Request how the robot should process and send audio
+        /// </summary>
+        /// <param name="audioProcessingMode">The robot can process audio in a variety of ways</param>
+        /// <returns>A task that represents the asynchronous operation; the task result contains the result from the robot.</returns>
+        [EditorBrowsable(EditorBrowsableState.Never)]
+        [Obsolete("Waiting for DDL to expose the external interface method...")]
+        public async Task<StatusCode> SetAudioMode(AudioProcessingMode audioProcessingMode)
+        {
+            //var response = await Robot.RunMethod(client => client.AudioRequestTypeAsync(new AudioSendModeRequest()
+            //{
+            //    Mode = (ExternalInterface.AudioProcessingMode)audioProcessingMode
+            //})).ConfigureAwait(false);
+            //return response.Status.Code.Convert();
+            return StatusCode.NotFound;
+        }
+
+        /// <summary>
         /// Starts the audio feed.  The feed will run in a background thread and raise the <see cref="AudioReceived" /> event for each received image.
         /// </summary>
         /// <returns>A task that represents the asynchronous operation.</returns>
-        [Obsolete("The audio feed on Vector was never enabled", true)]
         [EditorBrowsable(EditorBrowsableState.Never)]
         public async Task StartAudioFeed()
         {
-            await audioFeed.Start().ConfigureAwait(false); 
+            await audioFeed.Start().ConfigureAwait(false);
             OnPropertyChanged(nameof(IsAudioFeedActive));
         }
 
