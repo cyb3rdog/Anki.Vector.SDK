@@ -134,12 +134,16 @@ namespace Anki.Vector
                     throw new VectorInvalidVersionException("Your SDK version is not compatible with Vector’s version.");
                 }
             }
-            catch (Exception)
+            catch (RpcException rpcError)
             {
                 client?.Dispose();
-                throw;
+                throw TranslateGrpcException(rpcError);
             }
-
+            catch (Exception error)
+            {
+                client?.Dispose();
+                throw error;
+            }
             return client;
         }
 
@@ -303,13 +307,13 @@ namespace Anki.Vector
                 case Grpc.Core.StatusCode.Cancelled:
                     if (grpcException.Status.Detail == "Received http2 header with status: 401")
                     {
-                        return new VectorUnauthenticatedException("Failed to authenticate communication with Vector.", grpcException);
+                        return new VectorUnauthenticatedException("Authentication Failed. Please check your connection configuration.", grpcException);
                     }
                     return new TaskCanceledException("Operation was cancelled", grpcException);
                 case Grpc.Core.StatusCode.DeadlineExceeded:
                     return new VectorTimeoutException("Communication with Vector timed out", grpcException);
                 case Grpc.Core.StatusCode.Unauthenticated:
-                    return new VectorUnauthenticatedException("Failed to authenticate communication with Vector.", grpcException);
+                    return new VectorUnauthenticatedException("Authentication Failed. Please check your connection configuration.", grpcException);
                 case Grpc.Core.StatusCode.Unavailable:
                     return new VectorUnavailableException("Unable to reach Vector.", grpcException);
                 case Grpc.Core.StatusCode.Unimplemented:
