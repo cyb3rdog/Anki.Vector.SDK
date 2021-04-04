@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Anki.Vector.Exceptions;
@@ -188,6 +189,26 @@ namespace Anki.Vector
                     throw new VectorAuthenticationException(VectorAuthenticationFailureType.SerialNumber, ex.Message, ex);
                 }
             }
+        }
+
+        /// <summary>
+        /// Validates the Vector's Certificate against the provided robot neme
+        /// </summary>
+        /// <param name="certificate">The Vector's certificate.</param>
+        /// <param name="robotName">The Vector's robot name.</param>
+        /// <returns>True for valid certificate.</returns>
+        public static bool IsCertificateValid(string certificate, string robotName)
+        {
+            // Serial number must be provided
+            if (string.IsNullOrEmpty(certificate)) throw new ArgumentException("Certificate must be provided.", nameof(certificate));
+            if (string.IsNullOrEmpty(robotName)) throw new ArgumentException("Certificate must be provided.", nameof(robotName));
+
+            string certBytes = certificate.Replace("-----BEGIN CERTIFICATE-----", "").Replace("-----END CERTIFICATE-----", string.Empty);
+            X509Certificate2 x509certificate = new X509Certificate2(Convert.FromBase64String(certBytes));
+            return (x509certificate != null) ? x509certificate.GetNameInfo(X509NameType.SimpleName, false) == robotName ||
+                    x509certificate.GetNameInfo(X509NameType.DnsName, false) == robotName ||
+                    x509certificate.GetNameInfo(X509NameType.DnsFromAlternativeName, false) == robotName
+                : false;
         }
 
         /// <summary>
