@@ -56,7 +56,7 @@ namespace Anki.Vector.Types
         /// <summary>
         /// Initializes a new instance of the <see cref="AlexaAuthStates"/> class.
         /// </summary>
-        /// <param name="e">The e.</param>
+        /// <param name="alexaAuthStateResponse"></param>
         internal AlexaAuthStatus(ExternalInterface.AlexaAuthStateResponse alexaAuthStateResponse)
         {
             AuthState = (AlexaAuthState)alexaAuthStateResponse.AuthState;

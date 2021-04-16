@@ -31,6 +31,9 @@ namespace Anki.Vector
         High = 4
     }
 
+    /// <summary>
+    /// Audio Processing mode
+    /// </summary>
     public enum AudioProcessingMode
     {
         /// <summary>Error value</summary>
@@ -132,9 +135,9 @@ namespace Anki.Vector
         /// <returns>A task that represents the asynchronous operation; the task result contains the result from the robot.</returns>
         [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Waiting for DDL to expose the external interface method...")]
-        public async Task<StatusCode> SetAudioMode(AudioProcessingMode audioProcessingMode)
+        public async Task<StatusCode> AudioSendMode(AudioProcessingMode audioProcessingMode)
         {
-            //var response = await Robot.RunMethod(client => client.AudioRequestTypeAsync(new AudioSendModeRequest()
+            //var response = await Robot.RunMethod(client => client.AudioSendModeAsync(new AudioSendModeRequest()
             //{
             //    Mode = (ExternalInterface.AudioProcessingMode)audioProcessingMode
             //})).ConfigureAwait(false);

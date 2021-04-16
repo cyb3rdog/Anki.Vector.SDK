@@ -21,9 +21,9 @@ namespace Anki.Vector.Types
         /// <summary>Bad connectivity</summary>
         BadConnectivity = 2,
         /// <summary>Failed TLS</summary>
-        FailedTls = 3,
+        NotAvailable = 3,
         /// <summary>Failed Authorization</summary>
-        FailedAuth = 4,
+        AuthorizationFailed = 4,
         /// <summary>Insufficient bandwidth</summary>
         InsufficientBandwidth = 5,
     }

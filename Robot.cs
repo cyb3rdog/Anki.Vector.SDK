@@ -9,6 +9,7 @@ using System.Net;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Anki.Vector.Events;
@@ -68,6 +69,11 @@ namespace Anki.Vector
         /// Occurs when robot is delocalized  (i.e. whenever Vector no longer knows where he is - e.g.when he's picked up).
         /// </summary>
         public event EventHandler<DelocalizedEventArgs> Delocalized;
+
+        /// <summary>
+        /// Gets the alexa component
+        /// </summary>
+        public AlexaComponent Alexa { get; }
 
         /// <summary>
         /// Gets the control component
@@ -251,7 +257,12 @@ namespace Anki.Vector
         public Version FirmwareVersion { get; private set; }
 
         /// <summary>
-        /// Get the connected robot Name.  Populated when connected.
+        /// Gets the robot type (PROD/EP/OSKR).  Populated when connected
+        /// </summary>
+        public string RobotType { get; private set; }
+
+        /// <summary>
+        /// Get the connected robot Name.  Populated when connected
         /// </summary>
         public string RobotName { get; private set; }
 
@@ -369,6 +380,7 @@ namespace Anki.Vector
         public Robot()
         {
             // Components
+            this.Alexa = new AlexaComponent(this);
             this.Control = new ControlComponent(this);
             this.Events = new EventComponent(this);
             this.Camera = new CameraComponent(this);
@@ -562,8 +574,12 @@ namespace Anki.Vector
                 // Gets the firmware version from the robot and updates the firmware version property
                 var versionState = await this.ReadVersionState().ConfigureAwait(false);
                 Version version = new Version();
-                if (Version.TryParse(versionState.OsVersion, out version)) FirmwareVersion = version;
+                RobotType = Regex.Replace(versionState.OsVersion, @"[\d.]", string.Empty).Trim().ToUpper();
+                if (string.IsNullOrEmpty(RobotType)) RobotType = "PROD";
+                string versionNumber = Regex.Replace(versionState.OsVersion, @"[^\d.]", string.Empty).Trim();
+                if (Version.TryParse(versionNumber, out version)) FirmwareVersion = version;
                 OnPropertyChanged(nameof(FirmwareVersion));
+                OnPropertyChanged(nameof(RobotType));
                 OnPropertyChanged(nameof(Capabilities));
                 // Start the event loop
                 await this.Events.Start().ConfigureAwait(false);
@@ -655,13 +671,6 @@ namespace Anki.Vector
             }).ConfigureAwait(false);
             if (response.Code != ResultCode.SettingsAccepted) return null;
             return RobotSettings.FromJdoc(response.Doc);
-        }
-
-        public async Task<AlexaAuthStatus> ReadAlexaAuthState()
-        {
-            var response = await RunMethod(client => client.GetAlexaAuthStateAsync(new AlexaAuthStateRequest())).ConfigureAwait(false);
-            response.Status.EnsureSuccess();
-            return new AlexaAuthStatus(response);
         }
 
         /// <summary>

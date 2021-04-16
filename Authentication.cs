@@ -7,7 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Security;
+using System.Net.Sockets;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Anki.Vector.Exceptions;
@@ -151,6 +155,42 @@ namespace Anki.Vector
             return robotConfiguration;
         }
 
+
+        /// <summary>
+        /// Gets the certificate for the specific robot
+        /// </summary>
+        /// <returns>A task that represents the asynchronous operation; the task result contains the certificate.</returns>
+        /// <exception cref="VectorAuthenticationException"></exception>
+        public static async Task<string> GetCertificate(IPAddress host)
+        {
+            string result = await Task.Run(() =>
+            {
+                string taskResult = null;
+                using (TcpClient client = new TcpClient(host.ToString(), 443))
+                {
+                    using (SslStream sslStream = new SslStream(client.GetStream(), false, new RemoteCertificateValidationCallback(
+                        (object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) =>
+                        {
+                            X509Certificate2 x509cert = new X509Certificate2(certificate.GetRawCertData());
+                            StringBuilder builder = new StringBuilder();
+                            builder.AppendLine("-----BEGIN CERTIFICATE-----");
+                            builder.AppendLine(
+                                Convert.ToBase64String(x509cert.RawData, Base64FormattingOptions.InsertLineBreaks));
+                            builder.AppendLine("-----END CERTIFICATE-----");
+                            taskResult = builder.ToString();
+                            return true;
+                        })))
+                    {
+                        sslStream.AuthenticateAsClient(host.ToString());
+                    };
+                    client.Close();
+                }
+                return taskResult ?? throw new VectorAuthenticationException(VectorAuthenticationFailureType.Connection, "Unable to open SSL channel to Vector");
+            }).ConfigureAwait(false);
+            return result;
+        }
+
+
         /// <summary>
         /// Gets the certificate for the specific robot by serial number.
         /// </summary>
@@ -175,9 +215,7 @@ namespace Anki.Vector
             {
                 // If the result is forbidden then the serial number is invalid
                 if (response.StatusCode == HttpStatusCode.Forbidden)
-                {
                     throw new VectorAuthenticationException(VectorAuthenticationFailureType.SerialNumber, "Serial number is invalid.");
-                }
 
                 try
                 {
@@ -275,13 +313,12 @@ namespace Anki.Vector
         /// <summary>
         /// Checks the Robot Availability
         /// </summary>
-        /// <param name="certificate">The SSL certificate for the robot.</param>
         /// <param name="robotName">Name of the robot.</param>
         /// <param name="host">The host name or IP address with optional port.</param>
         /// <returns>
         /// A task that represents the asynchronous operation; the task result contains the authentication token.
         /// </returns>
-        public static async Task<bool> IsRobotReachable(string certificate, string robotName, string host)
+        public static async Task<bool> IsRobotReachable(string robotName, string host)
         {
             //if (string.IsNullOrEmpty(certificate)) throw new ArgumentException("SSL certificate must be provided.", nameof(certificate));
             if (string.IsNullOrEmpty(robotName)) throw new ArgumentException("Robot name must be provided.", "Robot Name");
@@ -293,6 +330,7 @@ namespace Anki.Vector
             {
                 try
                 {
+                    string certificate = await GetCertificate(IPAddress.Parse(host)).ConfigureAwait(true);
                     client = await Client.ConnectForAuth(certificate, host, robotName, 15_000).ConfigureAwait(false);
                     return (client != null);
                 }

@@ -8,15 +8,37 @@ using System.Threading.Tasks;
 
 namespace Anki.Vector
 {
-    public class AccountApiError
+	/// <summary>
+	///
+	/// </summary>
+	public class AccountApiError
 	{
+		/// <summary>
+		///
+		/// </summary>
 		public string Code;
+		/// <summary>
+		///
+		/// </summary>
 		public string Field;
+		/// <summary>
+		///
+		/// </summary>
 		public string Status;
-		public string Message;		
+		/// <summary>
+		///
+		/// </summary>
+		public string Message;
+		/// <summary>
+		///
+		/// </summary>
 		public Exception Exception;
 
-
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="responseJson"></param>
+		/// <returns></returns>
 		public static AccountApiError GetErrorFromResponse(JObject responseJson)
 		{
 			AccountApiError accountApiError = new AccountApiError();
@@ -31,6 +53,11 @@ namespace Anki.Vector
 			return accountApiError;
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="exception"></param>
+		/// <returns></returns>
 		public static AccountApiError GetErrorFromException(Exception exception)
 		{
 			AccountApiError accountApiError = new AccountApiError();
@@ -56,14 +83,30 @@ namespace Anki.Vector
 
 			return resultMessage;
 		}
-    }
+	}
 
+	/// <summary>
+	///
+	/// </summary>
 	public class AccountApiResponse
 	{
+		/// <summary>
+		///
+		/// </summary>
 		public bool Success;
+		/// <summary>
+		///
+		/// </summary>
 		public AccountApiError Error;
+		/// <summary>
+		///
+		/// </summary>
 		public IHttpResponse RawResponse;
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="httpResponse"></param>
 		public AccountApiResponse(IHttpResponse httpResponse)
 		{
 			if (httpResponse != null)
@@ -86,6 +129,10 @@ namespace Anki.Vector
 				throw new WebException(this.Error.Message);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <returns></returns>
 		public JObject TryGetResponseContentAsJson()
 		{
 			if (this.RawResponse == null)
@@ -99,6 +146,9 @@ namespace Anki.Vector
 		}
 	}
 
+	/// <summary>
+	///
+	/// </summary>
 	public class AnkiService
 	{
 		private HttpService _HttpService;
@@ -108,7 +158,7 @@ namespace Anki.Vector
 		internal static string AnkiAppKeyValue = "aung2ieCho3aiph7Een3Ei";
 
 		internal static string AuthSchemeAnki = "Anki";
-	
+
 		private Dictionary<string, string> RequestHeaders
 		{
 			get
@@ -119,11 +169,20 @@ namespace Anki.Vector
 			}
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="userAgent"></param>
 		public AnkiService(string userAgent)
 		{
 			this._HttpService = new HttpService(userAgent);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="password"></param>
+		/// <returns></returns>
 		public int GetPasswordComplexityMissingFlags(string password)
 		{
 			int complexityBits = 0;
@@ -138,6 +197,11 @@ namespace Anki.Vector
 			return complexityBits;
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="password"></param>
+		/// <returns></returns>
 		public bool IsPasswordValid(string password)
 		{
 			if (string.IsNullOrEmpty(password))
@@ -147,6 +211,11 @@ namespace Anki.Vector
 			return passwordComplexityMissingFlags == 0;
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="request"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> UserCreateAccount(JObject request)
 		{
 			Uri uri = this.MakeUriForRequest("/1/users");
@@ -154,6 +223,12 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="sessionToken"></param>
+		/// <param name="userId"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> UserRequestEmailVerification(string sessionToken, string userId)
 		{
 			Tuple<string, string> authorization = new Tuple<string, string>(AnkiService.AuthSchemeAnki, sessionToken);
@@ -163,6 +238,12 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="sessionToken"></param>
+		/// <param name="userId"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> UserCheckForEmailVerification(string sessionToken, string userId)
 		{
 			Tuple<string, string> authorization = new Tuple<string, string>(AnkiService.AuthSchemeAnki, sessionToken);
@@ -172,6 +253,11 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="email"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> UserResetPassword(string email)
 		{
 			Dictionary<string, string> reqquest = new Dictionary<string, string>();
@@ -182,6 +268,13 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="sessionToken"></param>
+		/// <param name="userId"></param>
+		/// <param name="newPassword"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> UserUpdatePassword(string sessionToken, string userId, string newPassword)
 		{
 			Tuple<string, string> authorization = new Tuple<string, string>(AnkiService.AuthSchemeAnki, sessionToken);
@@ -193,6 +286,12 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="email"></param>
+		/// <param name="password"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> SessionLogin(string email, string password)
 		{
 			Dictionary<string, string> request = new Dictionary<string, string>();
@@ -204,6 +303,11 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="sessionToken"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> SessionLogout(string sessionToken)
 		{
 			Tuple<string, string> authorization = new Tuple<string, string>(AnkiService.AuthSchemeAnki, sessionToken);
@@ -215,6 +319,12 @@ namespace Anki.Vector
 			return new AccountApiResponse(response);
 		}
 
+		/// <summary>
+		///
+		/// </summary>
+		/// <param name="sessionToken"></param>
+		/// <param name="userId"></param>
+		/// <returns></returns>
 		public async Task<AccountApiResponse> GetUserInfo(string sessionToken, string userId)
 		{
 			Tuple<string, string> authorization = new Tuple<string, string>(AnkiService.AuthSchemeAnki, sessionToken);

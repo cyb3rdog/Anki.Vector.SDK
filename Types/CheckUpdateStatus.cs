@@ -20,6 +20,14 @@ namespace Anki.Vector.Types
         ReadyToInstall = 1,
         /// <summary>The download is in progress</summary>
         InProgressDownload = 2,
+        /// <summary>The download has been interupted</summary>
+        DownloadInterruted = 3,
+        /// <summary>Checking for update is in progress</summary>
+        CheckingForUpdate = 4,
+        /// <summary>Updateing is in progress</summary>
+        InProgressOther = 5,
+        /// <summary>Update failed</summary>
+        UpdateFailed = 6
     }
 
     /// <summary>

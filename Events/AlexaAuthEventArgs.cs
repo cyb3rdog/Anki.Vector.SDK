@@ -2,6 +2,7 @@
 //     Copyright (c) 2020 Wayne Venables. All rights reserved.
 // </copyright>
 
+using Anki.Vector.Types;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -61,6 +62,20 @@ namespace Anki.Vector.Events
         {
             AuthState = (AlexaAuthState)e.AlexaAuthEvent.AuthState;
             Extra = e.AlexaAuthEvent.Extra;
+        }
+
+        /// <summary>
+        /// Converts the AlexaAuthEventArgs into AlexaAuthStatus
+        /// </summary>
+        /// <param name="e">AlexaAuthEventArgs</param>
+        /// <returns>AlexaAuthStatus</returns>
+        public AlexaAuthStatus ToAlexaAuthStatus()
+        {
+            return new AlexaAuthStatus(new ExternalInterface.AlexaAuthStateResponse()
+            {
+                AuthState = (ExternalInterface.AlexaAuthState)(int)this.AuthState,
+                Extra = this.Extra
+            });
         }
     }
 }

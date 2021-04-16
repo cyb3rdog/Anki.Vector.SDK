@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace Anki.Vector.Http
 {
+#pragma warning disable CS1591
 	public class HttpService
 	{
 		public delegate void HttpResponseDelegate(IHttpResponse response);
@@ -153,4 +154,6 @@ namespace Anki.Vector.Http
 					requestMessage.Headers.Add(keyValuePair.Key, keyValuePair.Value);
 		}
 	}
+
+	#pragma warning restore CS1591
 }

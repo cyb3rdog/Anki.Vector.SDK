@@ -6,6 +6,7 @@ using System.Net.Http;
 
 namespace Anki.Vector.Http
 {
+#pragma warning disable CS1591
 	public interface IHttpResponse
 	{
 		IEnumerable<KeyValuePair<string, IEnumerable<string>>> Headers { get; }
@@ -76,4 +77,6 @@ namespace Anki.Vector.Http
 		public JToken ContentAsJson { get; }
 		public string ContentAsString { get; }
 	}
+
+#pragma warning restore CS1591
 }
