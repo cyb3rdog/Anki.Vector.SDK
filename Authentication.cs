@@ -172,11 +172,11 @@ namespace Anki.Vector
                         (object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) =>
                         {
                             X509Certificate2 x509cert = new X509Certificate2(certificate.GetRawCertData());
-                            StringBuilder builder = new StringBuilder();
-                            builder.AppendLine("-----BEGIN CERTIFICATE-----");
-                            builder.AppendLine(
-                                Convert.ToBase64String(x509cert.RawData, Base64FormattingOptions.InsertLineBreaks));
-                            builder.AppendLine("-----END CERTIFICATE-----");
+                            StringBuilder builder = new StringBuilder(Convert.ToBase64String(x509cert.RawData, Base64FormattingOptions.None));
+                            for (int i = 64; i < builder.Length; i += 65) //' 64 + "\n"
+                                builder.Insert(i, "\n");
+                            builder.Insert(0, "-----BEGIN CERTIFICATE-----\n");
+                            builder.Append("\n-----END CERTIFICATE-----\n");
                             taskResult = builder.ToString();
                             return true;
                         })))

@@ -106,7 +106,7 @@ namespace Anki.Vector
             this.playbackFeed = new AsyncDuplexEventLoop<ExternalAudioStreamRequest, ExternalAudioStreamResponse>(
                 (token) => Robot.StartStream(client => client.ExternalAudioStreamPlayback(cancellationToken: token)),
                 ProcessAudioResponse,
-                () => { OnPropertyChanged(nameof(IsPlaybackActive)); playbackResult?.SetResult(PlaybackResult.Completed); },
+                () => { OnPropertyChanged(nameof(IsPlaybackActive)); playbackResult?.TrySetResult(PlaybackResult.Completed); },
                 Robot.PropagateException
             );
         }

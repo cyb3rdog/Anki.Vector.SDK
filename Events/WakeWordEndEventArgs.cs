@@ -2,6 +2,10 @@
 //     Copyright (c) 2020 Wayne Venables. All rights reserved.
 // </copyright>
 
+using Anki.Vector.Types;
+using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+
 namespace Anki.Vector.Events
 {
     /// <summary>
@@ -24,6 +28,9 @@ namespace Anki.Vector.Events
         /// </summary>
         public string IntentJson { get; }
 
+
+        public IntentData Intent { get; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="WakeWordEndEventArgs" /> class.
         /// </summary>
@@ -32,6 +39,24 @@ namespace Anki.Vector.Events
         {
             IntentHeard = e.WakeWord.WakeWordEnd.IntentHeard;
             IntentJson = e.WakeWord.WakeWordEnd.IntentJson;
+            Intent = ParseUserIntent(e.WakeWord.WakeWordEnd.IntentJson);
+        }
+
+        public static IntentData ParseUserIntent(string intentJson)
+        {
+            if (string.IsNullOrEmpty(intentJson)) return null;
+            try
+            {
+                JObject json = JObject.Parse(intentJson);
+                JToken token = json.SelectToken("type");
+                if (token == null) return null;
+
+                return Intents.DefaultIntents.GetIntentBy(IntentData.Property.IntentType, token.ToString().ToLower());
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }
