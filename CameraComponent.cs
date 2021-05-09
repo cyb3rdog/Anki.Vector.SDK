@@ -15,7 +15,7 @@ namespace Anki.Vector
 
     /// <summary>
     /// Support for Vector’s camera.
-    /// <para>Vector has a built-in camera which he uses to observe the world around him.  You can start receiving camera images from Vector by calling the <see cref="StartFeed"/> method.  
+    /// <para>Vector has a built-in camera which he uses to observe the world around him.  You can start receiving camera images from Vector by calling the <see cref="StartFeed"/> method.
     /// The <see cref="ImageReceived"/> event will be raised for each frame received.  Although there is an <see cref="ImageEncoding"/> property, the data received from Vector is always in
     /// the color JPEG format.</para>
     /// <para>The camera resolution is 1280 x 720 with a field of view of 90 deg (H) x 50 deg (V).</para>
@@ -35,7 +35,7 @@ namespace Anki.Vector
         private Image _latestImage = null;
 
         /// <summary>
-        /// Gets the configuration and calibration of the camera.  
+        /// Gets the configuration and calibration of the camera.
         /// </summary>
         /// <remarks>Camera configuration is only populated with firmware version 1.7 or greater.  See <see cref="Capabilities.CameraSettings"/>.</remarks>
         public CameraConfig Config { get; private set; }
@@ -240,7 +240,7 @@ namespace Anki.Vector
         /// </summary>
         /// <returns>A task that represents the asynchronous operation; the task result contains the camera configuration.</returns>
         /// <remarks>This method is only available with firmware version 1.7 or greater.  See <see cref="Capabilities.CameraSettings"/>.</remarks>
-        private async Task<CameraConfig> ReadCameraConfig()
+        public async Task<CameraConfig> ReadCameraConfig()
         {
             Robot.Capabilities.Assert(Capabilities.Version1_7);
             var response = await Robot.RunMethod(client => client.GetCameraConfigAsync(new CameraConfigRequest())).ConfigureAwait(false);
@@ -273,7 +273,7 @@ namespace Anki.Vector
         }
 
         /// <summary>
-        /// Disables the image streaming.  
+        /// Disables the image streaming.
         /// </summary>
         /// <returns>A task that represents the asynchronous operation; the task result contains the result from the robot.</returns>
         private async Task<StatusCode> DisableImageStreaming()
