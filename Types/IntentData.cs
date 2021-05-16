@@ -40,7 +40,7 @@ namespace Anki.Vector.Types
             MinimumVersion
         }
 
-        private const string minVersion = "0.0.0.0";
+        private static readonly Version defaultVersion = new Version("0.0.0.0");
 
         [JsonProperty("sdk_id")]
         public uint? IntentSDKId { get; set; }
@@ -62,9 +62,9 @@ namespace Anki.Vector.Types
         {
             get
             {
-                if ((string.IsNullOrEmpty(MinVersion)) && (Version.TryParse(this.MinVersion, out Version result)))
+                if ((!string.IsNullOrEmpty(MinVersion)) && (Version.TryParse(this.MinVersion, out Version result)))
                     return result;
-                return new Version(minVersion);
+                return defaultVersion;
             }
         }
 

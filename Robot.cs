@@ -573,13 +573,7 @@ namespace Anki.Vector
                 this.client = client;
                 // Gets the firmware version from the robot and updates the firmware version property
                 var versionState = await this.ReadVersionState().ConfigureAwait(false);
-                Version version = new Version();
-                RobotType = Regex.Replace(versionState.OsVersion, @"[\d.]", string.Empty).Trim().ToUpper();
-                if (string.IsNullOrEmpty(RobotType)) RobotType = "PROD";
-                string versionNumber = Regex.Replace(versionState.OsVersion, @"[^\d.]", string.Empty).Trim();
-                if (Version.TryParse(versionNumber, out version)) FirmwareVersion = version;
-                OnPropertyChanged(nameof(FirmwareVersion));
-                OnPropertyChanged(nameof(RobotType));
+                this.TryGetVersion(versionState);
                 OnPropertyChanged(nameof(Capabilities));
                 // Start the event loop
                 await this.Events.Start().ConfigureAwait(false);
@@ -589,6 +583,32 @@ namespace Anki.Vector
                 client.Dispose();
                 this.client = null;
                 throw;
+            }
+        }
+
+        private void TryGetVersion(VersionState versionState)
+        {
+            try
+            {
+                if ((versionState == null) || (string.IsNullOrEmpty(versionState.OsVersion))) return;
+                this.RobotType = Regex.Replace(versionState.OsVersion, @"[\d.]", string.Empty).Trim().ToUpper();
+
+                string[] versionParts = versionState.OsVersion.Split(new char[] { '_', '-', ',', '/', '\\', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (string versionString in versionParts)
+                {
+                    string versionNumber = Regex.Replace(versionString, @"[^\d.]", string.Empty).Trim();
+                    if (Version.TryParse(versionNumber, out Version version)) FirmwareVersion = version;
+                }
+            }
+            catch
+            { /* supress */ }
+            finally
+            {
+                if (string.IsNullOrEmpty(this.RobotType)) this.RobotType = "PROD";
+                if (this.RobotType.Contains("OSKR")) this.RobotType = "OSKR";
+
+                OnPropertyChanged(nameof(FirmwareVersion));
+                OnPropertyChanged(nameof(RobotType));
             }
         }
 

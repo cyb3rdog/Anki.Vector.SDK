@@ -25,7 +25,7 @@ namespace Anki.Vector.Types
         /// <summary>Checking for update is in progress</summary>
         CheckingForUpdate = 4,
         /// <summary>Updateing is in progress</summary>
-        InProgressOther = 5,
+        UpdateInProgress = 5,
         /// <summary>Update failed</summary>
         UpdateFailed = 6
     }
